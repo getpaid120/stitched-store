@@ -543,40 +543,71 @@ function render() {
 
   // Footer
   const ft = document.createElement('footer');
-  ft.style.cssText = 'background:#fff;border-top:1px solid var(--surface-border);padding:56px 24px 32px;margin-top:auto';
+  ft.style.cssText = 'background:#fff;border-top:1px solid var(--surface-border);padding:60px 24px 32px;margin-top:auto';
   ft.innerHTML = `<div style="max-width:1200px;margin:0 auto">
-    <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px">
-      <div>
-        <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;font-family:var(--fd);font-size:20px;font-weight:700"><span>🧵</span> Stitched</div>
-        <p style="color:var(--text-secondary);font-size:13px;line-height:1.7;max-width:280px">${__('heroSub')}</p>
+    <!-- Top row: brand + newsletter CTA -->
+    <div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:36px;border-bottom:1px solid var(--surface-border);margin-bottom:36px;flex-wrap:wrap;gap:16px">
+      <div style="display:flex;align-items:center;gap:10px">
+        <span style="width:40px;height:40px;border-radius:var(--radius);background:var(--gradient-1);display:flex;align-items:center;justify-content:center;font-size:20px">🧵</span>
+        <div><div style="font-family:var(--fd);font-size:18px;font-weight:700;letter-spacing:-0.02em">Stitched</div><div style="font-size:11px;color:var(--text-muted)">curated quality goods</div></div>
       </div>
+      <div style="display:flex;gap:16px;align-items:center">
+        <span style="font-size:12px;color:var(--text-secondary)">Free shipping on orders over $50</span>
+        <div style="width:1px;height:20px;background:var(--surface-border)"></div>
+        <span style="font-size:12px;color:var(--text-secondary)">30-day returns</span>
+      </div>
+    </div>
+    <!-- Links grid -->
+    <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1.2fr;gap:40px;margin-bottom:40px">
       <div>
-        <h4 style="font-family:var(--fd);font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px">${__('store')}</h4>
-        <div style="display:flex;flex-direction:column;gap:8px">
-          <button class="nav-btn" style="padding:0;font-size:13px" onclick="nav('store')">${__('allProducts')}</button>
-          <button class="nav-btn" style="padding:0;font-size:13px" onclick="nav('store');setTimeout(()=>{const i=document.querySelector('#ss');if(i)i.focus()},100)">${__('search')}</button>
+        <p style="color:var(--text-secondary);font-size:13px;line-height:1.8;max-width:300px;margin-bottom:16px">${__('heroSub')}</p>
+        <div style="display:flex;gap:10px">
+          <span style="width:30px;height:30px;border-radius:50%;border:1px solid var(--surface-border);display:flex;align-items:center;justify-content:center;font-size:12px;cursor:pointer;transition:all .2s;color:var(--text-muted)" onclick="nav('about')" title="About">🛈</span>
+          <span style="width:30px;height:30px;border-radius:50%;border:1px solid var(--surface-border);display:flex;align-items:center;justify-content:center;font-size:12px;cursor:pointer;transition:all .2s;color:var(--text-muted)" onclick="nav('shipping')" title="Shipping">📬</span>
+          <span style="width:30px;height:30px;border-radius:50%;border:1px solid var(--surface-border);display:flex;align-items:center;justify-content:center;font-size:12px;cursor:pointer;transition:all .2s;color:var(--text-muted)" onclick="nav('terms')" title="Terms">📄</span>
         </div>
       </div>
       <div>
-        <h4 style="font-family:var(--fd);font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px">${__('about')}</h4>
-        <div style="display:flex;flex-direction:column;gap:8px">
-          <button class="nav-btn" style="padding:0;font-size:13px" onclick="nav('about')">${__('about')}</button>
-          <button class="nav-btn" style="padding:0;font-size:13px" onclick="nav('shipping')">${__('shippingReturns')}</button>
-          <button class="nav-btn" style="padding:0;font-size:13px" onclick="nav('terms')">${__('terms')}</button>
-          <button class="nav-btn" style="padding:0;font-size:13px" onclick="nav('privacy')">${__('privacy')}</button>
+        <h4 style="font-family:var(--fd);font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--text-muted);margin-bottom:14px">${__('store')}</h4>
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <button class="nav-btn" style="padding:4px 0;font-size:13px" onclick="nav('store')">${__('allProducts')}</button>
+          <button class="nav-btn" style="padding:4px 0;font-size:13px" onclick="nav('store');setTimeout(()=>{const i=document.querySelector('#ss');if(i)i.focus()},100)">${__('search')}</button>
         </div>
       </div>
       <div>
-        <h4 style="font-family:var(--fd);font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px">${__('support')}</h4>
-        <div style="display:flex;flex-direction:column;gap:8px;font-size:13px;color:var(--text-secondary)">
-          <span>${__('contactEmail')}</span>
-          <span>${__('hours')}</span>
+        <h4 style="font-family:var(--fd);font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--text-muted);margin-bottom:14px">Support</h4>
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <button class="nav-btn" style="padding:4px 0;font-size:13px" onclick="nav('about')">${__('about')}</button>
+          <button class="nav-btn" style="padding:4px 0;font-size:13px" onclick="nav('shipping')">${__('shippingReturns')}</button>
+          <button class="nav-btn" style="padding:4px 0;font-size:13px" onclick="nav('privacy')">${__('privacy')}</button>
+          <button class="nav-btn" style="padding:4px 0;font-size:13px" onclick="nav('terms')">${__('terms')}</button>
+        </div>
+      </div>
+      <div>
+        <h4 style="font-family:var(--fd);font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--text-muted);margin-bottom:14px">Contact</h4>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary)">
+            <span style="font-size:14px">✉️</span>
+            <a href="mailto:contact@stitched.store" style="color:var(--accent);text-decoration:none">contact@stitched.store</a>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary)">
+            <span style="font-size:14px">🕐</span>
+            <span>${__('hours')}</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary)">
+            <span style="font-size:14px">💬</span>
+            <span style="cursor:pointer;color:var(--accent)" onclick="chatToggle()">Live chat</span>
+          </div>
         </div>
       </div>
     </div>
-    <div style="border-top:1px solid var(--surface-border);padding-top:20px;display:flex;justify-content:space-between;font-size:12px;color:var(--text-muted);flex-wrap:wrap;gap:8px">
+    <!-- Bottom bar -->
+    <div style="border-top:1px solid var(--surface-border);padding-top:20px;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--text-muted);flex-wrap:wrap;gap:12px">
       <span>${__('rightsReserved')}</span>
-      <span>${__('madeWithCare')}</span>
+      <div style="display:flex;align-items:center;gap:8px">
+        <span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--gradient-1)"></span>
+        <span>${__('madeWithCare')}</span>
+      </div>
     </div>
   </div>`;
 

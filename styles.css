@@ -260,5 +260,5 @@ h1,h2,h3,h4,h5,h6{font-family:var(--fd);font-weight:600;letter-spacing:-0.02em}
 .rv-text{font-size:13px;color:var(--text-secondary);line-height:1.5}
 
 /* Responsive footer */
-@media(max-width:768px){footer>div>div{grid-template-columns:1fr 1fr!important;gap:24px!important}}
+@media(max-width:768px){footer>div>div:first-of-type{flex-direction:column!important;align-items:flex-start!important}footer>div>div[style*="grid-template-columns"]{grid-template-columns:1fr 1fr!important;gap:28px!important}}
 @media(max-width:480px){.topbar-inner{padding:0 16px;height:56px}.hero{padding:60px 20px}.dashboard{padding:24px 16px}.checkout-page{padding:24px 16px}footer>div>div{grid-template-columns:1fr!important;gap:20px!important}}
