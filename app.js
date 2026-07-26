@@ -884,8 +884,26 @@ function renderProduct() {
             ${__('addToCart')} — $${p.yourPrice.toFixed(2)}
           </button>
         </div>
-      </div>
-    </div>`;
+  </div>
+  ${p.reviews && p.reviews.length > 0 ? `
+  <div style="margin-top:40px;padding-top:32px;border-top:1px solid var(--surface-border)">
+    <h3 style="font-family:var(--fd);font-size:18px;font-weight:600;margin-bottom:16px">Customer Reviews (${p.reviews.length})</h3>
+    <div class="rv-grid">
+      ${p.reviews.map(r => `
+        <div class="rv-card">
+          <div class="rv-h">
+            <div class="rv-av">${r.name.charAt(0).toUpperCase()}</div>
+            <div>
+              <div class="rv-name">${r.name}</div>
+              <div class="rv-stars">${'★'.repeat(r.rating)}${'☆'.repeat(5-r.rating)}</div>
+            </div>
+          </div>
+          <p class="rv-text">${r.comment}</p>
+        </div>
+      `).join('')}
+    </div>
+  </div>` : ''}
+</div>`;
   page.style.cssText += `padding:40px 24px;flex:1;max-width:1000px;margin:0 auto;width:100%`;
   return page;
 }

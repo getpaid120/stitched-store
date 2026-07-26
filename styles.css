@@ -249,6 +249,16 @@ h1,h2,h3,h4,h5,h6{font-family:var(--fd);font-weight:600;letter-spacing:-0.02em}
 
 @media(max-width:480px){.chat-panel{right:12px;bottom:80px;width:calc(100vw - 24px);max-height:60vh}.chat-bubble{right:12px;bottom:16px;width:46px;height:46px}}
 
+/* ── Reviews ──────────────────────────────────────────────────────── */
+.rv-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.rv-card{background:#fff;border:1px solid var(--surface-border);border-radius:var(--radius-lg);padding:16px;box-shadow:var(--shadow-sm);transition:box-shadow .2s}
+.rv-card:hover{box-shadow:var(--shadow)}
+.rv-h{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+.rv-av{width:36px;height:36px;border-radius:50%;background:var(--gradient-1);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;flex-shrink:0}
+.rv-name{font-size:13px;font-weight:600;color:var(--text)}
+.rv-stars{font-size:13px;color:#e17055;letter-spacing:1px}
+.rv-text{font-size:13px;color:var(--text-secondary);line-height:1.5}
+
 /* Responsive footer */
 @media(max-width:768px){footer>div>div{grid-template-columns:1fr 1fr!important;gap:24px!important}}
 @media(max-width:480px){.topbar-inner{padding:0 16px;height:56px}.hero{padding:60px 20px}.dashboard{padding:24px 16px}.checkout-page{padding:24px 16px}footer>div>div{grid-template-columns:1fr!important;gap:20px!important}}

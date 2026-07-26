@@ -11,7 +11,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/kitchen-accessories/bamboo-spatula/1.webp"
     ],
-    "rating": 3.27
+    "rating": 4.7,
+    "reviews": [
+      {
+        "name": "Lucas Ramirez",
+        "rating": 5,
+        "comment": "Awesome product!"
+      },
+      {
+        "name": "Caleb Perkins",
+        "rating": 5,
+        "comment": "Highly recommended!"
+      },
+      {
+        "name": "Nolan Gonzalez",
+        "rating": 4,
+        "comment": "Highly recommended!"
+      }
+    ]
   },
   {
     "id": "dj_49",
@@ -26,7 +43,24 @@
       "https://cdn.dummyjson.com/product-images/kitchen-accessories/black-aluminium-cup/1.webp",
       "https://cdn.dummyjson.com/product-images/kitchen-accessories/black-aluminium-cup/2.webp"
     ],
-    "rating": 4.46
+    "rating": 3.0,
+    "reviews": [
+      {
+        "name": "Alexander Hernandez",
+        "rating": 3,
+        "comment": "Very disappointed!"
+      },
+      {
+        "name": "Aurora Rodriguez",
+        "rating": 5,
+        "comment": "Great value for money!"
+      },
+      {
+        "name": "Benjamin Foster",
+        "rating": 1,
+        "comment": "Not worth the price!"
+      }
+    ]
   },
   {
     "id": "dj_50",
@@ -40,7 +74,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/kitchen-accessories/black-whisk/1.webp"
     ],
-    "rating": 3.9
+    "rating": 3.0,
+    "reviews": [
+      {
+        "name": "Cameron Perez",
+        "rating": 3,
+        "comment": "Not worth the price!"
+      },
+      {
+        "name": "Benjamin Foster",
+        "rating": 1,
+        "comment": "Waste of money!"
+      },
+      {
+        "name": "Paisley Bell",
+        "rating": 5,
+        "comment": "Very pleased!"
+      }
+    ]
   },
   {
     "id": "dj_51",
@@ -57,7 +108,24 @@
       "https://cdn.dummyjson.com/product-images/kitchen-accessories/boxed-blender/3.webp",
       "https://cdn.dummyjson.com/product-images/kitchen-accessories/boxed-blender/4.webp"
     ],
-    "rating": 4.56
+    "rating": 5.0,
+    "reviews": [
+      {
+        "name": "Ella Adams",
+        "rating": 5,
+        "comment": "Very pleased!"
+      },
+      {
+        "name": "Ruby Andrews",
+        "rating": 5,
+        "comment": "Would buy again!"
+      },
+      {
+        "name": "Aurora Lawson",
+        "rating": 5,
+        "comment": "Very happy with my purchase!"
+      }
+    ]
   },
   {
     "id": "dj_52",
@@ -71,7 +139,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/kitchen-accessories/carbon-steel-wok/1.webp"
     ],
-    "rating": 4.05
+    "rating": 4.3,
+    "reviews": [
+      {
+        "name": "Nolan Bryant",
+        "rating": 4,
+        "comment": "Excellent quality!"
+      },
+      {
+        "name": "Luna Perez",
+        "rating": 4,
+        "comment": "Highly impressed!"
+      },
+      {
+        "name": "Noah Lewis",
+        "rating": 5,
+        "comment": "Very satisfied!"
+      }
+    ]
   },
   {
     "id": "dj_53",
@@ -85,7 +170,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/kitchen-accessories/chopping-board/1.webp"
     ],
-    "rating": 3.7
+    "rating": 4.3,
+    "reviews": [
+      {
+        "name": "Xavier Wright",
+        "rating": 5,
+        "comment": "Great value for money!"
+      },
+      {
+        "name": "Henry Turner",
+        "rating": 4,
+        "comment": "Great value for money!"
+      },
+      {
+        "name": "Evelyn Walker",
+        "rating": 4,
+        "comment": "Fast shipping!"
+      }
+    ]
   },
   {
     "id": "dj_54",
@@ -99,7 +201,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/kitchen-accessories/citrus-squeezer-yellow/1.webp"
     ],
-    "rating": 4.63
+    "rating": 4.3,
+    "reviews": [
+      {
+        "name": "Lucas Ramirez",
+        "rating": 4,
+        "comment": "Highly recommended!"
+      },
+      {
+        "name": "Eleanor Collins",
+        "rating": 4,
+        "comment": "Great product!"
+      },
+      {
+        "name": "Mila Hernandez",
+        "rating": 5,
+        "comment": "Highly impressed!"
+      }
+    ]
   },
   {
     "id": "dj_55",
@@ -113,7 +232,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/kitchen-accessories/egg-slicer/1.webp"
     ],
-    "rating": 3.09
+    "rating": 2.7,
+    "reviews": [
+      {
+        "name": "Harper Garcia",
+        "rating": 3,
+        "comment": "Very dissatisfied!"
+      },
+      {
+        "name": "Lily Torres",
+        "rating": 4,
+        "comment": "Very happy with my purchase!"
+      },
+      {
+        "name": "Tyler Davis",
+        "rating": 1,
+        "comment": "Not worth the price!"
+      }
+    ]
   },
   {
     "id": "dj_56",
@@ -130,7 +266,24 @@
       "https://cdn.dummyjson.com/product-images/kitchen-accessories/electric-stove/3.webp",
       "https://cdn.dummyjson.com/product-images/kitchen-accessories/electric-stove/4.webp"
     ],
-    "rating": 4.11
+    "rating": 2.3,
+    "reviews": [
+      {
+        "name": "Ava Harris",
+        "rating": 1,
+        "comment": "Would not recommend!"
+      },
+      {
+        "name": "Liam Smith",
+        "rating": 2,
+        "comment": "Very dissatisfied!"
+      },
+      {
+        "name": "Christian Perez",
+        "rating": 4,
+        "comment": "Very pleased!"
+      }
+    ]
   },
   {
     "id": "dj_57",
@@ -144,7 +297,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/kitchen-accessories/fine-mesh-strainer/1.webp"
     ],
-    "rating": 3.04
+    "rating": 3.7,
+    "reviews": [
+      {
+        "name": "Isabella Anderson",
+        "rating": 5,
+        "comment": "Very pleased!"
+      },
+      {
+        "name": "Aaliyah Hanson",
+        "rating": 4,
+        "comment": "Highly impressed!"
+      },
+      {
+        "name": "Layla Sullivan",
+        "rating": 2,
+        "comment": "Would not recommend!"
+      }
+    ]
   },
   {
     "id": "dj_58",
@@ -158,7 +328,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/kitchen-accessories/fork/1.webp"
     ],
-    "rating": 3.11
+    "rating": 4.0,
+    "reviews": [
+      {
+        "name": "Elena Baker",
+        "rating": 5,
+        "comment": "Highly impressed!"
+      },
+      {
+        "name": "Avery Scott",
+        "rating": 5,
+        "comment": "Very satisfied!"
+      },
+      {
+        "name": "Mateo Perez",
+        "rating": 2,
+        "comment": "Would not buy again!"
+      }
+    ]
   },
   {
     "id": "dj_59",
@@ -172,7 +359,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/kitchen-accessories/glass/1.webp"
     ],
-    "rating": 4.02
+    "rating": 4.3,
+    "reviews": [
+      {
+        "name": "Jackson Evans",
+        "rating": 5,
+        "comment": "Very happy with my purchase!"
+      },
+      {
+        "name": "Nicholas Bailey",
+        "rating": 3,
+        "comment": "Waste of money!"
+      },
+      {
+        "name": "Nathan Reed",
+        "rating": 5,
+        "comment": "Very satisfied!"
+      }
+    ]
   },
   {
     "id": "dj_60",
@@ -186,7 +390,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/kitchen-accessories/grater-black/1.webp"
     ],
-    "rating": 3.21
+    "rating": 2.3,
+    "reviews": [
+      {
+        "name": "Ella Adams",
+        "rating": 1,
+        "comment": "Would not buy again!"
+      },
+      {
+        "name": "Eli Ward",
+        "rating": 1,
+        "comment": "Not as described!"
+      },
+      {
+        "name": "James Garcia",
+        "rating": 5,
+        "comment": "Highly impressed!"
+      }
+    ]
   },
   {
     "id": "dj_61",
@@ -200,7 +421,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/kitchen-accessories/hand-blender/1.webp"
     ],
-    "rating": 3.86
+    "rating": 3.3,
+    "reviews": [
+      {
+        "name": "Hazel Evans",
+        "rating": 5,
+        "comment": "Excellent quality!"
+      },
+      {
+        "name": "Hannah Howard",
+        "rating": 4,
+        "comment": "Highly impressed!"
+      },
+      {
+        "name": "Jonathan Pierce",
+        "rating": 1,
+        "comment": "Would not buy again!"
+      }
+    ]
   },
   {
     "id": "dj_62",
@@ -214,7 +452,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/kitchen-accessories/ice-cube-tray/1.webp"
     ],
-    "rating": 4.71
+    "rating": 5.0,
+    "reviews": [
+      {
+        "name": "Isaac Lawrence",
+        "rating": 5,
+        "comment": "Awesome product!"
+      },
+      {
+        "name": "Leo Rivera",
+        "rating": 5,
+        "comment": "Would buy again!"
+      },
+      {
+        "name": "Henry Turner",
+        "rating": 5,
+        "comment": "Very pleased!"
+      }
+    ]
   },
   {
     "id": "dj_63",
@@ -228,7 +483,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/kitchen-accessories/kitchen-sieve/1.webp"
     ],
-    "rating": 3.09
+    "rating": 4.7,
+    "reviews": [
+      {
+        "name": "Stella Morris",
+        "rating": 5,
+        "comment": "Highly recommended!"
+      },
+      {
+        "name": "Henry Adams",
+        "rating": 5,
+        "comment": "Very happy with my purchase!"
+      },
+      {
+        "name": "Lillian Simmons",
+        "rating": 4,
+        "comment": "Awesome product!"
+      }
+    ]
   },
   {
     "id": "dj_64",
@@ -242,7 +514,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/kitchen-accessories/knife/1.webp"
     ],
-    "rating": 3.26
+    "rating": 4.0,
+    "reviews": [
+      {
+        "name": "Aaliyah Martinez",
+        "rating": 2,
+        "comment": "Very disappointed!"
+      },
+      {
+        "name": "Addison Wright",
+        "rating": 5,
+        "comment": "Fast shipping!"
+      },
+      {
+        "name": "Mateo Nguyen",
+        "rating": 5,
+        "comment": "Very pleased!"
+      }
+    ]
   },
   {
     "id": "dj_65",
@@ -256,7 +545,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/kitchen-accessories/lunch-box/1.webp"
     ],
-    "rating": 4.93
+    "rating": 4.0,
+    "reviews": [
+      {
+        "name": "Jace Smith",
+        "rating": 5,
+        "comment": "Very pleased!"
+      },
+      {
+        "name": "Zoe Bennett",
+        "rating": 5,
+        "comment": "Very happy with my purchase!"
+      },
+      {
+        "name": "Michael Johnson",
+        "rating": 2,
+        "comment": "Poor quality!"
+      }
+    ]
   },
   {
     "id": "dj_66",
@@ -273,7 +579,24 @@
       "https://cdn.dummyjson.com/product-images/kitchen-accessories/microwave-oven/3.webp",
       "https://cdn.dummyjson.com/product-images/kitchen-accessories/microwave-oven/4.webp"
     ],
-    "rating": 4.82
+    "rating": 3.0,
+    "reviews": [
+      {
+        "name": "Nora Russell",
+        "rating": 3,
+        "comment": "Very dissatisfied!"
+      },
+      {
+        "name": "Alice Smith",
+        "rating": 4,
+        "comment": "Fast shipping!"
+      },
+      {
+        "name": "Ethan Fletcher",
+        "rating": 2,
+        "comment": "Very disappointed!"
+      }
+    ]
   },
   {
     "id": "dj_67",
@@ -288,7 +611,24 @@
       "https://cdn.dummyjson.com/product-images/kitchen-accessories/mug-tree-stand/1.webp",
       "https://cdn.dummyjson.com/product-images/kitchen-accessories/mug-tree-stand/2.webp"
     ],
-    "rating": 2.64
+    "rating": 3.3,
+    "reviews": [
+      {
+        "name": "Bella Grant",
+        "rating": 1,
+        "comment": "Very unhappy with my purchase!"
+      },
+      {
+        "name": "Paisley Bell",
+        "rating": 5,
+        "comment": "Highly recommended!"
+      },
+      {
+        "name": "David Martinez",
+        "rating": 4,
+        "comment": "Fast shipping!"
+      }
+    ]
   },
   {
     "id": "dj_68",
@@ -302,7 +642,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/kitchen-accessories/pan/1.webp"
     ],
-    "rating": 2.79
+    "rating": 3.3,
+    "reviews": [
+      {
+        "name": "Michael Johnson",
+        "rating": 5,
+        "comment": "Highly impressed!"
+      },
+      {
+        "name": "Adrian Flores",
+        "rating": 4,
+        "comment": "Highly recommended!"
+      },
+      {
+        "name": "Nicholas Bailey",
+        "rating": 1,
+        "comment": "Not as described!"
+      }
+    ]
   },
   {
     "id": "dj_69",
@@ -316,7 +673,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/kitchen-accessories/plate/1.webp"
     ],
-    "rating": 3.65
+    "rating": 3.7,
+    "reviews": [
+      {
+        "name": "Mia Miller",
+        "rating": 3,
+        "comment": "Disappointing product!"
+      },
+      {
+        "name": "Henry Adams",
+        "rating": 4,
+        "comment": "Great product!"
+      },
+      {
+        "name": "Nora Russell",
+        "rating": 4,
+        "comment": "Excellent quality!"
+      }
+    ]
   },
   {
     "id": "dj_70",
@@ -330,7 +704,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/kitchen-accessories/red-tongs/1.webp"
     ],
-    "rating": 4.42
+    "rating": 4.3,
+    "reviews": [
+      {
+        "name": "Xavier Wright",
+        "rating": 4,
+        "comment": "Very satisfied!"
+      },
+      {
+        "name": "Stella Hughes",
+        "rating": 5,
+        "comment": "Highly recommended!"
+      },
+      {
+        "name": "Jaxon Barnes",
+        "rating": 4,
+        "comment": "Excellent quality!"
+      }
+    ]
   },
   {
     "id": "dj_71",
@@ -344,7 +735,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/kitchen-accessories/silver-pot-with-glass-cap/1.webp"
     ],
-    "rating": 3.22
+    "rating": 3.0,
+    "reviews": [
+      {
+        "name": "Julian Newton",
+        "rating": 4,
+        "comment": "Great product!"
+      },
+      {
+        "name": "Noah Lewis",
+        "rating": 4,
+        "comment": "Excellent quality!"
+      },
+      {
+        "name": "Brayden Hill",
+        "rating": 1,
+        "comment": "Disappointing product!"
+      }
+    ]
   },
   {
     "id": "dj_72",
@@ -358,7 +766,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/kitchen-accessories/slotted-turner/1.webp"
     ],
-    "rating": 3.4
+    "rating": 2.7,
+    "reviews": [
+      {
+        "name": "Ava Taylor",
+        "rating": 1,
+        "comment": "Would not recommend!"
+      },
+      {
+        "name": "Liam Smith",
+        "rating": 2,
+        "comment": "Would not recommend!"
+      },
+      {
+        "name": "Gabriel Mitchell",
+        "rating": 5,
+        "comment": "Very satisfied!"
+      }
+    ]
   },
   {
     "id": "dj_73",
@@ -372,7 +797,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/kitchen-accessories/spice-rack/1.webp"
     ],
-    "rating": 4.87
+    "rating": 3.7,
+    "reviews": [
+      {
+        "name": "Elena Baker",
+        "rating": 5,
+        "comment": "Very satisfied!"
+      },
+      {
+        "name": "Owen Fisher",
+        "rating": 4,
+        "comment": "Excellent quality!"
+      },
+      {
+        "name": "Sadie Morales",
+        "rating": 2,
+        "comment": "Waste of money!"
+      }
+    ]
   },
   {
     "id": "dj_74",
@@ -386,7 +828,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/kitchen-accessories/spoon/1.webp"
     ],
-    "rating": 4.03
+    "rating": 2.7,
+    "reviews": [
+      {
+        "name": "Jackson Evans",
+        "rating": 3,
+        "comment": "Waste of money!"
+      },
+      {
+        "name": "Elena Baker",
+        "rating": 1,
+        "comment": "Disappointing product!"
+      },
+      {
+        "name": "Bella Gonzalez",
+        "rating": 4,
+        "comment": "Awesome product!"
+      }
+    ]
   },
   {
     "id": "dj_75",
@@ -400,7 +859,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/kitchen-accessories/tray/1.webp"
     ],
-    "rating": 4.62
+    "rating": 4.0,
+    "reviews": [
+      {
+        "name": "Samantha Howard",
+        "rating": 5,
+        "comment": "Fast shipping!"
+      },
+      {
+        "name": "Benjamin Wilson",
+        "rating": 3,
+        "comment": "Very disappointed!"
+      },
+      {
+        "name": "Caleb Nelson",
+        "rating": 4,
+        "comment": "Excellent quality!"
+      }
+    ]
   },
   {
     "id": "dj_76",
@@ -414,7 +890,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/kitchen-accessories/wooden-rolling-pin/1.webp"
     ],
-    "rating": 2.92
+    "rating": 3.3,
+    "reviews": [
+      {
+        "name": "Aurora Lawson",
+        "rating": 2,
+        "comment": "Would not recommend!"
+      },
+      {
+        "name": "Ava Taylor",
+        "rating": 3,
+        "comment": "Very disappointed!"
+      },
+      {
+        "name": "Mila Hernandez",
+        "rating": 5,
+        "comment": "Great product!"
+      }
+    ]
   },
   {
     "id": "dj_77",
@@ -428,7 +921,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/kitchen-accessories/yellow-peeler/1.webp"
     ],
-    "rating": 4.24
+    "rating": 3.3,
+    "reviews": [
+      {
+        "name": "Claire Foster",
+        "rating": 1,
+        "comment": "Very unhappy with my purchase!"
+      },
+      {
+        "name": "Aaliyah Hanson",
+        "rating": 5,
+        "comment": "Very happy with my purchase!"
+      },
+      {
+        "name": "Olivia Wilson",
+        "rating": 4,
+        "comment": "Great product!"
+      }
+    ]
   },
   {
     "id": "dj_6",
@@ -444,7 +954,24 @@
       "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/2.webp",
       "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/3.webp"
     ],
-    "rating": 4.37
+    "rating": 3.0,
+    "reviews": [
+      {
+        "name": "Layla Young",
+        "rating": 2,
+        "comment": "Very disappointed!"
+      },
+      {
+        "name": "Daniel Cook",
+        "rating": 4,
+        "comment": "Fast shipping!"
+      },
+      {
+        "name": "Jacob Cooper",
+        "rating": 3,
+        "comment": "Not as described!"
+      }
+    ]
   },
   {
     "id": "dj_7",
@@ -460,7 +987,24 @@
       "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/2.webp",
       "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/3.webp"
     ],
-    "rating": 4.26
+    "rating": 4.7,
+    "reviews": [
+      {
+        "name": "Ruby Andrews",
+        "rating": 4,
+        "comment": "Highly impressed!"
+      },
+      {
+        "name": "Leah Henderson",
+        "rating": 5,
+        "comment": "Awesome product!"
+      },
+      {
+        "name": "Xavier Wright",
+        "rating": 5,
+        "comment": "Very happy with my purchase!"
+      }
+    ]
   },
   {
     "id": "dj_8",
@@ -476,7 +1020,24 @@
       "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/2.webp",
       "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/3.webp"
     ],
-    "rating": 3.8
+    "rating": 4.3,
+    "reviews": [
+      {
+        "name": "Nicholas Bailey",
+        "rating": 5,
+        "comment": "Great value for money!"
+      },
+      {
+        "name": "Penelope Harper",
+        "rating": 4,
+        "comment": "Great value for money!"
+      },
+      {
+        "name": "Emma Miller",
+        "rating": 4,
+        "comment": "Great product!"
+      }
+    ]
   },
   {
     "id": "dj_9",
@@ -492,7 +1053,24 @@
       "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/2.webp",
       "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/3.webp"
     ],
-    "rating": 3.96
+    "rating": 4.3,
+    "reviews": [
+      {
+        "name": "Mateo Bennett",
+        "rating": 4,
+        "comment": "Would buy again!"
+      },
+      {
+        "name": "Nolan Gonzalez",
+        "rating": 4,
+        "comment": "Highly recommended!"
+      },
+      {
+        "name": "Aurora Lawson",
+        "rating": 5,
+        "comment": "Very happy with my purchase!"
+      }
+    ]
   },
   {
     "id": "dj_1",
@@ -506,7 +1084,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp"
     ],
-    "rating": 2.56
+    "rating": 4.0,
+    "reviews": [
+      {
+        "name": "Eleanor Collins",
+        "rating": 3,
+        "comment": "Would not recommend!"
+      },
+      {
+        "name": "Lucas Gordon",
+        "rating": 4,
+        "comment": "Very satisfied!"
+      },
+      {
+        "name": "Eleanor Collins",
+        "rating": 5,
+        "comment": "Highly impressed!"
+      }
+    ]
   },
   {
     "id": "dj_2",
@@ -520,7 +1115,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/1.webp"
     ],
-    "rating": 2.86
+    "rating": 3.3,
+    "reviews": [
+      {
+        "name": "Savannah Gomez",
+        "rating": 5,
+        "comment": "Great product!"
+      },
+      {
+        "name": "Christian Perez",
+        "rating": 4,
+        "comment": "Awesome product!"
+      },
+      {
+        "name": "Nicholas Bailey",
+        "rating": 1,
+        "comment": "Poor quality!"
+      }
+    ]
   },
   {
     "id": "dj_10",
@@ -536,7 +1148,24 @@
       "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/2.webp",
       "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/3.webp"
     ],
-    "rating": 2.74
+    "rating": 3.3,
+    "reviews": [
+      {
+        "name": "Cameron Perez",
+        "rating": 1,
+        "comment": "Very dissatisfied!"
+      },
+      {
+        "name": "Daniel Cook",
+        "rating": 5,
+        "comment": "Very happy with my purchase!"
+      },
+      {
+        "name": "Addison Wright",
+        "rating": 4,
+        "comment": "Highly impressed!"
+      }
+    ]
   },
   {
     "id": "dj_3",
@@ -550,7 +1179,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/beauty/powder-canister/1.webp"
     ],
-    "rating": 4.64
+    "rating": 3.3,
+    "reviews": [
+      {
+        "name": "Alexander Jones",
+        "rating": 4,
+        "comment": "Would buy again!"
+      },
+      {
+        "name": "Elijah Cruz",
+        "rating": 5,
+        "comment": "Highly impressed!"
+      },
+      {
+        "name": "Avery Perez",
+        "rating": 1,
+        "comment": "Very dissatisfied!"
+      }
+    ]
   },
   {
     "id": "dj_4",
@@ -564,7 +1210,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/1.webp"
     ],
-    "rating": 4.36
+    "rating": 4.7,
+    "reviews": [
+      {
+        "name": "Liam Garcia",
+        "rating": 4,
+        "comment": "Great product!"
+      },
+      {
+        "name": "Ruby Andrews",
+        "rating": 5,
+        "comment": "Great product!"
+      },
+      {
+        "name": "Clara Berry",
+        "rating": 5,
+        "comment": "Would buy again!"
+      }
+    ]
   },
   {
     "id": "dj_5",
@@ -578,7 +1241,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/beauty/red-nail-polish/1.webp"
     ],
-    "rating": 4.32
+    "rating": 2.7,
+    "reviews": [
+      {
+        "name": "Benjamin Wilson",
+        "rating": 2,
+        "comment": "Poor quality!"
+      },
+      {
+        "name": "Liam Smith",
+        "rating": 5,
+        "comment": "Great product!"
+      },
+      {
+        "name": "Clara Berry",
+        "rating": 1,
+        "comment": "Very unhappy with my purchase!"
+      }
+    ]
   },
   {
     "id": "dj_99",
@@ -593,7 +1273,24 @@
       "https://cdn.dummyjson.com/product-images/mobile-accessories/amazon-echo-plus/1.webp",
       "https://cdn.dummyjson.com/product-images/mobile-accessories/amazon-echo-plus/2.webp"
     ],
-    "rating": 4.99
+    "rating": 3.0,
+    "reviews": [
+      {
+        "name": "Chloe Morales",
+        "rating": 2,
+        "comment": "Would not recommend!"
+      },
+      {
+        "name": "Mateo Perez",
+        "rating": 3,
+        "comment": "Very disappointed!"
+      },
+      {
+        "name": "Evelyn Walker",
+        "rating": 4,
+        "comment": "Fast shipping!"
+      }
+    ]
   },
   {
     "id": "dj_101",
@@ -607,7 +1304,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-airpods-max-silver/1.webp"
     ],
-    "rating": 3.47
+    "rating": 4.3,
+    "reviews": [
+      {
+        "name": "Henry Adams",
+        "rating": 5,
+        "comment": "Excellent quality!"
+      },
+      {
+        "name": "Elijah Cruz",
+        "rating": 4,
+        "comment": "Very happy with my purchase!"
+      },
+      {
+        "name": "William Lopez",
+        "rating": 4,
+        "comment": "Would buy again!"
+      }
+    ]
   },
   {
     "id": "dj_100",
@@ -623,7 +1337,24 @@
       "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-airpods/2.webp",
       "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-airpods/3.webp"
     ],
-    "rating": 4.15
+    "rating": 4.0,
+    "reviews": [
+      {
+        "name": "Christopher West",
+        "rating": 3,
+        "comment": "Would not buy again!"
+      },
+      {
+        "name": "Emma Wilson",
+        "rating": 5,
+        "comment": "Great product!"
+      },
+      {
+        "name": "Xavier Wright",
+        "rating": 4,
+        "comment": "Excellent quality!"
+      }
+    ]
   },
   {
     "id": "dj_102",
@@ -637,7 +1368,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-airpower-wireless-charger/1.webp"
     ],
-    "rating": 3.68
+    "rating": 4.0,
+    "reviews": [
+      {
+        "name": "Christian Perez",
+        "rating": 5,
+        "comment": "Would buy again!"
+      },
+      {
+        "name": "Ruby Andrews",
+        "rating": 4,
+        "comment": "Awesome product!"
+      },
+      {
+        "name": "Harper Turner",
+        "rating": 3,
+        "comment": "Not worth the price!"
+      }
+    ]
   },
   {
     "id": "dj_103",
@@ -651,7 +1399,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-homepod-mini-cosmic-grey/1.webp"
     ],
-    "rating": 4.62
+    "rating": 4.0,
+    "reviews": [
+      {
+        "name": "Max Russell",
+        "rating": 5,
+        "comment": "Great product!"
+      },
+      {
+        "name": "Isaac Lawrence",
+        "rating": 3,
+        "comment": "Would not buy again!"
+      },
+      {
+        "name": "Avery Carter",
+        "rating": 4,
+        "comment": "Very pleased!"
+      }
+    ]
   },
   {
     "id": "dj_78",
@@ -667,7 +1432,24 @@
       "https://cdn.dummyjson.com/product-images/laptops/apple-macbook-pro-14-inch-space-grey/2.webp",
       "https://cdn.dummyjson.com/product-images/laptops/apple-macbook-pro-14-inch-space-grey/3.webp"
     ],
-    "rating": 3.65
+    "rating": 4.7,
+    "reviews": [
+      {
+        "name": "Hazel Evans",
+        "rating": 5,
+        "comment": "Very happy with my purchase!"
+      },
+      {
+        "name": "Christopher West",
+        "rating": 5,
+        "comment": "Very happy with my purchase!"
+      },
+      {
+        "name": "Aubrey Garcia",
+        "rating": 4,
+        "comment": "Very satisfied!"
+      }
+    ]
   },
   {
     "id": "dj_105",
@@ -682,7 +1464,24 @@
       "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-magsafe-battery-pack/1.webp",
       "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-magsafe-battery-pack/2.webp"
     ],
-    "rating": 3.62
+    "rating": 3.0,
+    "reviews": [
+      {
+        "name": "Stella Morris",
+        "rating": 2,
+        "comment": "Would not recommend!"
+      },
+      {
+        "name": "Henry Adams",
+        "rating": 2,
+        "comment": "Not as described!"
+      },
+      {
+        "name": "Cameron Burke",
+        "rating": 5,
+        "comment": "Fast shipping!"
+      }
+    ]
   },
   {
     "id": "dj_106",
@@ -698,7 +1497,24 @@
       "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-watch-series-4-gold/2.webp",
       "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-watch-series-4-gold/3.webp"
     ],
-    "rating": 2.74
+    "rating": 3.7,
+    "reviews": [
+      {
+        "name": "Chloe Morales",
+        "rating": 3,
+        "comment": "Very unhappy with my purchase!"
+      },
+      {
+        "name": "Ava Harrison",
+        "rating": 4,
+        "comment": "Fast shipping!"
+      },
+      {
+        "name": "Nicholas Bailey",
+        "rating": 4,
+        "comment": "Would buy again!"
+      }
+    ]
   },
   {
     "id": "dj_104",
@@ -713,7 +1529,24 @@
       "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-iphone-charger/1.webp",
       "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-iphone-charger/2.webp"
     ],
-    "rating": 4.15
+    "rating": 2.7,
+    "reviews": [
+      {
+        "name": "Sadie Morales",
+        "rating": 1,
+        "comment": "Very disappointed!"
+      },
+      {
+        "name": "Lily Torres",
+        "rating": 5,
+        "comment": "Great product!"
+      },
+      {
+        "name": "Luke Cooper",
+        "rating": 2,
+        "comment": "Waste of money!"
+      }
+    ]
   },
   {
     "id": "dj_79",
@@ -729,7 +1562,24 @@
       "https://cdn.dummyjson.com/product-images/laptops/asus-zenbook-pro-dual-screen-laptop/2.webp",
       "https://cdn.dummyjson.com/product-images/laptops/asus-zenbook-pro-dual-screen-laptop/3.webp"
     ],
-    "rating": 3.95
+    "rating": 4.3,
+    "reviews": [
+      {
+        "name": "Michael Johnson",
+        "rating": 4,
+        "comment": "Very happy with my purchase!"
+      },
+      {
+        "name": "Zoe Bennett",
+        "rating": 5,
+        "comment": "Highly recommended!"
+      },
+      {
+        "name": "Mila Hernandez",
+        "rating": 4,
+        "comment": "Very satisfied!"
+      }
+    ]
   },
   {
     "id": "dj_107",
@@ -743,7 +1593,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/mobile-accessories/beats-flex-wireless-earphones/1.webp"
     ],
-    "rating": 4.24
+    "rating": 3.0,
+    "reviews": [
+      {
+        "name": "William Gonzalez",
+        "rating": 2,
+        "comment": "Disappointing product!"
+      },
+      {
+        "name": "Gabriel Mitchell",
+        "rating": 5,
+        "comment": "Very pleased!"
+      },
+      {
+        "name": "Gabriel Adams",
+        "rating": 2,
+        "comment": "Not worth the price!"
+      }
+    ]
   },
   {
     "id": "dj_80",
@@ -759,7 +1626,24 @@
       "https://cdn.dummyjson.com/product-images/laptops/huawei-matebook-x-pro/2.webp",
       "https://cdn.dummyjson.com/product-images/laptops/huawei-matebook-x-pro/3.webp"
     ],
-    "rating": 4.98
+    "rating": 3.0,
+    "reviews": [
+      {
+        "name": "Evan Wright",
+        "rating": 4,
+        "comment": "Very satisfied!"
+      },
+      {
+        "name": "Hunter Gordon",
+        "rating": 4,
+        "comment": "Very happy with my purchase!"
+      },
+      {
+        "name": "William Gonzalez",
+        "rating": 1,
+        "comment": "Not worth the price!"
+      }
+    ]
   },
   {
     "id": "dj_81",
@@ -775,7 +1659,24 @@
       "https://cdn.dummyjson.com/product-images/laptops/lenovo-yoga-920/2.webp",
       "https://cdn.dummyjson.com/product-images/laptops/lenovo-yoga-920/3.webp"
     ],
-    "rating": 2.86
+    "rating": 4.3,
+    "reviews": [
+      {
+        "name": "Bella Gonzalez",
+        "rating": 4,
+        "comment": "Would buy again!"
+      },
+      {
+        "name": "Nathan Reed",
+        "rating": 5,
+        "comment": "Great value for money!"
+      },
+      {
+        "name": "Hazel Gardner",
+        "rating": 4,
+        "comment": "Great value for money!"
+      }
+    ]
   },
   {
     "id": "dj_109",
@@ -790,7 +1691,24 @@
       "https://cdn.dummyjson.com/product-images/mobile-accessories/monopod/1.webp",
       "https://cdn.dummyjson.com/product-images/mobile-accessories/monopod/2.webp"
     ],
-    "rating": 4.43
+    "rating": 3.3,
+    "reviews": [
+      {
+        "name": "Max Parker",
+        "rating": 1,
+        "comment": "Not worth the price!"
+      },
+      {
+        "name": "Maya Reed",
+        "rating": 4,
+        "comment": "Highly recommended!"
+      },
+      {
+        "name": "Mila Hernandez",
+        "rating": 5,
+        "comment": "Fast shipping!"
+      }
+    ]
   },
   {
     "id": "dj_82",
@@ -806,7 +1724,24 @@
       "https://cdn.dummyjson.com/product-images/laptops/new-dell-xps-13-9300-laptop/2.webp",
       "https://cdn.dummyjson.com/product-images/laptops/new-dell-xps-13-9300-laptop/3.webp"
     ],
-    "rating": 2.67
+    "rating": 3.0,
+    "reviews": [
+      {
+        "name": "Charlotte Lopez",
+        "rating": 3,
+        "comment": "Poor quality!"
+      },
+      {
+        "name": "Alice Smith",
+        "rating": 4,
+        "comment": "Very satisfied!"
+      },
+      {
+        "name": "Ava Taylor",
+        "rating": 2,
+        "comment": "Disappointing product!"
+      }
+    ]
   },
   {
     "id": "dj_125",
@@ -822,7 +1757,24 @@
       "https://cdn.dummyjson.com/product-images/smartphones/oppo-a57/2.webp",
       "https://cdn.dummyjson.com/product-images/smartphones/oppo-a57/3.webp"
     ],
-    "rating": 3.94
+    "rating": 3.7,
+    "reviews": [
+      {
+        "name": "Scarlett Wright",
+        "rating": 4,
+        "comment": "Excellent quality!"
+      },
+      {
+        "name": "Jacob Cooper",
+        "rating": 5,
+        "comment": "Excellent quality!"
+      },
+      {
+        "name": "Zoe Nicholson",
+        "rating": 2,
+        "comment": "Poor quality!"
+      }
+    ]
   },
   {
     "id": "dj_126",
@@ -838,7 +1790,24 @@
       "https://cdn.dummyjson.com/product-images/smartphones/oppo-f19-pro-plus/2.webp",
       "https://cdn.dummyjson.com/product-images/smartphones/oppo-f19-pro-plus/3.webp"
     ],
-    "rating": 3.51
+    "rating": 4.7,
+    "reviews": [
+      {
+        "name": "Emily Johnson",
+        "rating": 5,
+        "comment": "Very happy with my purchase!"
+      },
+      {
+        "name": "Jaxon Barnes",
+        "rating": 5,
+        "comment": "Highly recommended!"
+      },
+      {
+        "name": "Nova Cooper",
+        "rating": 4,
+        "comment": "Would buy again!"
+      }
+    ]
   },
   {
     "id": "dj_127",
@@ -855,7 +1824,24 @@
       "https://cdn.dummyjson.com/product-images/smartphones/oppo-k1/3.webp",
       "https://cdn.dummyjson.com/product-images/smartphones/oppo-k1/4.webp"
     ],
-    "rating": 4.25
+    "rating": 3.3,
+    "reviews": [
+      {
+        "name": "Christopher West",
+        "rating": 4,
+        "comment": "Very pleased!"
+      },
+      {
+        "name": "Mia Miller",
+        "rating": 4,
+        "comment": "Highly recommended!"
+      },
+      {
+        "name": "Ella Adams",
+        "rating": 2,
+        "comment": "Very dissatisfied!"
+      }
+    ]
   },
   {
     "id": "dj_128",
@@ -871,7 +1857,24 @@
       "https://cdn.dummyjson.com/product-images/smartphones/realme-c35/2.webp",
       "https://cdn.dummyjson.com/product-images/smartphones/realme-c35/3.webp"
     ],
-    "rating": 4.2
+    "rating": 3.3,
+    "reviews": [
+      {
+        "name": "Penelope King",
+        "rating": 4,
+        "comment": "Great product!"
+      },
+      {
+        "name": "Asher Scott",
+        "rating": 2,
+        "comment": "Very unhappy with my purchase!"
+      },
+      {
+        "name": "Henry Adams",
+        "rating": 4,
+        "comment": "Highly impressed!"
+      }
+    ]
   },
   {
     "id": "dj_129",
@@ -887,7 +1890,24 @@
       "https://cdn.dummyjson.com/product-images/smartphones/realme-x/2.webp",
       "https://cdn.dummyjson.com/product-images/smartphones/realme-x/3.webp"
     ],
-    "rating": 3.7
+    "rating": 5.0,
+    "reviews": [
+      {
+        "name": "Hazel Evans",
+        "rating": 5,
+        "comment": "Would buy again!"
+      },
+      {
+        "name": "Brayden Fleming",
+        "rating": 5,
+        "comment": "Fast shipping!"
+      },
+      {
+        "name": "Madison Stewart",
+        "rating": 5,
+        "comment": "Very satisfied!"
+      }
+    ]
   },
   {
     "id": "dj_130",
@@ -903,7 +1923,24 @@
       "https://cdn.dummyjson.com/product-images/smartphones/realme-xt/2.webp",
       "https://cdn.dummyjson.com/product-images/smartphones/realme-xt/3.webp"
     ],
-    "rating": 4.58
+    "rating": 4.0,
+    "reviews": [
+      {
+        "name": "Emily Brown",
+        "rating": 4,
+        "comment": "Very satisfied!"
+      },
+      {
+        "name": "Ella Cook",
+        "rating": 3,
+        "comment": "Not as described!"
+      },
+      {
+        "name": "Layla Sullivan",
+        "rating": 5,
+        "comment": "Would buy again!"
+      }
+    ]
   },
   {
     "id": "dj_133",
@@ -919,7 +1956,24 @@
       "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s10/2.webp",
       "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s10/3.webp"
     ],
-    "rating": 3.06
+    "rating": 3.7,
+    "reviews": [
+      {
+        "name": "Tristan Scott",
+        "rating": 4,
+        "comment": "Excellent quality!"
+      },
+      {
+        "name": "Christopher West",
+        "rating": 5,
+        "comment": "Would buy again!"
+      },
+      {
+        "name": "Amelia Perez",
+        "rating": 2,
+        "comment": "Would not recommend!"
+      }
+    ]
   },
   {
     "id": "dj_131",
@@ -935,7 +1989,24 @@
       "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s7/2.webp",
       "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s7/3.webp"
     ],
-    "rating": 3.3
+    "rating": 3.0,
+    "reviews": [
+      {
+        "name": "Julian James",
+        "rating": 1,
+        "comment": "Not as described!"
+      },
+      {
+        "name": "Lucas Gordon",
+        "rating": 4,
+        "comment": "Fast shipping!"
+      },
+      {
+        "name": "Ava Taylor",
+        "rating": 4,
+        "comment": "Excellent quality!"
+      }
+    ]
   },
   {
     "id": "dj_132",
@@ -951,7 +2022,24 @@
       "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s8/2.webp",
       "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s8/3.webp"
     ],
-    "rating": 4.4
+    "rating": 4.0,
+    "reviews": [
+      {
+        "name": "Owen Fisher",
+        "rating": 4,
+        "comment": "Highly impressed!"
+      },
+      {
+        "name": "Clara Berry",
+        "rating": 4,
+        "comment": "Highly impressed!"
+      },
+      {
+        "name": "Tyler Davis",
+        "rating": 4,
+        "comment": "Highly recommended!"
+      }
+    ]
   },
   {
     "id": "dj_160",
@@ -968,7 +2056,24 @@
       "https://cdn.dummyjson.com/product-images/tablets/samsung-galaxy-tab-s8-plus-grey/3.webp",
       "https://cdn.dummyjson.com/product-images/tablets/samsung-galaxy-tab-s8-plus-grey/4.webp"
     ],
-    "rating": 4.68
+    "rating": 3.0,
+    "reviews": [
+      {
+        "name": "Christopher West",
+        "rating": 5,
+        "comment": "Highly impressed!"
+      },
+      {
+        "name": "Owen Sullivan",
+        "rating": 2,
+        "comment": "Disappointing product!"
+      },
+      {
+        "name": "Aria Roberts",
+        "rating": 2,
+        "comment": "Very disappointed!"
+      }
+    ]
   },
   {
     "id": "dj_161",
@@ -985,7 +2090,24 @@
       "https://cdn.dummyjson.com/product-images/tablets/samsung-galaxy-tab-white/3.webp",
       "https://cdn.dummyjson.com/product-images/tablets/samsung-galaxy-tab-white/4.webp"
     ],
-    "rating": 3.72
+    "rating": 2.3,
+    "reviews": [
+      {
+        "name": "Max Russell",
+        "rating": 1,
+        "comment": "Waste of money!"
+      },
+      {
+        "name": "Lincoln Kelly",
+        "rating": 2,
+        "comment": "Poor quality!"
+      },
+      {
+        "name": "Elena Long",
+        "rating": 4,
+        "comment": "Very satisfied!"
+      }
+    ]
   },
   {
     "id": "dj_110",
@@ -999,7 +2121,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/mobile-accessories/selfie-lamp-with-iphone/1.webp"
     ],
-    "rating": 3.55
+    "rating": 3.7,
+    "reviews": [
+      {
+        "name": "Luke Cooper",
+        "rating": 4,
+        "comment": "Highly recommended!"
+      },
+      {
+        "name": "Caleb Perkins",
+        "rating": 3,
+        "comment": "Poor quality!"
+      },
+      {
+        "name": "Benjamin Wilson",
+        "rating": 4,
+        "comment": "Highly recommended!"
+      }
+    ]
   },
   {
     "id": "dj_111",
@@ -1013,7 +2152,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/mobile-accessories/selfie-stick-monopod/1.webp"
     ],
-    "rating": 3.88
+    "rating": 3.0,
+    "reviews": [
+      {
+        "name": "Ryan Graham",
+        "rating": 4,
+        "comment": "Great product!"
+      },
+      {
+        "name": "Nora Russell",
+        "rating": 4,
+        "comment": "Great product!"
+      },
+      {
+        "name": "Luna Perez",
+        "rating": 1,
+        "comment": "Very dissatisfied!"
+      }
+    ]
   },
   {
     "id": "dj_112",
@@ -1027,7 +2183,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/mobile-accessories/tv-studio-camera-pedestal/1.webp"
     ],
-    "rating": 2.78
+    "rating": 4.3,
+    "reviews": [
+      {
+        "name": "Aubrey Gutierrez",
+        "rating": 3,
+        "comment": "Would not recommend!"
+      },
+      {
+        "name": "Carter Rivera",
+        "rating": 5,
+        "comment": "Would buy again!"
+      },
+      {
+        "name": "Max Russell",
+        "rating": 5,
+        "comment": "Fast shipping!"
+      }
+    ]
   },
   {
     "id": "dj_134",
@@ -1043,7 +2216,24 @@
       "https://cdn.dummyjson.com/product-images/smartphones/vivo-s1/2.webp",
       "https://cdn.dummyjson.com/product-images/smartphones/vivo-s1/3.webp"
     ],
-    "rating": 3.5
+    "rating": 3.7,
+    "reviews": [
+      {
+        "name": "Samantha Martinez",
+        "rating": 4,
+        "comment": "Very satisfied!"
+      },
+      {
+        "name": "Logan Lee",
+        "rating": 3,
+        "comment": "Very disappointed!"
+      },
+      {
+        "name": "Sophia Jones",
+        "rating": 4,
+        "comment": "Would buy again!"
+      }
+    ]
   },
   {
     "id": "dj_135",
@@ -1059,7 +2249,24 @@
       "https://cdn.dummyjson.com/product-images/smartphones/vivo-v9/2.webp",
       "https://cdn.dummyjson.com/product-images/smartphones/vivo-v9/3.webp"
     ],
-    "rating": 3.6
+    "rating": 3.7,
+    "reviews": [
+      {
+        "name": "Logan Lawson",
+        "rating": 2,
+        "comment": "Very unhappy with my purchase!"
+      },
+      {
+        "name": "Layla Young",
+        "rating": 5,
+        "comment": "Awesome product!"
+      },
+      {
+        "name": "Asher Scott",
+        "rating": 4,
+        "comment": "Great value for money!"
+      }
+    ]
   },
   {
     "id": "dj_136",
@@ -1075,7 +2282,24 @@
       "https://cdn.dummyjson.com/product-images/smartphones/vivo-x21/2.webp",
       "https://cdn.dummyjson.com/product-images/smartphones/vivo-x21/3.webp"
     ],
-    "rating": 4.26
+    "rating": 3.3,
+    "reviews": [
+      {
+        "name": "Liam Gonzalez",
+        "rating": 4,
+        "comment": "Very pleased!"
+      },
+      {
+        "name": "Aurora Barnes",
+        "rating": 4,
+        "comment": "Fast shipping!"
+      },
+      {
+        "name": "Evelyn Walker",
+        "rating": 2,
+        "comment": "Not as described!"
+      }
+    ]
   },
   {
     "id": "dj_159",
@@ -1092,7 +2316,24 @@
       "https://cdn.dummyjson.com/product-images/tablets/ipad-mini-2021-starlight/3.webp",
       "https://cdn.dummyjson.com/product-images/tablets/ipad-mini-2021-starlight/4.webp"
     ],
-    "rating": 3.18
+    "rating": 4.3,
+    "reviews": [
+      {
+        "name": "Eleanor Collins",
+        "rating": 4,
+        "comment": "Highly impressed!"
+      },
+      {
+        "name": "Leo Rivera",
+        "rating": 5,
+        "comment": "Very happy with my purchase!"
+      },
+      {
+        "name": "Carter Rivera",
+        "rating": 4,
+        "comment": "Would buy again!"
+      }
+    ]
   },
   {
     "id": "dj_108",
@@ -1109,7 +2350,24 @@
       "https://cdn.dummyjson.com/product-images/mobile-accessories/iphone-12-silicone-case-with-magsafe-plum/3.webp",
       "https://cdn.dummyjson.com/product-images/mobile-accessories/iphone-12-silicone-case-with-magsafe-plum/4.webp"
     ],
-    "rating": 3.62
+    "rating": 4.0,
+    "reviews": [
+      {
+        "name": "Penelope King",
+        "rating": 2,
+        "comment": "Would not buy again!"
+      },
+      {
+        "name": "Isabella Anderson",
+        "rating": 5,
+        "comment": "Great value for money!"
+      },
+      {
+        "name": "Claire Foster",
+        "rating": 5,
+        "comment": "Highly recommended!"
+      }
+    ]
   },
   {
     "id": "dj_123",
@@ -1125,7 +2383,24 @@
       "https://cdn.dummyjson.com/product-images/smartphones/iphone-13-pro/2.webp",
       "https://cdn.dummyjson.com/product-images/smartphones/iphone-13-pro/3.webp"
     ],
-    "rating": 4.12
+    "rating": 4.3,
+    "reviews": [
+      {
+        "name": "Christian Perez",
+        "rating": 5,
+        "comment": "Would buy again!"
+      },
+      {
+        "name": "Liam Gonzalez",
+        "rating": 3,
+        "comment": "Not worth the price!"
+      },
+      {
+        "name": "Tristan Scott",
+        "rating": 5,
+        "comment": "Very satisfied!"
+      }
+    ]
   },
   {
     "id": "dj_121",
@@ -1141,7 +2416,24 @@
       "https://cdn.dummyjson.com/product-images/smartphones/iphone-5s/2.webp",
       "https://cdn.dummyjson.com/product-images/smartphones/iphone-5s/3.webp"
     ],
-    "rating": 2.83
+    "rating": 3.7,
+    "reviews": [
+      {
+        "name": "Jace Smith",
+        "rating": 5,
+        "comment": "Highly recommended!"
+      },
+      {
+        "name": "Logan Torres",
+        "rating": 1,
+        "comment": "Not as described!"
+      },
+      {
+        "name": "Harper Kelly",
+        "rating": 5,
+        "comment": "Very satisfied!"
+      }
+    ]
   },
   {
     "id": "dj_122",
@@ -1157,7 +2449,24 @@
       "https://cdn.dummyjson.com/product-images/smartphones/iphone-6/2.webp",
       "https://cdn.dummyjson.com/product-images/smartphones/iphone-6/3.webp"
     ],
-    "rating": 3.41
+    "rating": 4.0,
+    "reviews": [
+      {
+        "name": "Stella Morris",
+        "rating": 3,
+        "comment": "Disappointing product!"
+      },
+      {
+        "name": "Nolan Gonzalez",
+        "rating": 4,
+        "comment": "Excellent quality!"
+      },
+      {
+        "name": "Benjamin Foster",
+        "rating": 5,
+        "comment": "Great value for money!"
+      }
+    ]
   },
   {
     "id": "dj_124",
@@ -1173,7 +2482,24 @@
       "https://cdn.dummyjson.com/product-images/smartphones/iphone-x/2.webp",
       "https://cdn.dummyjson.com/product-images/smartphones/iphone-x/3.webp"
     ],
-    "rating": 2.51
+    "rating": 3.7,
+    "reviews": [
+      {
+        "name": "Tyler Davis",
+        "rating": 4,
+        "comment": "Highly recommended!"
+      },
+      {
+        "name": "Aria Parker",
+        "rating": 5,
+        "comment": "Great product!"
+      },
+      {
+        "name": "Lily Torres",
+        "rating": 2,
+        "comment": "Not as described!"
+      }
+    ]
   },
   {
     "id": "dj_185",
@@ -1190,7 +2516,24 @@
       "https://cdn.dummyjson.com/product-images/womens-shoes/black-&-brown-slipper/3.webp",
       "https://cdn.dummyjson.com/product-images/womens-shoes/black-&-brown-slipper/4.webp"
     ],
-    "rating": 2.53
+    "rating": 3.7,
+    "reviews": [
+      {
+        "name": "Isaac Lawrence",
+        "rating": 5,
+        "comment": "Highly impressed!"
+      },
+      {
+        "name": "William Gonzalez",
+        "rating": 2,
+        "comment": "Not worth the price!"
+      },
+      {
+        "name": "Sophia Jones",
+        "rating": 4,
+        "comment": "Very happy with my purchase!"
+      }
+    ]
   },
   {
     "id": "dj_154",
@@ -1206,7 +2549,24 @@
       "https://cdn.dummyjson.com/product-images/sunglasses/black-sun-glasses/2.webp",
       "https://cdn.dummyjson.com/product-images/sunglasses/black-sun-glasses/3.webp"
     ],
-    "rating": 4.41
+    "rating": 3.0,
+    "reviews": [
+      {
+        "name": "Jonathan Pierce",
+        "rating": 3,
+        "comment": "Would not recommend!"
+      },
+      {
+        "name": "Owen Fisher",
+        "rating": 2,
+        "comment": "Disappointing product!"
+      },
+      {
+        "name": "Samantha Martinez",
+        "rating": 4,
+        "comment": "Very happy with my purchase!"
+      }
+    ]
   },
   {
     "id": "dj_177",
@@ -1223,7 +2583,24 @@
       "https://cdn.dummyjson.com/product-images/womens-dresses/black-women's-gown/3.webp",
       "https://cdn.dummyjson.com/product-images/womens-dresses/black-women's-gown/4.webp"
     ],
-    "rating": 3.64
+    "rating": 4.0,
+    "reviews": [
+      {
+        "name": "Ethan Fletcher",
+        "rating": 4,
+        "comment": "Great value for money!"
+      },
+      {
+        "name": "Julian Newton",
+        "rating": 3,
+        "comment": "Very dissatisfied!"
+      },
+      {
+        "name": "Savannah Gomez",
+        "rating": 5,
+        "comment": "Very satisfied!"
+      }
+    ]
   },
   {
     "id": "dj_83",
@@ -1240,7 +2617,24 @@
       "https://cdn.dummyjson.com/product-images/mens-shirts/blue-&-black-check-shirt/3.webp",
       "https://cdn.dummyjson.com/product-images/mens-shirts/blue-&-black-check-shirt/4.webp"
     ],
-    "rating": 3.64
+    "rating": 3.3,
+    "reviews": [
+      {
+        "name": "Logan Lee",
+        "rating": 1,
+        "comment": "Waste of money!"
+      },
+      {
+        "name": "Zachary Lee",
+        "rating": 5,
+        "comment": "Very satisfied!"
+      },
+      {
+        "name": "Aurora Rodriguez",
+        "rating": 4,
+        "comment": "Fast shipping!"
+      }
+    ]
   },
   {
     "id": "dj_162",
@@ -1257,7 +2651,24 @@
       "https://cdn.dummyjson.com/product-images/tops/blue-frock/3.webp",
       "https://cdn.dummyjson.com/product-images/tops/blue-frock/4.webp"
     ],
-    "rating": 4.17
+    "rating": 4.0,
+    "reviews": [
+      {
+        "name": "Victoria McDonald",
+        "rating": 4,
+        "comment": "Great product!"
+      },
+      {
+        "name": "Benjamin Foster",
+        "rating": 4,
+        "comment": "Fast shipping!"
+      },
+      {
+        "name": "Addison Ward",
+        "rating": 4,
+        "comment": "Would buy again!"
+      }
+    ]
   },
   {
     "id": "dj_172",
@@ -1273,7 +2684,24 @@
       "https://cdn.dummyjson.com/product-images/womens-bags/blue-women's-handbag/2.webp",
       "https://cdn.dummyjson.com/product-images/womens-bags/blue-women's-handbag/3.webp"
     ],
-    "rating": 2.92
+    "rating": 3.3,
+    "reviews": [
+      {
+        "name": "Grace Perry",
+        "rating": 3,
+        "comment": "Waste of money!"
+      },
+      {
+        "name": "Evelyn Sanchez",
+        "rating": 3,
+        "comment": "Not worth the price!"
+      },
+      {
+        "name": "Eli Ward",
+        "rating": 4,
+        "comment": "Highly impressed!"
+      }
+    ]
   },
   {
     "id": "dj_93",
@@ -1289,7 +2717,24 @@
       "https://cdn.dummyjson.com/product-images/mens-watches/brown-leather-belt-watch/2.webp",
       "https://cdn.dummyjson.com/product-images/mens-watches/brown-leather-belt-watch/3.webp"
     ],
-    "rating": 4.19
+    "rating": 3.0,
+    "reviews": [
+      {
+        "name": "James Garcia",
+        "rating": 1,
+        "comment": "Very unhappy with my purchase!"
+      },
+      {
+        "name": "Avery Barnes",
+        "rating": 4,
+        "comment": "Fast shipping!"
+      },
+      {
+        "name": "David Martinez",
+        "rating": 4,
+        "comment": "Would buy again!"
+      }
+    ]
   },
   {
     "id": "dj_186",
@@ -1306,7 +2751,24 @@
       "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/3.webp",
       "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/4.webp"
     ],
-    "rating": 4.92
+    "rating": 3.7,
+    "reviews": [
+      {
+        "name": "Maya Reed",
+        "rating": 5,
+        "comment": "Great value for money!"
+      },
+      {
+        "name": "Grace Perry",
+        "rating": 5,
+        "comment": "Great value for money!"
+      },
+      {
+        "name": "Eleanor Collins",
+        "rating": 1,
+        "comment": "Not as described!"
+      }
+    ]
   },
   {
     "id": "dj_155",
@@ -1322,7 +2784,24 @@
       "https://cdn.dummyjson.com/product-images/sunglasses/classic-sun-glasses/2.webp",
       "https://cdn.dummyjson.com/product-images/sunglasses/classic-sun-glasses/3.webp"
     ],
-    "rating": 3.86
+    "rating": 4.0,
+    "reviews": [
+      {
+        "name": "Logan Lee",
+        "rating": 5,
+        "comment": "Very satisfied!"
+      },
+      {
+        "name": "Jack Ward",
+        "rating": 3,
+        "comment": "Very dissatisfied!"
+      },
+      {
+        "name": "Julian James",
+        "rating": 4,
+        "comment": "Very happy with my purchase!"
+      }
+    ]
   },
   {
     "id": "dj_178",
@@ -1339,7 +2818,24 @@
       "https://cdn.dummyjson.com/product-images/womens-dresses/corset-leather-with-skirt/3.webp",
       "https://cdn.dummyjson.com/product-images/womens-dresses/corset-leather-with-skirt/4.webp"
     ],
-    "rating": 3.05
+    "rating": 4.3,
+    "reviews": [
+      {
+        "name": "Natalie Price",
+        "rating": 5,
+        "comment": "Very happy with my purchase!"
+      },
+      {
+        "name": "Sophia Jones",
+        "rating": 4,
+        "comment": "Highly recommended!"
+      },
+      {
+        "name": "Leo Rivera",
+        "rating": 4,
+        "comment": "Highly recommended!"
+      }
+    ]
   },
   {
     "id": "dj_179",
@@ -1356,7 +2852,24 @@
       "https://cdn.dummyjson.com/product-images/womens-dresses/corset-with-black-skirt/3.webp",
       "https://cdn.dummyjson.com/product-images/womens-dresses/corset-with-black-skirt/4.webp"
     ],
-    "rating": 4.52
+    "rating": 4.0,
+    "reviews": [
+      {
+        "name": "Lucas Allen",
+        "rating": 5,
+        "comment": "Very satisfied!"
+      },
+      {
+        "name": "Benjamin Wilson",
+        "rating": 2,
+        "comment": "Disappointing product!"
+      },
+      {
+        "name": "Elena Long",
+        "rating": 5,
+        "comment": "Very happy with my purchase!"
+      }
+    ]
   },
   {
     "id": "dj_180",
@@ -1373,7 +2886,24 @@
       "https://cdn.dummyjson.com/product-images/womens-dresses/dress-pea/3.webp",
       "https://cdn.dummyjson.com/product-images/womens-dresses/dress-pea/4.webp"
     ],
-    "rating": 4.88
+    "rating": 2.3,
+    "reviews": [
+      {
+        "name": "Harper Turner",
+        "rating": 4,
+        "comment": "Fast shipping!"
+      },
+      {
+        "name": "Luna Russell",
+        "rating": 1,
+        "comment": "Not worth the price!"
+      },
+      {
+        "name": "Michael Johnson",
+        "rating": 2,
+        "comment": "Would not buy again!"
+      }
+    ]
   },
   {
     "id": "dj_84",
@@ -1390,7 +2920,24 @@
       "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/3.webp",
       "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/4.webp"
     ],
-    "rating": 3.18
+    "rating": 3.7,
+    "reviews": [
+      {
+        "name": "Amelia Perez",
+        "rating": 5,
+        "comment": "Excellent quality!"
+      },
+      {
+        "name": "Tyler Davis",
+        "rating": 5,
+        "comment": "Awesome product!"
+      },
+      {
+        "name": "Harper King",
+        "rating": 1,
+        "comment": "Disappointing product!"
+      }
+    ]
   },
   {
     "id": "dj_163",
@@ -1407,7 +2954,24 @@
       "https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/3.webp",
       "https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/4.webp"
     ],
-    "rating": 4.77
+    "rating": 4.3,
+    "reviews": [
+      {
+        "name": "Mason Pearson",
+        "rating": 5,
+        "comment": "Excellent quality!"
+      },
+      {
+        "name": "Aubrey Garcia",
+        "rating": 4,
+        "comment": "Great product!"
+      },
+      {
+        "name": "Charlotte Davis",
+        "rating": 4,
+        "comment": "Very satisfied!"
+      }
+    ]
   },
   {
     "id": "dj_187",
@@ -1424,7 +2988,24 @@
       "https://cdn.dummyjson.com/product-images/womens-shoes/golden-shoes-woman/3.webp",
       "https://cdn.dummyjson.com/product-images/womens-shoes/golden-shoes-woman/4.webp"
     ],
-    "rating": 3.26
+    "rating": 4.3,
+    "reviews": [
+      {
+        "name": "Nolan Gonzalez",
+        "rating": 4,
+        "comment": "Excellent quality!"
+      },
+      {
+        "name": "Brayden Fleming",
+        "rating": 5,
+        "comment": "Very pleased!"
+      },
+      {
+        "name": "Eleanor Tyler",
+        "rating": 4,
+        "comment": "Very pleased!"
+      }
+    ]
   },
   {
     "id": "dj_164",
@@ -1441,7 +3022,24 @@
       "https://cdn.dummyjson.com/product-images/tops/gray-dress/3.webp",
       "https://cdn.dummyjson.com/product-images/tops/gray-dress/4.webp"
     ],
-    "rating": 2.72
+    "rating": 4.7,
+    "reviews": [
+      {
+        "name": "Brayden Fleming",
+        "rating": 5,
+        "comment": "Highly impressed!"
+      },
+      {
+        "name": "Michael Johnson",
+        "rating": 4,
+        "comment": "Awesome product!"
+      },
+      {
+        "name": "Evelyn Sanchez",
+        "rating": 5,
+        "comment": "Highly recommended!"
+      }
+    ]
   },
   {
     "id": "dj_182",
@@ -1457,7 +3055,24 @@
       "https://cdn.dummyjson.com/product-images/womens-jewellery/green-crystal-earring/2.webp",
       "https://cdn.dummyjson.com/product-images/womens-jewellery/green-crystal-earring/3.webp"
     ],
-    "rating": 3.96
+    "rating": 4.3,
+    "reviews": [
+      {
+        "name": "Michael Williams",
+        "rating": 4,
+        "comment": "Would buy again!"
+      },
+      {
+        "name": "Samantha Howard",
+        "rating": 5,
+        "comment": "Great value for money!"
+      },
+      {
+        "name": "Xavier Wright",
+        "rating": 4,
+        "comment": "Excellent quality!"
+      }
+    ]
   },
   {
     "id": "dj_183",
@@ -1473,7 +3088,24 @@
       "https://cdn.dummyjson.com/product-images/womens-jewellery/green-oval-earring/2.webp",
       "https://cdn.dummyjson.com/product-images/womens-jewellery/green-oval-earring/3.webp"
     ],
-    "rating": 3.57
+    "rating": 4.0,
+    "reviews": [
+      {
+        "name": "Elena Long",
+        "rating": 3,
+        "comment": "Would not buy again!"
+      },
+      {
+        "name": "Layla Sullivan",
+        "rating": 5,
+        "comment": "Very satisfied!"
+      },
+      {
+        "name": "Xavier Wright",
+        "rating": 4,
+        "comment": "Would buy again!"
+      }
+    ]
   },
   {
     "id": "dj_156",
@@ -1489,7 +3121,24 @@
       "https://cdn.dummyjson.com/product-images/sunglasses/green-and-black-glasses/2.webp",
       "https://cdn.dummyjson.com/product-images/sunglasses/green-and-black-glasses/3.webp"
     ],
-    "rating": 4.55
+    "rating": 3.7,
+    "reviews": [
+      {
+        "name": "Ava Taylor",
+        "rating": 3,
+        "comment": "Waste of money!"
+      },
+      {
+        "name": "Owen Sullivan",
+        "rating": 3,
+        "comment": "Disappointing product!"
+      },
+      {
+        "name": "Victoria McDonald",
+        "rating": 5,
+        "comment": "Highly impressed!"
+      }
+    ]
   },
   {
     "id": "dj_173",
@@ -1505,7 +3154,24 @@
       "https://cdn.dummyjson.com/product-images/womens-bags/heshe-women's-leather-bag/2.webp",
       "https://cdn.dummyjson.com/product-images/womens-bags/heshe-women's-leather-bag/3.webp"
     ],
-    "rating": 4.92
+    "rating": 4.3,
+    "reviews": [
+      {
+        "name": "Hunter Gordon",
+        "rating": 5,
+        "comment": "Excellent quality!"
+      },
+      {
+        "name": "Mason Parker",
+        "rating": 4,
+        "comment": "Awesome product!"
+      },
+      {
+        "name": "William Gonzalez",
+        "rating": 4,
+        "comment": "Awesome product!"
+      }
+    ]
   },
   {
     "id": "dj_190",
@@ -1521,7 +3187,24 @@
       "https://cdn.dummyjson.com/product-images/womens-watches/iwc-ingenieur-automatic-steel/2.webp",
       "https://cdn.dummyjson.com/product-images/womens-watches/iwc-ingenieur-automatic-steel/3.webp"
     ],
-    "rating": 2.93
+    "rating": 3.7,
+    "reviews": [
+      {
+        "name": "Gabriel Adams",
+        "rating": 3,
+        "comment": "Disappointing product!"
+      },
+      {
+        "name": "Evan Reed",
+        "rating": 5,
+        "comment": "Great value for money!"
+      },
+      {
+        "name": "Clara Berry",
+        "rating": 3,
+        "comment": "Would not buy again!"
+      }
+    ]
   },
   {
     "id": "dj_94",
@@ -1537,7 +3220,24 @@
       "https://cdn.dummyjson.com/product-images/mens-watches/longines-master-collection/2.webp",
       "https://cdn.dummyjson.com/product-images/mens-watches/longines-master-collection/3.webp"
     ],
-    "rating": 3.87
+    "rating": 4.0,
+    "reviews": [
+      {
+        "name": "Eli Ward",
+        "rating": 4,
+        "comment": "Highly impressed!"
+      },
+      {
+        "name": "Owen Fisher",
+        "rating": 3,
+        "comment": "Very disappointed!"
+      },
+      {
+        "name": "Nathan Reed",
+        "rating": 5,
+        "comment": "Great product!"
+      }
+    ]
   },
   {
     "id": "dj_85",
@@ -1554,7 +3254,24 @@
       "https://cdn.dummyjson.com/product-images/mens-shirts/man-plaid-shirt/3.webp",
       "https://cdn.dummyjson.com/product-images/mens-shirts/man-plaid-shirt/4.webp"
     ],
-    "rating": 3.46
+    "rating": 3.0,
+    "reviews": [
+      {
+        "name": "Aubrey Wagner",
+        "rating": 3,
+        "comment": "Disappointing product!"
+      },
+      {
+        "name": "Evan Reed",
+        "rating": 4,
+        "comment": "Awesome product!"
+      },
+      {
+        "name": "Evelyn Gonzalez",
+        "rating": 2,
+        "comment": "Very disappointed!"
+      }
+    ]
   },
   {
     "id": "dj_86",
@@ -1571,7 +3288,24 @@
       "https://cdn.dummyjson.com/product-images/mens-shirts/man-short-sleeve-shirt/3.webp",
       "https://cdn.dummyjson.com/product-images/mens-shirts/man-short-sleeve-shirt/4.webp"
     ],
-    "rating": 2.9
+    "rating": 2.7,
+    "reviews": [
+      {
+        "name": "Charlotte Lopez",
+        "rating": 5,
+        "comment": "Highly recommended!"
+      },
+      {
+        "name": "Ellie Stewart",
+        "rating": 2,
+        "comment": "Poor quality!"
+      },
+      {
+        "name": "Sadie Morales",
+        "rating": 1,
+        "comment": "Would not recommend!"
+      }
+    ]
   },
   {
     "id": "dj_181",
@@ -1588,7 +3322,24 @@
       "https://cdn.dummyjson.com/product-images/womens-dresses/marni-red-&-black-suit/3.webp",
       "https://cdn.dummyjson.com/product-images/womens-dresses/marni-red-&-black-suit/4.webp"
     ],
-    "rating": 4.48
+    "rating": 4.0,
+    "reviews": [
+      {
+        "name": "Avery Perez",
+        "rating": 5,
+        "comment": "Fast shipping!"
+      },
+      {
+        "name": "Scarlett Wright",
+        "rating": 3,
+        "comment": "Very disappointed!"
+      },
+      {
+        "name": "Claire Foster",
+        "rating": 4,
+        "comment": "Highly impressed!"
+      }
+    ]
   },
   {
     "id": "dj_87",
@@ -1605,7 +3356,24 @@
       "https://cdn.dummyjson.com/product-images/mens-shirts/men-check-shirt/3.webp",
       "https://cdn.dummyjson.com/product-images/mens-shirts/men-check-shirt/4.webp"
     ],
-    "rating": 2.72
+    "rating": 3.3,
+    "reviews": [
+      {
+        "name": "Mateo Nguyen",
+        "rating": 3,
+        "comment": "Would not recommend!"
+      },
+      {
+        "name": "Lucas Allen",
+        "rating": 5,
+        "comment": "Fast shipping!"
+      },
+      {
+        "name": "Henry Adams",
+        "rating": 2,
+        "comment": "Very unhappy with my purchase!"
+      }
+    ]
   },
   {
     "id": "dj_88",
@@ -1622,7 +3390,24 @@
       "https://cdn.dummyjson.com/product-images/mens-shoes/nike-air-jordan-1-red-and-black/3.webp",
       "https://cdn.dummyjson.com/product-images/mens-shoes/nike-air-jordan-1-red-and-black/4.webp"
     ],
-    "rating": 4.77
+    "rating": 3.3,
+    "reviews": [
+      {
+        "name": "Elena Long",
+        "rating": 5,
+        "comment": "Highly impressed!"
+      },
+      {
+        "name": "Addison Wright",
+        "rating": 4,
+        "comment": "Very happy with my purchase!"
+      },
+      {
+        "name": "Mason Wright",
+        "rating": 1,
+        "comment": "Waste of money!"
+      }
+    ]
   },
   {
     "id": "dj_89",
@@ -1639,7 +3424,24 @@
       "https://cdn.dummyjson.com/product-images/mens-shoes/nike-baseball-cleats/3.webp",
       "https://cdn.dummyjson.com/product-images/mens-shoes/nike-baseball-cleats/4.webp"
     ],
-    "rating": 3.88
+    "rating": 3.3,
+    "reviews": [
+      {
+        "name": "Aaron Cook",
+        "rating": 5,
+        "comment": "Would buy again!"
+      },
+      {
+        "name": "Noah Lewis",
+        "rating": 2,
+        "comment": "Very disappointed!"
+      },
+      {
+        "name": "Michael Johnson",
+        "rating": 3,
+        "comment": "Would not recommend!"
+      }
+    ]
   },
   {
     "id": "dj_188",
@@ -1656,7 +3458,24 @@
       "https://cdn.dummyjson.com/product-images/womens-shoes/pampi-shoes/3.webp",
       "https://cdn.dummyjson.com/product-images/womens-shoes/pampi-shoes/4.webp"
     ],
-    "rating": 3.05
+    "rating": 4.3,
+    "reviews": [
+      {
+        "name": "Nathan Reed",
+        "rating": 4,
+        "comment": "Highly recommended!"
+      },
+      {
+        "name": "Connor Baker",
+        "rating": 4,
+        "comment": "Would buy again!"
+      },
+      {
+        "name": "Noah Lewis",
+        "rating": 5,
+        "comment": "Awesome product!"
+      }
+    ]
   },
   {
     "id": "dj_157",
@@ -1672,7 +3491,24 @@
       "https://cdn.dummyjson.com/product-images/sunglasses/party-glasses/2.webp",
       "https://cdn.dummyjson.com/product-images/sunglasses/party-glasses/3.webp"
     ],
-    "rating": 2.79
+    "rating": 4.7,
+    "reviews": [
+      {
+        "name": "Levi Hicks",
+        "rating": 5,
+        "comment": "Very pleased!"
+      },
+      {
+        "name": "Ariana Ross",
+        "rating": 5,
+        "comment": "Excellent quality!"
+      },
+      {
+        "name": "Samantha Howard",
+        "rating": 4,
+        "comment": "Great product!"
+      }
+    ]
   },
   {
     "id": "dj_174",
@@ -1688,7 +3524,24 @@
       "https://cdn.dummyjson.com/product-images/womens-bags/prada-women-bag/2.webp",
       "https://cdn.dummyjson.com/product-images/womens-bags/prada-women-bag/3.webp"
     ],
-    "rating": 2.71
+    "rating": 3.7,
+    "reviews": [
+      {
+        "name": "Caleb Perkins",
+        "rating": 2,
+        "comment": "Would not buy again!"
+      },
+      {
+        "name": "Carter Baker",
+        "rating": 4,
+        "comment": "Great value for money!"
+      },
+      {
+        "name": "Lucas Ramirez",
+        "rating": 5,
+        "comment": "Highly recommended!"
+      }
+    ]
   },
   {
     "id": "dj_90",
@@ -1705,7 +3558,24 @@
       "https://cdn.dummyjson.com/product-images/mens-shoes/puma-future-rider-trainers/3.webp",
       "https://cdn.dummyjson.com/product-images/mens-shoes/puma-future-rider-trainers/4.webp"
     ],
-    "rating": 4.9
+    "rating": 3.7,
+    "reviews": [
+      {
+        "name": "Jackson Morales",
+        "rating": 5,
+        "comment": "Highly impressed!"
+      },
+      {
+        "name": "Sophia Jones",
+        "rating": 1,
+        "comment": "Very disappointed!"
+      },
+      {
+        "name": "Logan Torres",
+        "rating": 5,
+        "comment": "Very pleased!"
+      }
+    ]
   },
   {
     "id": "dj_189",
@@ -1722,7 +3592,24 @@
       "https://cdn.dummyjson.com/product-images/womens-shoes/red-shoes/3.webp",
       "https://cdn.dummyjson.com/product-images/womens-shoes/red-shoes/4.webp"
     ],
-    "rating": 3.25
+    "rating": 4.7,
+    "reviews": [
+      {
+        "name": "Isabella Anderson",
+        "rating": 5,
+        "comment": "Fast shipping!"
+      },
+      {
+        "name": "Luna Perez",
+        "rating": 4,
+        "comment": "Awesome product!"
+      },
+      {
+        "name": "Savannah Gomez",
+        "rating": 5,
+        "comment": "Highly impressed!"
+      }
+    ]
   },
   {
     "id": "dj_95",
@@ -1738,7 +3625,24 @@
       "https://cdn.dummyjson.com/product-images/mens-watches/rolex-cellini-date-black-dial/2.webp",
       "https://cdn.dummyjson.com/product-images/mens-watches/rolex-cellini-date-black-dial/3.webp"
     ],
-    "rating": 4.97
+    "rating": 2.7,
+    "reviews": [
+      {
+        "name": "Owen Sullivan",
+        "rating": 3,
+        "comment": "Not worth the price!"
+      },
+      {
+        "name": "Jonathan Pierce",
+        "rating": 4,
+        "comment": "Very satisfied!"
+      },
+      {
+        "name": "Adrian Flores",
+        "rating": 1,
+        "comment": "Would not buy again!"
+      }
+    ]
   },
   {
     "id": "dj_96",
@@ -1754,7 +3658,24 @@
       "https://cdn.dummyjson.com/product-images/mens-watches/rolex-cellini-moonphase/2.webp",
       "https://cdn.dummyjson.com/product-images/mens-watches/rolex-cellini-moonphase/3.webp"
     ],
-    "rating": 2.58
+    "rating": 4.0,
+    "reviews": [
+      {
+        "name": "Ella Adams",
+        "rating": 3,
+        "comment": "Poor quality!"
+      },
+      {
+        "name": "Leo Rivera",
+        "rating": 5,
+        "comment": "Very satisfied!"
+      },
+      {
+        "name": "Emma Miller",
+        "rating": 4,
+        "comment": "Very pleased!"
+      }
+    ]
   },
   {
     "id": "dj_191",
@@ -1770,7 +3691,24 @@
       "https://cdn.dummyjson.com/product-images/womens-watches/rolex-cellini-moonphase/2.webp",
       "https://cdn.dummyjson.com/product-images/womens-watches/rolex-cellini-moonphase/3.webp"
     ],
-    "rating": 3.83
+    "rating": 3.3,
+    "reviews": [
+      {
+        "name": "Gabriel Hayes",
+        "rating": 4,
+        "comment": "Very happy with my purchase!"
+      },
+      {
+        "name": "Logan Torres",
+        "rating": 5,
+        "comment": "Fast shipping!"
+      },
+      {
+        "name": "Isabella Jackson",
+        "rating": 1,
+        "comment": "Disappointing product!"
+      }
+    ]
   },
   {
     "id": "dj_97",
@@ -1786,7 +3724,24 @@
       "https://cdn.dummyjson.com/product-images/mens-watches/rolex-datejust/2.webp",
       "https://cdn.dummyjson.com/product-images/mens-watches/rolex-datejust/3.webp"
     ],
-    "rating": 3.66
+    "rating": 3.7,
+    "reviews": [
+      {
+        "name": "Alice Smith",
+        "rating": 4,
+        "comment": "Fast shipping!"
+      },
+      {
+        "name": "Abigail Rivera",
+        "rating": 4,
+        "comment": "Very pleased!"
+      },
+      {
+        "name": "Daniel Cook",
+        "rating": 3,
+        "comment": "Waste of money!"
+      }
+    ]
   },
   {
     "id": "dj_192",
@@ -1802,7 +3757,24 @@
       "https://cdn.dummyjson.com/product-images/womens-watches/rolex-datejust-women/2.webp",
       "https://cdn.dummyjson.com/product-images/womens-watches/rolex-datejust-women/3.webp"
     ],
-    "rating": 2.86
+    "rating": 4.0,
+    "reviews": [
+      {
+        "name": "Benjamin Wilson",
+        "rating": 3,
+        "comment": "Not as described!"
+      },
+      {
+        "name": "Madison Collins",
+        "rating": 5,
+        "comment": "Highly impressed!"
+      },
+      {
+        "name": "Lucas Gray",
+        "rating": 4,
+        "comment": "Very satisfied!"
+      }
+    ]
   },
   {
     "id": "dj_98",
@@ -1818,7 +3790,24 @@
       "https://cdn.dummyjson.com/product-images/mens-watches/rolex-submariner-watch/2.webp",
       "https://cdn.dummyjson.com/product-images/mens-watches/rolex-submariner-watch/3.webp"
     ],
-    "rating": 2.69
+    "rating": 4.7,
+    "reviews": [
+      {
+        "name": "Luna Perez",
+        "rating": 4,
+        "comment": "Great value for money!"
+      },
+      {
+        "name": "Hannah Robinson",
+        "rating": 5,
+        "comment": "Highly recommended!"
+      },
+      {
+        "name": "Aaliyah Hanson",
+        "rating": 5,
+        "comment": "Fast shipping!"
+      }
+    ]
   },
   {
     "id": "dj_165",
@@ -1835,7 +3824,24 @@
       "https://cdn.dummyjson.com/product-images/tops/short-frock/3.webp",
       "https://cdn.dummyjson.com/product-images/tops/short-frock/4.webp"
     ],
-    "rating": 3.23
+    "rating": 4.0,
+    "reviews": [
+      {
+        "name": "Gabriel Hayes",
+        "rating": 3,
+        "comment": "Disappointing product!"
+      },
+      {
+        "name": "Samantha Howard",
+        "rating": 5,
+        "comment": "Awesome product!"
+      },
+      {
+        "name": "Luke Cooper",
+        "rating": 4,
+        "comment": "Fast shipping!"
+      }
+    ]
   },
   {
     "id": "dj_91",
@@ -1852,7 +3858,24 @@
       "https://cdn.dummyjson.com/product-images/mens-shoes/sports-sneakers-off-white-&-red/3.webp",
       "https://cdn.dummyjson.com/product-images/mens-shoes/sports-sneakers-off-white-&-red/4.webp"
     ],
-    "rating": 4.77
+    "rating": 4.7,
+    "reviews": [
+      {
+        "name": "Sadie Morales",
+        "rating": 4,
+        "comment": "Would buy again!"
+      },
+      {
+        "name": "Julian Newton",
+        "rating": 5,
+        "comment": "Fast shipping!"
+      },
+      {
+        "name": "Logan Lee",
+        "rating": 5,
+        "comment": "Awesome product!"
+      }
+    ]
   },
   {
     "id": "dj_92",
@@ -1869,7 +3892,24 @@
       "https://cdn.dummyjson.com/product-images/mens-shoes/sports-sneakers-off-white-red/3.webp",
       "https://cdn.dummyjson.com/product-images/mens-shoes/sports-sneakers-off-white-red/4.webp"
     ],
-    "rating": 4.69
+    "rating": 3.3,
+    "reviews": [
+      {
+        "name": "Aurora Lawson",
+        "rating": 4,
+        "comment": "Excellent quality!"
+      },
+      {
+        "name": "Gabriel Mitchell",
+        "rating": 5,
+        "comment": "Great value for money!"
+      },
+      {
+        "name": "Eli Bennett",
+        "rating": 1,
+        "comment": "Not worth the price!"
+      }
+    ]
   },
   {
     "id": "dj_158",
@@ -1885,7 +3925,24 @@
       "https://cdn.dummyjson.com/product-images/sunglasses/sunglasses/2.webp",
       "https://cdn.dummyjson.com/product-images/sunglasses/sunglasses/3.webp"
     ],
-    "rating": 3.02
+    "rating": 3.7,
+    "reviews": [
+      {
+        "name": "Olivia Wilson",
+        "rating": 5,
+        "comment": "Would buy again!"
+      },
+      {
+        "name": "Lillian Bishop",
+        "rating": 2,
+        "comment": "Not worth the price!"
+      },
+      {
+        "name": "Leah Henderson",
+        "rating": 4,
+        "comment": "Fast shipping!"
+      }
+    ]
   },
   {
     "id": "dj_166",
@@ -1902,7 +3959,24 @@
       "https://cdn.dummyjson.com/product-images/tops/tartan-dress/3.webp",
       "https://cdn.dummyjson.com/product-images/tops/tartan-dress/4.webp"
     ],
-    "rating": 4.05
+    "rating": 4.0,
+    "reviews": [
+      {
+        "name": "Mason Pearson",
+        "rating": 5,
+        "comment": "Highly recommended!"
+      },
+      {
+        "name": "Luke Cooper",
+        "rating": 3,
+        "comment": "Not as described!"
+      },
+      {
+        "name": "William Lopez",
+        "rating": 4,
+        "comment": "Excellent quality!"
+      }
+    ]
   },
   {
     "id": "dj_184",
@@ -1918,7 +3992,24 @@
       "https://cdn.dummyjson.com/product-images/womens-jewellery/tropical-earring/2.webp",
       "https://cdn.dummyjson.com/product-images/womens-jewellery/tropical-earring/3.webp"
     ],
-    "rating": 4.4
+    "rating": 3.3,
+    "reviews": [
+      {
+        "name": "Alexander Jones",
+        "rating": 5,
+        "comment": "Great product!"
+      },
+      {
+        "name": "Eli Ward",
+        "rating": 4,
+        "comment": "Awesome product!"
+      },
+      {
+        "name": "Carter Rivera",
+        "rating": 1,
+        "comment": "Very unhappy with my purchase!"
+      }
+    ]
   },
   {
     "id": "dj_193",
@@ -1934,7 +4025,24 @@
       "https://cdn.dummyjson.com/product-images/womens-watches/watch-gold-for-women/2.webp",
       "https://cdn.dummyjson.com/product-images/womens-watches/watch-gold-for-women/3.webp"
     ],
-    "rating": 4.24
+    "rating": 4.3,
+    "reviews": [
+      {
+        "name": "Elena Baker",
+        "rating": 4,
+        "comment": "Highly impressed!"
+      },
+      {
+        "name": "Avery Barnes",
+        "rating": 4,
+        "comment": "Would buy again!"
+      },
+      {
+        "name": "Evelyn Sanchez",
+        "rating": 5,
+        "comment": "Great product!"
+      }
+    ]
   },
   {
     "id": "dj_175",
@@ -1950,7 +4058,24 @@
       "https://cdn.dummyjson.com/product-images/womens-bags/white-faux-leather-backpack/2.webp",
       "https://cdn.dummyjson.com/product-images/womens-bags/white-faux-leather-backpack/3.webp"
     ],
-    "rating": 3.36
+    "rating": 3.3,
+    "reviews": [
+      {
+        "name": "Ava Harrison",
+        "rating": 4,
+        "comment": "Awesome product!"
+      },
+      {
+        "name": "Liam Garcia",
+        "rating": 1,
+        "comment": "Not as described!"
+      },
+      {
+        "name": "Cameron Perez",
+        "rating": 5,
+        "comment": "Great value for money!"
+      }
+    ]
   },
   {
     "id": "dj_176",
@@ -1966,7 +4091,24 @@
       "https://cdn.dummyjson.com/product-images/womens-bags/women-handbag-black/2.webp",
       "https://cdn.dummyjson.com/product-images/womens-bags/women-handbag-black/3.webp"
     ],
-    "rating": 2.89
+    "rating": 3.3,
+    "reviews": [
+      {
+        "name": "Natalie Price",
+        "rating": 4,
+        "comment": "Very pleased!"
+      },
+      {
+        "name": "Emily Johnson",
+        "rating": 5,
+        "comment": "Great product!"
+      },
+      {
+        "name": "Henry Hill",
+        "rating": 1,
+        "comment": "Waste of money!"
+      }
+    ]
   },
   {
     "id": "dj_194",
@@ -1982,7 +4124,24 @@
       "https://cdn.dummyjson.com/product-images/womens-watches/women's-wrist-watch/2.webp",
       "https://cdn.dummyjson.com/product-images/womens-watches/women's-wrist-watch/3.webp"
     ],
-    "rating": 3.52
+    "rating": 4.7,
+    "reviews": [
+      {
+        "name": "Harper Kelly",
+        "rating": 4,
+        "comment": "Very happy with my purchase!"
+      },
+      {
+        "name": "Gabriel Bailey",
+        "rating": 5,
+        "comment": "Highly recommended!"
+      },
+      {
+        "name": "Natalie Price",
+        "rating": 5,
+        "comment": "Fast shipping!"
+      }
+    ]
   },
   {
     "id": "dj_16",
@@ -1996,7 +4155,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/groceries/apple/1.webp"
     ],
-    "rating": 4.19
+    "rating": 3.0,
+    "reviews": [
+      {
+        "name": "Sophia Brown",
+        "rating": 5,
+        "comment": "Very satisfied!"
+      },
+      {
+        "name": "Scarlett Bowman",
+        "rating": 1,
+        "comment": "Very dissatisfied!"
+      },
+      {
+        "name": "William Gonzalez",
+        "rating": 3,
+        "comment": "Very unhappy with my purchase!"
+      }
+    ]
   },
   {
     "id": "dj_17",
@@ -2010,7 +4186,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/groceries/beef-steak/1.webp"
     ],
-    "rating": 4.47
+    "rating": 4.0,
+    "reviews": [
+      {
+        "name": "Eleanor Tyler",
+        "rating": 3,
+        "comment": "Would not recommend!"
+      },
+      {
+        "name": "Alexander Jones",
+        "rating": 4,
+        "comment": "Fast shipping!"
+      },
+      {
+        "name": "Natalie Harris",
+        "rating": 5,
+        "comment": "Great value for money!"
+      }
+    ]
   },
   {
     "id": "dj_18",
@@ -2024,7 +4217,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/groceries/cat-food/1.webp"
     ],
-    "rating": 3.13
+    "rating": 2.7,
+    "reviews": [
+      {
+        "name": "Noah Lewis",
+        "rating": 3,
+        "comment": "Would not recommend!"
+      },
+      {
+        "name": "Ruby Andrews",
+        "rating": 3,
+        "comment": "Very unhappy with my purchase!"
+      },
+      {
+        "name": "Ethan Thompson",
+        "rating": 2,
+        "comment": "Very disappointed!"
+      }
+    ]
   },
   {
     "id": "dj_19",
@@ -2039,7 +4249,24 @@
       "https://cdn.dummyjson.com/product-images/groceries/chicken-meat/1.webp",
       "https://cdn.dummyjson.com/product-images/groceries/chicken-meat/2.webp"
     ],
-    "rating": 3.19
+    "rating": 4.0,
+    "reviews": [
+      {
+        "name": "Mateo Bennett",
+        "rating": 5,
+        "comment": "Great product!"
+      },
+      {
+        "name": "Jackson Evans",
+        "rating": 4,
+        "comment": "Highly recommended!"
+      },
+      {
+        "name": "Sadie Morales",
+        "rating": 3,
+        "comment": "Not worth the price!"
+      }
+    ]
   },
   {
     "id": "dj_20",
@@ -2053,7 +4280,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/groceries/cooking-oil/1.webp"
     ],
-    "rating": 4.8
+    "rating": 4.0,
+    "reviews": [
+      {
+        "name": "Victoria McDonald",
+        "rating": 5,
+        "comment": "Very happy with my purchase!"
+      },
+      {
+        "name": "Hazel Evans",
+        "rating": 2,
+        "comment": "Would not recommend!"
+      },
+      {
+        "name": "Zoe Bennett",
+        "rating": 5,
+        "comment": "Would buy again!"
+      }
+    ]
   },
   {
     "id": "dj_21",
@@ -2067,7 +4311,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/groceries/cucumber/1.webp"
     ],
-    "rating": 4.07
+    "rating": 3.3,
+    "reviews": [
+      {
+        "name": "Lincoln Kelly",
+        "rating": 4,
+        "comment": "Great product!"
+      },
+      {
+        "name": "Savannah Gomez",
+        "rating": 4,
+        "comment": "Great value for money!"
+      },
+      {
+        "name": "James Davis",
+        "rating": 2,
+        "comment": "Poor quality!"
+      }
+    ]
   },
   {
     "id": "dj_22",
@@ -2081,7 +4342,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/groceries/dog-food/1.webp"
     ],
-    "rating": 4.55
+    "rating": 4.7,
+    "reviews": [
+      {
+        "name": "Nicholas Edwards",
+        "rating": 5,
+        "comment": "Excellent quality!"
+      },
+      {
+        "name": "Zachary Lee",
+        "rating": 5,
+        "comment": "Awesome product!"
+      },
+      {
+        "name": "Nova Cooper",
+        "rating": 4,
+        "comment": "Great product!"
+      }
+    ]
   },
   {
     "id": "dj_23",
@@ -2095,7 +4373,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/groceries/eggs/1.webp"
     ],
-    "rating": 2.53
+    "rating": 3.3,
+    "reviews": [
+      {
+        "name": "Penelope King",
+        "rating": 3,
+        "comment": "Disappointing product!"
+      },
+      {
+        "name": "Eleanor Tyler",
+        "rating": 3,
+        "comment": "Poor quality!"
+      },
+      {
+        "name": "Benjamin Foster",
+        "rating": 4,
+        "comment": "Very pleased!"
+      }
+    ]
   },
   {
     "id": "dj_24",
@@ -2109,7 +4404,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/groceries/fish-steak/1.webp"
     ],
-    "rating": 3.78
+    "rating": 3.7,
+    "reviews": [
+      {
+        "name": "Caleb Perkins",
+        "rating": 2,
+        "comment": "Would not buy again!"
+      },
+      {
+        "name": "Isabella Jackson",
+        "rating": 5,
+        "comment": "Excellent quality!"
+      },
+      {
+        "name": "Nathan Dixon",
+        "rating": 4,
+        "comment": "Great value for money!"
+      }
+    ]
   },
   {
     "id": "dj_25",
@@ -2123,7 +4435,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/groceries/green-bell-pepper/1.webp"
     ],
-    "rating": 3.25
+    "rating": 4.0,
+    "reviews": [
+      {
+        "name": "Avery Carter",
+        "rating": 4,
+        "comment": "Highly recommended!"
+      },
+      {
+        "name": "Henry Hill",
+        "rating": 3,
+        "comment": "Would not recommend!"
+      },
+      {
+        "name": "Addison Wright",
+        "rating": 5,
+        "comment": "Excellent quality!"
+      }
+    ]
   },
   {
     "id": "dj_26",
@@ -2137,7 +4466,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/groceries/green-chili-pepper/1.webp"
     ],
-    "rating": 3.66
+    "rating": 2.7,
+    "reviews": [
+      {
+        "name": "Luna Russell",
+        "rating": 4,
+        "comment": "Great product!"
+      },
+      {
+        "name": "Noah Lewis",
+        "rating": 1,
+        "comment": "Waste of money!"
+      },
+      {
+        "name": "Clara Berry",
+        "rating": 3,
+        "comment": "Very disappointed!"
+      }
+    ]
   },
   {
     "id": "dj_27",
@@ -2151,7 +4497,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/groceries/honey-jar/1.webp"
     ],
-    "rating": 3.97
+    "rating": 2.3,
+    "reviews": [
+      {
+        "name": "Autumn Gomez",
+        "rating": 1,
+        "comment": "Very disappointed!"
+      },
+      {
+        "name": "Benjamin Wilson",
+        "rating": 4,
+        "comment": "Highly impressed!"
+      },
+      {
+        "name": "Nicholas Edwards",
+        "rating": 2,
+        "comment": "Very disappointed!"
+      }
+    ]
   },
   {
     "id": "dj_28",
@@ -2168,7 +4531,24 @@
       "https://cdn.dummyjson.com/product-images/groceries/ice-cream/3.webp",
       "https://cdn.dummyjson.com/product-images/groceries/ice-cream/4.webp"
     ],
-    "rating": 3.39
+    "rating": 4.7,
+    "reviews": [
+      {
+        "name": "Elijah Cruz",
+        "rating": 5,
+        "comment": "Very pleased!"
+      },
+      {
+        "name": "Jace Smith",
+        "rating": 4,
+        "comment": "Excellent quality!"
+      },
+      {
+        "name": "Sadie Morales",
+        "rating": 5,
+        "comment": "Highly impressed!"
+      }
+    ]
   },
   {
     "id": "dj_29",
@@ -2182,7 +4562,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/groceries/juice/1.webp"
     ],
-    "rating": 3.94
+    "rating": 4.7,
+    "reviews": [
+      {
+        "name": "Nolan Gonzalez",
+        "rating": 5,
+        "comment": "Excellent quality!"
+      },
+      {
+        "name": "Bella Grant",
+        "rating": 4,
+        "comment": "Would buy again!"
+      },
+      {
+        "name": "Aria Flores",
+        "rating": 5,
+        "comment": "Awesome product!"
+      }
+    ]
   },
   {
     "id": "dj_30",
@@ -2196,7 +4593,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/groceries/kiwi/1.webp"
     ],
-    "rating": 4.93
+    "rating": 3.3,
+    "reviews": [
+      {
+        "name": "Emily Brown",
+        "rating": 4,
+        "comment": "Highly recommended!"
+      },
+      {
+        "name": "Jackson Morales",
+        "rating": 2,
+        "comment": "Would not buy again!"
+      },
+      {
+        "name": "Nora Russell",
+        "rating": 4,
+        "comment": "Fast shipping!"
+      }
+    ]
   },
   {
     "id": "dj_31",
@@ -2210,7 +4624,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/groceries/lemon/1.webp"
     ],
-    "rating": 3.53
+    "rating": 5.0,
+    "reviews": [
+      {
+        "name": "Logan Lawson",
+        "rating": 5,
+        "comment": "Awesome product!"
+      },
+      {
+        "name": "Avery Perez",
+        "rating": 5,
+        "comment": "Highly impressed!"
+      },
+      {
+        "name": "Benjamin Foster",
+        "rating": 5,
+        "comment": "Very satisfied!"
+      }
+    ]
   },
   {
     "id": "dj_32",
@@ -2224,7 +4655,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/groceries/milk/1.webp"
     ],
-    "rating": 2.61
+    "rating": 4.0,
+    "reviews": [
+      {
+        "name": "Nicholas Bailey",
+        "rating": 4,
+        "comment": "Very satisfied!"
+      },
+      {
+        "name": "Harper Turner",
+        "rating": 3,
+        "comment": "Would not buy again!"
+      },
+      {
+        "name": "Autumn Gomez",
+        "rating": 5,
+        "comment": "Great value for money!"
+      }
+    ]
   },
   {
     "id": "dj_33",
@@ -2238,7 +4686,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/groceries/mulberry/1.webp"
     ],
-    "rating": 4.95
+    "rating": 2.7,
+    "reviews": [
+      {
+        "name": "Avery Barnes",
+        "rating": 5,
+        "comment": "Fast shipping!"
+      },
+      {
+        "name": "Sadie Morales",
+        "rating": 2,
+        "comment": "Not worth the price!"
+      },
+      {
+        "name": "Oscar Powers",
+        "rating": 1,
+        "comment": "Would not buy again!"
+      }
+    ]
   },
   {
     "id": "dj_34",
@@ -2252,7 +4717,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/groceries/nescafe-coffee/1.webp"
     ],
-    "rating": 4.82
+    "rating": 4.7,
+    "reviews": [
+      {
+        "name": "Gabriel Adams",
+        "rating": 5,
+        "comment": "Very pleased!"
+      },
+      {
+        "name": "Ella Cook",
+        "rating": 5,
+        "comment": "Highly recommended!"
+      },
+      {
+        "name": "Logan Torres",
+        "rating": 4,
+        "comment": "Would buy again!"
+      }
+    ]
   },
   {
     "id": "dj_35",
@@ -2266,7 +4748,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/groceries/potatoes/1.webp"
     ],
-    "rating": 4.81
+    "rating": 4.7,
+    "reviews": [
+      {
+        "name": "Eleanor Collins",
+        "rating": 5,
+        "comment": "Highly impressed!"
+      },
+      {
+        "name": "Lily Torres",
+        "rating": 4,
+        "comment": "Fast shipping!"
+      },
+      {
+        "name": "Ariana Ross",
+        "rating": 5,
+        "comment": "Highly recommended!"
+      }
+    ]
   },
   {
     "id": "dj_36",
@@ -2280,7 +4779,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/groceries/protein-powder/1.webp"
     ],
-    "rating": 4.18
+    "rating": 3.7,
+    "reviews": [
+      {
+        "name": "Aurora Rodriguez",
+        "rating": 3,
+        "comment": "Very unhappy with my purchase!"
+      },
+      {
+        "name": "Miles Stevenson",
+        "rating": 4,
+        "comment": "Would buy again!"
+      },
+      {
+        "name": "Clara Berry",
+        "rating": 4,
+        "comment": "Very happy with my purchase!"
+      }
+    ]
   },
   {
     "id": "dj_37",
@@ -2294,7 +4810,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/groceries/red-onions/1.webp"
     ],
-    "rating": 4.2
+    "rating": 4.0,
+    "reviews": [
+      {
+        "name": "Maya Reed",
+        "rating": 4,
+        "comment": "Fast shipping!"
+      },
+      {
+        "name": "Evelyn Gonzalez",
+        "rating": 3,
+        "comment": "Very dissatisfied!"
+      },
+      {
+        "name": "Jackson Evans",
+        "rating": 5,
+        "comment": "Awesome product!"
+      }
+    ]
   },
   {
     "id": "dj_38",
@@ -2308,7 +4841,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/groceries/rice/1.webp"
     ],
-    "rating": 3.18
+    "rating": 3.3,
+    "reviews": [
+      {
+        "name": "Sophia Brown",
+        "rating": 5,
+        "comment": "Would buy again!"
+      },
+      {
+        "name": "Grace Perry",
+        "rating": 4,
+        "comment": "Very satisfied!"
+      },
+      {
+        "name": "Cameron Burke",
+        "rating": 1,
+        "comment": "Very disappointed!"
+      }
+    ]
   },
   {
     "id": "dj_39",
@@ -2322,7 +4872,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/groceries/soft-drinks/1.webp"
     ],
-    "rating": 4.75
+    "rating": 3.0,
+    "reviews": [
+      {
+        "name": "Zachary Lee",
+        "rating": 2,
+        "comment": "Would not recommend!"
+      },
+      {
+        "name": "Oscar Powers",
+        "rating": 2,
+        "comment": "Would not recommend!"
+      },
+      {
+        "name": "Hannah Robinson",
+        "rating": 5,
+        "comment": "Highly recommended!"
+      }
+    ]
   },
   {
     "id": "dj_40",
@@ -2336,7 +4903,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/groceries/strawberry/1.webp"
     ],
-    "rating": 3.08
+    "rating": 3.3,
+    "reviews": [
+      {
+        "name": "Amelia Perez",
+        "rating": 3,
+        "comment": "Would not buy again!"
+      },
+      {
+        "name": "Olivia Wilson",
+        "rating": 3,
+        "comment": "Would not buy again!"
+      },
+      {
+        "name": "Hunter Gordon",
+        "rating": 4,
+        "comment": "Would buy again!"
+      }
+    ]
   },
   {
     "id": "dj_41",
@@ -2351,7 +4935,24 @@
       "https://cdn.dummyjson.com/product-images/groceries/tissue-paper-box/1.webp",
       "https://cdn.dummyjson.com/product-images/groceries/tissue-paper-box/2.webp"
     ],
-    "rating": 2.69
+    "rating": 3.7,
+    "reviews": [
+      {
+        "name": "Ariana Ross",
+        "rating": 1,
+        "comment": "Not as described!"
+      },
+      {
+        "name": "Carter Baker",
+        "rating": 5,
+        "comment": "Fast shipping!"
+      },
+      {
+        "name": "Penelope Harper",
+        "rating": 5,
+        "comment": "Great value for money!"
+      }
+    ]
   },
   {
     "id": "dj_42",
@@ -2365,7 +4966,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/groceries/water/1.webp"
     ],
-    "rating": 4.96
+    "rating": 3.3,
+    "reviews": [
+      {
+        "name": "Jonathan Pierce",
+        "rating": 5,
+        "comment": "Highly impressed!"
+      },
+      {
+        "name": "Grayson Coleman",
+        "rating": 2,
+        "comment": "Would not recommend!"
+      },
+      {
+        "name": "Ethan Fletcher",
+        "rating": 3,
+        "comment": "Not as described!"
+      }
+    ]
   },
   {
     "id": "dj_11",
@@ -2381,7 +4999,24 @@
       "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/2.webp",
       "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/3.webp"
     ],
-    "rating": 4.77
+    "rating": 2.3,
+    "reviews": [
+      {
+        "name": "Christopher West",
+        "rating": 2,
+        "comment": "Would not recommend!"
+      },
+      {
+        "name": "Vivian Carter",
+        "rating": 4,
+        "comment": "Highly impressed!"
+      },
+      {
+        "name": "Mason Wright",
+        "rating": 1,
+        "comment": "Poor quality!"
+      }
+    ]
   },
   {
     "id": "dj_12",
@@ -2397,7 +5032,24 @@
       "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/2.webp",
       "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/3.webp"
     ],
-    "rating": 3.92
+    "rating": 3.0,
+    "reviews": [
+      {
+        "name": "Christian Perez",
+        "rating": 3,
+        "comment": "Very unhappy with my purchase!"
+      },
+      {
+        "name": "Lillian Bishop",
+        "rating": 5,
+        "comment": "Fast shipping!"
+      },
+      {
+        "name": "Lillian Simmons",
+        "rating": 1,
+        "comment": "Poor quality!"
+      }
+    ]
   },
   {
     "id": "dj_13",
@@ -2413,7 +5065,24 @@
       "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/2.webp",
       "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/3.webp"
     ],
-    "rating": 2.87
+    "rating": 4.0,
+    "reviews": [
+      {
+        "name": "Aaliyah Hanson",
+        "rating": 4,
+        "comment": "Excellent quality!"
+      },
+      {
+        "name": "Liam Smith",
+        "rating": 4,
+        "comment": "Excellent quality!"
+      },
+      {
+        "name": "Avery Barnes",
+        "rating": 4,
+        "comment": "Highly recommended!"
+      }
+    ]
   },
   {
     "id": "dj_43",
@@ -2429,7 +5098,24 @@
       "https://cdn.dummyjson.com/product-images/home-decoration/decoration-swing/2.webp",
       "https://cdn.dummyjson.com/product-images/home-decoration/decoration-swing/3.webp"
     ],
-    "rating": 3.16
+    "rating": 2.0,
+    "reviews": [
+      {
+        "name": "Daniel Cook",
+        "rating": 1,
+        "comment": "Would not buy again!"
+      },
+      {
+        "name": "Hunter Gordon",
+        "rating": 2,
+        "comment": "Poor quality!"
+      },
+      {
+        "name": "Stella Morris",
+        "rating": 3,
+        "comment": "Very unhappy with my purchase!"
+      }
+    ]
   },
   {
     "id": "dj_44",
@@ -2443,7 +5129,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/home-decoration/family-tree-photo-frame/1.webp"
     ],
-    "rating": 4.53
+    "rating": 3.7,
+    "reviews": [
+      {
+        "name": "Oscar Powers",
+        "rating": 4,
+        "comment": "Highly impressed!"
+      },
+      {
+        "name": "Austin Hudson",
+        "rating": 5,
+        "comment": "Excellent quality!"
+      },
+      {
+        "name": "Luke Cooper",
+        "rating": 2,
+        "comment": "Very dissatisfied!"
+      }
+    ]
   },
   {
     "id": "dj_45",
@@ -2459,7 +5162,24 @@
       "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/2.webp",
       "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/3.webp"
     ],
-    "rating": 4.67
+    "rating": 3.7,
+    "reviews": [
+      {
+        "name": "Natalie Harris",
+        "rating": 5,
+        "comment": "Very happy with my purchase!"
+      },
+      {
+        "name": "Max Russell",
+        "rating": 1,
+        "comment": "Poor quality!"
+      },
+      {
+        "name": "Nolan Gonzalez",
+        "rating": 5,
+        "comment": "Very pleased!"
+      }
+    ]
   },
   {
     "id": "dj_14",
@@ -2475,7 +5195,24 @@
       "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/2.webp",
       "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/3.webp"
     ],
-    "rating": 4.88
+    "rating": 3.0,
+    "reviews": [
+      {
+        "name": "Ella Cook",
+        "rating": 2,
+        "comment": "Waste of money!"
+      },
+      {
+        "name": "Clara Berry",
+        "rating": 2,
+        "comment": "Very dissatisfied!"
+      },
+      {
+        "name": "Elena Long",
+        "rating": 5,
+        "comment": "Would buy again!"
+      }
+    ]
   },
   {
     "id": "dj_46",
@@ -2492,7 +5229,24 @@
       "https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/3.webp",
       "https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/4.webp"
     ],
-    "rating": 3.01
+    "rating": 4.0,
+    "reviews": [
+      {
+        "name": "Vivian Carter",
+        "rating": 4,
+        "comment": "Fast shipping!"
+      },
+      {
+        "name": "Ella Adams",
+        "rating": 5,
+        "comment": "Very satisfied!"
+      },
+      {
+        "name": "Liam Smith",
+        "rating": 3,
+        "comment": "Poor quality!"
+      }
+    ]
   },
   {
     "id": "dj_47",
@@ -2506,7 +5260,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/1.webp"
     ],
-    "rating": 3.55
+    "rating": 4.3,
+    "reviews": [
+      {
+        "name": "Benjamin Foster",
+        "rating": 5,
+        "comment": "Excellent quality!"
+      },
+      {
+        "name": "Sophia Jones",
+        "rating": 3,
+        "comment": "Would not recommend!"
+      },
+      {
+        "name": "Natalie Harris",
+        "rating": 5,
+        "comment": "Awesome product!"
+      }
+    ]
   },
   {
     "id": "dj_15",
@@ -2522,7 +5293,24 @@
       "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/2.webp",
       "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/3.webp"
     ],
-    "rating": 3.59
+    "rating": 4.0,
+    "reviews": [
+      {
+        "name": "Logan Torres",
+        "rating": 4,
+        "comment": "Fast shipping!"
+      },
+      {
+        "name": "Aria Parker",
+        "rating": 5,
+        "comment": "Very pleased!"
+      },
+      {
+        "name": "Dylan Wells",
+        "rating": 3,
+        "comment": "Poor quality!"
+      }
+    ]
   },
   {
     "id": "dj_113",
@@ -2539,7 +5327,24 @@
       "https://cdn.dummyjson.com/product-images/motorcycle/generic-motorcycle/3.webp",
       "https://cdn.dummyjson.com/product-images/motorcycle/generic-motorcycle/4.webp"
     ],
-    "rating": 4.91
+    "rating": 3.7,
+    "reviews": [
+      {
+        "name": "Hunter Gordon",
+        "rating": 5,
+        "comment": "Highly impressed!"
+      },
+      {
+        "name": "Nicholas Bailey",
+        "rating": 5,
+        "comment": "Very satisfied!"
+      },
+      {
+        "name": "Elena Long",
+        "rating": 1,
+        "comment": "Disappointing product!"
+      }
+    ]
   },
   {
     "id": "dj_114",
@@ -2556,7 +5361,24 @@
       "https://cdn.dummyjson.com/product-images/motorcycle/kawasaki-z800/3.webp",
       "https://cdn.dummyjson.com/product-images/motorcycle/kawasaki-z800/4.webp"
     ],
-    "rating": 3.98
+    "rating": 4.3,
+    "reviews": [
+      {
+        "name": "Scarlett Bowman",
+        "rating": 4,
+        "comment": "Highly impressed!"
+      },
+      {
+        "name": "Gabriel Bailey",
+        "rating": 5,
+        "comment": "Awesome product!"
+      },
+      {
+        "name": "Henry Hill",
+        "rating": 4,
+        "comment": "Fast shipping!"
+      }
+    ]
   },
   {
     "id": "dj_115",
@@ -2573,7 +5395,24 @@
       "https://cdn.dummyjson.com/product-images/motorcycle/motogp-ci.h1/3.webp",
       "https://cdn.dummyjson.com/product-images/motorcycle/motogp-ci.h1/4.webp"
     ],
-    "rating": 2.97
+    "rating": 4.3,
+    "reviews": [
+      {
+        "name": "Brandon Collins",
+        "rating": 4,
+        "comment": "Awesome product!"
+      },
+      {
+        "name": "Miles Stevenson",
+        "rating": 5,
+        "comment": "Fast shipping!"
+      },
+      {
+        "name": "Grayson Coleman",
+        "rating": 4,
+        "comment": "Highly recommended!"
+      }
+    ]
   },
   {
     "id": "dj_116",
@@ -2590,7 +5429,24 @@
       "https://cdn.dummyjson.com/product-images/motorcycle/scooter-motorcycle/3.webp",
       "https://cdn.dummyjson.com/product-images/motorcycle/scooter-motorcycle/4.webp"
     ],
-    "rating": 2.53
+    "rating": 3.0,
+    "reviews": [
+      {
+        "name": "Luna Perez",
+        "rating": 4,
+        "comment": "Highly recommended!"
+      },
+      {
+        "name": "Samantha Howard",
+        "rating": 2,
+        "comment": "Not as described!"
+      },
+      {
+        "name": "Noah Hernandez",
+        "rating": 3,
+        "comment": "Very dissatisfied!"
+      }
+    ]
   },
   {
     "id": "dj_117",
@@ -2607,7 +5463,24 @@
       "https://cdn.dummyjson.com/product-images/motorcycle/sportbike-motorcycle/3.webp",
       "https://cdn.dummyjson.com/product-images/motorcycle/sportbike-motorcycle/4.webp"
     ],
-    "rating": 3.94
+    "rating": 2.3,
+    "reviews": [
+      {
+        "name": "Mason Parker",
+        "rating": 5,
+        "comment": "Highly impressed!"
+      },
+      {
+        "name": "Daniel Cook",
+        "rating": 1,
+        "comment": "Would not recommend!"
+      },
+      {
+        "name": "Isabella Anderson",
+        "rating": 1,
+        "comment": "Very disappointed!"
+      }
+    ]
   },
   {
     "id": "dj_118",
@@ -2623,7 +5496,24 @@
       "https://cdn.dummyjson.com/product-images/skin-care/attitude-super-leaves-hand-soap/2.webp",
       "https://cdn.dummyjson.com/product-images/skin-care/attitude-super-leaves-hand-soap/3.webp"
     ],
-    "rating": 3.19
+    "rating": 4.7,
+    "reviews": [
+      {
+        "name": "Liam Garcia",
+        "rating": 5,
+        "comment": "Very satisfied!"
+      },
+      {
+        "name": "Victoria McDonald",
+        "rating": 4,
+        "comment": "Great product!"
+      },
+      {
+        "name": "Hannah Robinson",
+        "rating": 5,
+        "comment": "Very happy with my purchase!"
+      }
+    ]
   },
   {
     "id": "dj_119",
@@ -2639,7 +5529,24 @@
       "https://cdn.dummyjson.com/product-images/skin-care/olay-ultra-moisture-shea-butter-body-wash/2.webp",
       "https://cdn.dummyjson.com/product-images/skin-care/olay-ultra-moisture-shea-butter-body-wash/3.webp"
     ],
-    "rating": 4.51
+    "rating": 4.0,
+    "reviews": [
+      {
+        "name": "Abigail Rivera",
+        "rating": 4,
+        "comment": "Very satisfied!"
+      },
+      {
+        "name": "Hunter Gordon",
+        "rating": 4,
+        "comment": "Great value for money!"
+      },
+      {
+        "name": "Zoe Bennett",
+        "rating": 4,
+        "comment": "Very pleased!"
+      }
+    ]
   },
   {
     "id": "dj_120",
@@ -2655,7 +5562,24 @@
       "https://cdn.dummyjson.com/product-images/skin-care/vaseline-men-body-and-face-lotion/2.webp",
       "https://cdn.dummyjson.com/product-images/skin-care/vaseline-men-body-and-face-lotion/3.webp"
     ],
-    "rating": 3.16
+    "rating": 4.3,
+    "reviews": [
+      {
+        "name": "Aria Ferguson",
+        "rating": 4,
+        "comment": "Excellent quality!"
+      },
+      {
+        "name": "Nova Cooper",
+        "rating": 5,
+        "comment": "Very pleased!"
+      },
+      {
+        "name": "Madison Collins",
+        "rating": 4,
+        "comment": "Great product!"
+      }
+    ]
   },
   {
     "id": "dj_137",
@@ -2669,7 +5593,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/sports-accessories/american-football/1.webp"
     ],
-    "rating": 4.91
+    "rating": 4.0,
+    "reviews": [
+      {
+        "name": "Scarlett Bowman",
+        "rating": 4,
+        "comment": "Awesome product!"
+      },
+      {
+        "name": "Tristan Scott",
+        "rating": 4,
+        "comment": "Would buy again!"
+      },
+      {
+        "name": "Eleanor Tyler",
+        "rating": 4,
+        "comment": "Very pleased!"
+      }
+    ]
   },
   {
     "id": "dj_138",
@@ -2683,7 +5624,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/sports-accessories/baseball-ball/1.webp"
     ],
-    "rating": 2.57
+    "rating": 3.3,
+    "reviews": [
+      {
+        "name": "Scarlett Wright",
+        "rating": 5,
+        "comment": "Excellent quality!"
+      },
+      {
+        "name": "Carter Baker",
+        "rating": 4,
+        "comment": "Great value for money!"
+      },
+      {
+        "name": "Aria Flores",
+        "rating": 1,
+        "comment": "Poor quality!"
+      }
+    ]
   },
   {
     "id": "dj_139",
@@ -2699,7 +5657,24 @@
       "https://cdn.dummyjson.com/product-images/sports-accessories/baseball-glove/2.webp",
       "https://cdn.dummyjson.com/product-images/sports-accessories/baseball-glove/3.webp"
     ],
-    "rating": 3.96
+    "rating": 2.7,
+    "reviews": [
+      {
+        "name": "Hazel Gardner",
+        "rating": 1,
+        "comment": "Very unhappy with my purchase!"
+      },
+      {
+        "name": "Scarlett Wright",
+        "rating": 4,
+        "comment": "Great value for money!"
+      },
+      {
+        "name": "Nathan Reed",
+        "rating": 3,
+        "comment": "Would not recommend!"
+      }
+    ]
   },
   {
     "id": "dj_140",
@@ -2713,7 +5688,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/sports-accessories/basketball/1.webp"
     ],
-    "rating": 4.66
+    "rating": 3.7,
+    "reviews": [
+      {
+        "name": "Mia Rodriguez",
+        "rating": 5,
+        "comment": "Highly recommended!"
+      },
+      {
+        "name": "Ella Adams",
+        "rating": 2,
+        "comment": "Would not buy again!"
+      },
+      {
+        "name": "Aubrey Garcia",
+        "rating": 4,
+        "comment": "Very satisfied!"
+      }
+    ]
   },
   {
     "id": "dj_141",
@@ -2727,7 +5719,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/sports-accessories/basketball-rim/1.webp"
     ],
-    "rating": 4.6
+    "rating": 3.3,
+    "reviews": [
+      {
+        "name": "Mason Wright",
+        "rating": 4,
+        "comment": "Fast shipping!"
+      },
+      {
+        "name": "Tristan Scott",
+        "rating": 5,
+        "comment": "Highly recommended!"
+      },
+      {
+        "name": "Max Parker",
+        "rating": 1,
+        "comment": "Would not buy again!"
+      }
+    ]
   },
   {
     "id": "dj_142",
@@ -2741,7 +5750,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/sports-accessories/cricket-ball/1.webp"
     ],
-    "rating": 3.53
+    "rating": 1.3,
+    "reviews": [
+      {
+        "name": "Julian James",
+        "rating": 1,
+        "comment": "Poor quality!"
+      },
+      {
+        "name": "Autumn Gomez",
+        "rating": 1,
+        "comment": "Poor quality!"
+      },
+      {
+        "name": "Liam Gonzalez",
+        "rating": 2,
+        "comment": "Waste of money!"
+      }
+    ]
   },
   {
     "id": "dj_143",
@@ -2755,7 +5781,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/sports-accessories/cricket-bat/1.webp"
     ],
-    "rating": 3.17
+    "rating": 4.3,
+    "reviews": [
+      {
+        "name": "Samantha Howard",
+        "rating": 5,
+        "comment": "Very satisfied!"
+      },
+      {
+        "name": "Ella Adams",
+        "rating": 5,
+        "comment": "Would buy again!"
+      },
+      {
+        "name": "Julian Newton",
+        "rating": 3,
+        "comment": "Poor quality!"
+      }
+    ]
   },
   {
     "id": "dj_144",
@@ -2772,7 +5815,24 @@
       "https://cdn.dummyjson.com/product-images/sports-accessories/cricket-helmet/3.webp",
       "https://cdn.dummyjson.com/product-images/sports-accessories/cricket-helmet/4.webp"
     ],
-    "rating": 4.69
+    "rating": 4.3,
+    "reviews": [
+      {
+        "name": "Henry Turner",
+        "rating": 5,
+        "comment": "Great value for money!"
+      },
+      {
+        "name": "Maya Reed",
+        "rating": 4,
+        "comment": "Excellent quality!"
+      },
+      {
+        "name": "Avery Perez",
+        "rating": 4,
+        "comment": "Very pleased!"
+      }
+    ]
   },
   {
     "id": "dj_145",
@@ -2786,7 +5846,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/sports-accessories/cricket-wicket/1.webp"
     ],
-    "rating": 4.73
+    "rating": 4.3,
+    "reviews": [
+      {
+        "name": "Gabriel Mitchell",
+        "rating": 3,
+        "comment": "Very dissatisfied!"
+      },
+      {
+        "name": "Grayson Coleman",
+        "rating": 5,
+        "comment": "Fast shipping!"
+      },
+      {
+        "name": "Grace Green",
+        "rating": 5,
+        "comment": "Awesome product!"
+      }
+    ]
   },
   {
     "id": "dj_146",
@@ -2800,7 +5877,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/sports-accessories/feather-shuttlecock/1.webp"
     ],
-    "rating": 2.85
+    "rating": 4.3,
+    "reviews": [
+      {
+        "name": "Liam Smith",
+        "rating": 4,
+        "comment": "Awesome product!"
+      },
+      {
+        "name": "Aubrey Wagner",
+        "rating": 5,
+        "comment": "Very happy with my purchase!"
+      },
+      {
+        "name": "Scarlett Bowman",
+        "rating": 4,
+        "comment": "Very pleased!"
+      }
+    ]
   },
   {
     "id": "dj_147",
@@ -2814,7 +5908,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/sports-accessories/football/1.webp"
     ],
-    "rating": 3.28
+    "rating": 3.3,
+    "reviews": [
+      {
+        "name": "Elena Long",
+        "rating": 4,
+        "comment": "Very happy with my purchase!"
+      },
+      {
+        "name": "Leah Gutierrez",
+        "rating": 2,
+        "comment": "Would not recommend!"
+      },
+      {
+        "name": "Nathan Dixon",
+        "rating": 4,
+        "comment": "Very happy with my purchase!"
+      }
+    ]
   },
   {
     "id": "dj_148",
@@ -2828,7 +5939,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/sports-accessories/golf-ball/1.webp"
     ],
-    "rating": 4.3
+    "rating": 3.0,
+    "reviews": [
+      {
+        "name": "Ella Cook",
+        "rating": 2,
+        "comment": "Not worth the price!"
+      },
+      {
+        "name": "Cameron Perez",
+        "rating": 2,
+        "comment": "Waste of money!"
+      },
+      {
+        "name": "Mason Wright",
+        "rating": 5,
+        "comment": "Very satisfied!"
+      }
+    ]
   },
   {
     "id": "dj_149",
@@ -2842,7 +5970,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/sports-accessories/iron-golf/1.webp"
     ],
-    "rating": 4.41
+    "rating": 3.7,
+    "reviews": [
+      {
+        "name": "Julian Newton",
+        "rating": 5,
+        "comment": "Awesome product!"
+      },
+      {
+        "name": "Caleb Perkins",
+        "rating": 1,
+        "comment": "Would not buy again!"
+      },
+      {
+        "name": "Aria Ferguson",
+        "rating": 5,
+        "comment": "Awesome product!"
+      }
+    ]
   },
   {
     "id": "dj_150",
@@ -2856,7 +6001,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/sports-accessories/metal-baseball-bat/1.webp"
     ],
-    "rating": 4.66
+    "rating": 4.7,
+    "reviews": [
+      {
+        "name": "Gabriel Bailey",
+        "rating": 5,
+        "comment": "Very happy with my purchase!"
+      },
+      {
+        "name": "Owen Fisher",
+        "rating": 4,
+        "comment": "Great value for money!"
+      },
+      {
+        "name": "Logan Lawson",
+        "rating": 5,
+        "comment": "Would buy again!"
+      }
+    ]
   },
   {
     "id": "dj_151",
@@ -2870,7 +6032,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/sports-accessories/tennis-ball/1.webp"
     ],
-    "rating": 4.06
+    "rating": 4.3,
+    "reviews": [
+      {
+        "name": "Addison Ward",
+        "rating": 4,
+        "comment": "Would buy again!"
+      },
+      {
+        "name": "Max Russell",
+        "rating": 5,
+        "comment": "Great value for money!"
+      },
+      {
+        "name": "Luna Perez",
+        "rating": 4,
+        "comment": "Very happy with my purchase!"
+      }
+    ]
   },
   {
     "id": "dj_152",
@@ -2884,7 +6063,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/sports-accessories/tennis-racket/1.webp"
     ],
-    "rating": 4.03
+    "rating": 4.3,
+    "reviews": [
+      {
+        "name": "Mason Parker",
+        "rating": 3,
+        "comment": "Poor quality!"
+      },
+      {
+        "name": "Gabriel Bailey",
+        "rating": 5,
+        "comment": "Highly impressed!"
+      },
+      {
+        "name": "Lincoln Kelly",
+        "rating": 5,
+        "comment": "Highly recommended!"
+      }
+    ]
   },
   {
     "id": "dj_153",
@@ -2898,7 +6094,24 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/sports-accessories/volleyball/1.webp"
     ],
-    "rating": 3.84
+    "rating": 3.0,
+    "reviews": [
+      {
+        "name": "Carter Rivera",
+        "rating": 4,
+        "comment": "Great product!"
+      },
+      {
+        "name": "Eli Ward",
+        "rating": 1,
+        "comment": "Would not recommend!"
+      },
+      {
+        "name": "Emma Wilson",
+        "rating": 4,
+        "comment": "Highly recommended!"
+      }
+    ]
   },
   {
     "id": "dj_167",
@@ -2916,7 +6129,24 @@
       "https://cdn.dummyjson.com/product-images/vehicle/300-touring/4.webp",
       "https://cdn.dummyjson.com/product-images/vehicle/300-touring/5.webp"
     ],
-    "rating": 4.05
+    "rating": 3.7,
+    "reviews": [
+      {
+        "name": "Luna Russell",
+        "rating": 4,
+        "comment": "Very pleased!"
+      },
+      {
+        "name": "Harper Garcia",
+        "rating": 5,
+        "comment": "Great product!"
+      },
+      {
+        "name": "Harper Turner",
+        "rating": 2,
+        "comment": "Not as described!"
+      }
+    ]
   },
   {
     "id": "dj_168",
@@ -2934,7 +6164,24 @@
       "https://cdn.dummyjson.com/product-images/vehicle/charger-sxt-rwd/4.webp",
       "https://cdn.dummyjson.com/product-images/vehicle/charger-sxt-rwd/5.webp"
     ],
-    "rating": 2.58
+    "rating": 3.7,
+    "reviews": [
+      {
+        "name": "Lily Torres",
+        "rating": 2,
+        "comment": "Not worth the price!"
+      },
+      {
+        "name": "Hazel Evans",
+        "rating": 5,
+        "comment": "Would buy again!"
+      },
+      {
+        "name": "Owen Fisher",
+        "rating": 4,
+        "comment": "Fast shipping!"
+      }
+    ]
   },
   {
     "id": "dj_169",
@@ -2952,7 +6199,24 @@
       "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/4.webp",
       "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/5.webp"
     ],
-    "rating": 2.65
+    "rating": 4.0,
+    "reviews": [
+      {
+        "name": "Autumn Gomez",
+        "rating": 5,
+        "comment": "Awesome product!"
+      },
+      {
+        "name": "Mateo Bennett",
+        "rating": 2,
+        "comment": "Not as described!"
+      },
+      {
+        "name": "Harper Kelly",
+        "rating": 5,
+        "comment": "Very satisfied!"
+      }
+    ]
   },
   {
     "id": "dj_170",
@@ -2970,7 +6234,24 @@
       "https://cdn.dummyjson.com/product-images/vehicle/durango-sxt-rwd/4.webp",
       "https://cdn.dummyjson.com/product-images/vehicle/durango-sxt-rwd/5.webp"
     ],
-    "rating": 4.07
+    "rating": 3.3,
+    "reviews": [
+      {
+        "name": "David Martinez",
+        "rating": 5,
+        "comment": "Very pleased!"
+      },
+      {
+        "name": "Nathan Dixon",
+        "rating": 4,
+        "comment": "Great value for money!"
+      },
+      {
+        "name": "Mila Hernandez",
+        "rating": 1,
+        "comment": "Very disappointed!"
+      }
+    ]
   },
   {
     "id": "dj_171",
@@ -2988,6 +6269,23 @@
       "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/4.webp",
       "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/5.webp"
     ],
-    "rating": 3.62
+    "rating": 5.0,
+    "reviews": [
+      {
+        "name": "Isaac Lawrence",
+        "rating": 5,
+        "comment": "Fast shipping!"
+      },
+      {
+        "name": "Tyler Davis",
+        "rating": 5,
+        "comment": "Awesome product!"
+      },
+      {
+        "name": "Daniel Cook",
+        "rating": 5,
+        "comment": "Fast shipping!"
+      }
+    ]
   }
 ]
