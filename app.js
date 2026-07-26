@@ -557,6 +557,18 @@ function render() {
         <span style="font-size:12px;color:var(--text-secondary)">30-day returns</span>
       </div>
     </div>
+    <!-- Social bar -->
+    <div style="display:flex;align-items:center;justify-content:center;gap:20px;padding:24px 0;border-bottom:1px solid var(--surface-border);margin-bottom:32px">
+      <span style="font-size:12px;color:var(--text-muted);font-weight:600;text-transform:uppercase;letter-spacing:.1em">Stay connected</span>
+      <div style="display:flex;gap:12px">
+        <a href="#" target="_blank" rel="noopener" style="width:40px;height:40px;border-radius:50%;border:1px solid var(--surface-border);display:flex;align-items:center;justify-content:center;font-size:16px;color:var(--text-secondary);text-decoration:none;transition:all .25s;background:var(--bg)" class="si-link" title="Facebook">f</a>
+        <a href="#" target="_blank" rel="noopener" style="width:40px;height:40px;border-radius:50%;border:1px solid var(--surface-border);display:flex;align-items:center;justify-content:center;font-size:16px;color:var(--text-secondary);text-decoration:none;transition:all .25s;background:var(--bg)" class="si-link" title="X (Twitter)">𝕏</a>
+        <a href="#" target="_blank" rel="noopener" style="width:40px;height:40px;border-radius:50%;border:1px solid var(--surface-border);display:flex;align-items:center;justify-content:center;font-size:16px;color:var(--text-secondary);text-decoration:none;transition:all .25s;background:var(--bg)" class="si-link" title="Instagram">◻</a>
+        <a href="#" target="_blank" rel="noopener" style="width:40px;height:40px;border-radius:50%;border:1px solid var(--surface-border);display:flex;align-items:center;justify-content:center;font-size:16px;color:var(--text-secondary);text-decoration:none;transition:all .25s;background:var(--bg)" class="si-link" title="Messenger">💬</a>
+        <a href="#" target="_blank" rel="noopener" style="width:40px;height:40px;border-radius:50%;border:1px solid var(--surface-border);display:flex;align-items:center;justify-content:center;font-size:16px;color:var(--text-secondary);text-decoration:none;transition:all .25s;background:var(--bg)" class="si-link" title="WhatsApp">📱</a>
+      </div>
+    </div>
+    </div>
     <!-- Links grid -->
     <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1.2fr;gap:40px;margin-bottom:40px">
       <div>
