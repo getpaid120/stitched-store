@@ -773,14 +773,16 @@ function renderStore() {
     g.innerHTML = flt.length === 0
       ? '<div class="empty-state"><span class="empty-state-icon">📦</span><p>${__('noProducts')}</p></div>'
       : flt.map(p => `<div class="pc" onclick="navProduct('${p.id}')">
-          <div class="pc-img"><img src="${p.image}" alt="${p.name}" loading="lazy" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22300%22><rect fill=%22%23f0efe8%22 width=%22300%22 height=%22300%22/><text fill=%22%23a8a7b2%22 font-size=%2240%22 x=%22150%22 y=%22160%22 text-anchor=%22middle%22>📦</text></svg>'"></div>
+          <div class="pc-img">
+            <img src="${p.image}" alt="${p.name}" loading="lazy" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22300%22><rect fill=%22%23f0efe8%22 width=%22300%22 height=%22300%22/><text fill=%22%23a8a7b2%22 font-size=%2240%22 x=%22150%22 y=%22160%22 text-anchor=%22middle%22>📦</text></svg>'">
+            <button class="pc-quick-add" onclick="event.stopPropagation();addCart('${p.id}');this.innerHTML='✓';setTimeout(()=>this.innerHTML='+',800)" title="Add to cart">+</button>
+          </div>
           <div class="pc-info">
             <span class="pc-cat">${p.category}</span>
             <h3 class="pc-name">${p.name}</h3>
-            <p class="pc-desc">${(p.description||'').slice(0,80)}${(p.description||'').length>80?'…':''}</p>
+            <p class="pc-desc">${(p.description||'').slice(0,60)}${(p.description||'').length>60?'…':''}</p>
             <div class="pc-row">
                 <span class="pc-price">$${p.yourPrice.toFixed(2)}</span>
-                <span class="pc-old" style="display:none">$${p.supplierPrice.toFixed(2)}</span>
                 ${p.rating ? `<span class="pc-rating">★ ${p.rating}</span>` : ''}
             </div>
           </div>
