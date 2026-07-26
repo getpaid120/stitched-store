@@ -4,6 +4,9 @@ html{scroll-behavior:smooth}
 body{font-family:var(--fb);background:var(--bg);color:var(--text);font-size:14px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;min-height:100dvh}
 h1,h2,h3,h4,h5,h6{font-family:var(--fd);font-weight:600;letter-spacing:-0.02em}
 ::selection{background:var(--accent);color:#fff}
+.lang-sel{background:#fff;border:1px solid var(--surface-border);border-radius:var(--radius);padding:6px 10px;font-family:var(--fb);font-size:11px;color:var(--text-secondary);cursor:pointer;outline:none;transition:border-color .2s;max-width:80px}
+.lang-sel:hover{border-color:var(--accent);color:var(--text)}
+.lang-sel option{background:#fff;color:var(--text)}
 #app{min-height:100dvh;display:flex;flex-direction:column}
 
 /* Canvas particle background — light mode */
