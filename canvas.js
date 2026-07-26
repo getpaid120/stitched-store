@@ -35,7 +35,7 @@
       const s = this.size + Math.sin(this.pulse) * 0.5;
       const o = this.opacity + Math.sin(this.pulse) * 0.1;
       ctx.globalAlpha = Math.max(0, Math.min(1, o));
-      ctx.fillStyle = this.shape === 'circle' ? '#6c5ce7' : '#00cec9';
+      ctx.fillStyle = this.shape === 'circle' ? '#6c5ce7' : '#e17055';
       
       if (this.shape === 'circle') {
         ctx.beginPath();
@@ -55,7 +55,7 @@
   function init() {
     resize();
     particles = [];
-    const count = Math.min(80, Math.floor((w * h) / 15000));
+    const count = Math.min(50, Math.floor((w * h) / 18000));
     for (let i = 0; i < count; i++) particles.push(new Particle());
   }
   
@@ -64,7 +64,7 @@
     particles.forEach(p => { p.update(); p.draw(); });
     
     // Draw faint connections
-    ctx.strokeStyle = 'rgba(108,92,231,0.04)';
+    ctx.strokeStyle = 'rgba(108,92,231,0.08)';
     ctx.lineWidth = 0.5;
     for (let i = 0; i < particles.length; i++) {
       for (let j = i + 1; j < particles.length; j++) {

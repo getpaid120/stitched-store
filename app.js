@@ -151,7 +151,7 @@ function renderStore() {
     g.innerHTML = flt.length === 0
       ? '<div class="empty-state"><span class="empty-state-icon">📦</span><p>No products</p></div>'
       : flt.map(p => `<div class="pc" onclick="navProduct('${p.id}')">
-          <div class="pc-img"><img src="${p.image}" alt="${p.name}" loading="lazy" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22300%22><rect fill=%22%231a1a2e%22 width=%22300%22 height=%22300%22/><text fill=%22%238a88a8%22 font-size=%2240%22 x=%22150%22 y=%22160%22 text-anchor=%22middle%22>📦</text></svg>'"></div>
+          <div class="pc-img"><img src="${p.image}" alt="${p.name}" loading="lazy" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22300%22><rect fill=%22%23f0efe8%22 width=%22300%22 height=%22300%22/><text fill=%22%23a8a7b2%22 font-size=%2240%22 x=%22150%22 y=%22160%22 text-anchor=%22middle%22>📦</text></svg>'"></div>
           <div class="pc-info">
             <span class="pc-cat">${p.category}</span>
             <h3 class="pc-name">${p.name}</h3>
@@ -167,12 +167,12 @@ function renderStore() {
 
   page.innerHTML = `
     <section class="hero">
-      <div class="hero-badge"><span class="hero-badge-dot"></span> Dropshipping Store</div>
-      <h1>Real products.<br>Your prices.</h1>
-      <p class="hero-sub">Browse authentic products with live images. Set your markup, customers order, you fulfill.</p>
+      <div class="hero-badge"><span class="hero-badge-dot"></span> Curated Collection</div>
+      <h1>Products worth<br>sharing.</h1>
+      <p class="hero-sub">A curated marketplace of authentic goods. Browse, add to cart, and manage everything from one dashboard.</p>
       <div class="hero-actions">
         <button class="btn-primary" onclick="nav('admin')">Dashboard</button>
-        <button class="btn-secondary" onclick="document.querySelector('.sec')?.scrollIntoView({behavior:'smooth'})">Browse ↓</button>
+        <button class="btn-secondary" onclick="document.querySelector('.sec')?.scrollIntoView({behavior:'smooth'})">Explore →</button>
       </div>
       <div class="hero-stats">
         <div class="hero-stat"><div class="hero-stat-num">${products.length}</div><div class="hero-stat-label">Products</div></div>
@@ -183,7 +183,7 @@ function renderStore() {
       <div class="sec-h">
         <div>
           <div class="sec-label">Products</div>
-          <h2 style="font-family:var(--fd);font-size:clamp(24px,3.5vw,36px);font-weight:700;letter-spacing:-0.03em">Collection</h2>
+          <h2 style="font-family:var(--fd);font-size:clamp(24px,3.5vw,36px);font-weight:700;letter-spacing:-0.03em">Featured Products</h2>
         </div>
         <div class="sec-ctrl">
           <div class="sw"><svg class="si" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
