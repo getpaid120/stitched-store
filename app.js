@@ -1,6 +1,6 @@
-// Stitched v2 — Real product storefront with images
+// Stitched v3 — Full storefront with auth, categories, info pages
 // Architecture: loads products from products.json (fetched at run time),
-// falls back to embedded data. Cart/orders in localStorage.
+// falls back to embedded data. Cart/orders/users in localStorage.
 
 const DATA_URL = 'products.json';
 
@@ -10,6 +10,27 @@ let orders = [];
 let cart = [];
 let currentPage = 'store';
 let lastSync = null;
+let currentUser = null;
+
+// Simple user auth helpers (localStorage-based)
+function getUsers() { return lsj('users', []); }
+function saveUsers(u) { lssj('users', u); }
+function getUser(email) { return getUsers().find(u => u.email === email); }
+function isLoggedIn() { const u = lsj('currentUser', null); currentUser = u; return !!u; }
+function login(email, password) {
+  const u = getUser(email);
+  if (!u || u.password !== password) return false;
+  currentUser = u; lssj('currentUser', { email: u.email, name: u.name });
+  return true;
+}
+function signup(name, email, password) {
+  if (getUser(email)) return false;
+  const users = getUsers();
+  users.push({ name, email, password, created: new Date().toISOString() });
+  saveUsers(users);
+  return login(email, password);
+}
+function logout() { currentUser = null; localStorage.removeItem('st_currentUser'); }
 
 function ls(key) { try { return localStorage.getItem('st_'+key); } catch { return null; } }
 function lss(key, v) { try { localStorage.setItem('st_'+key, v); } catch {} }
@@ -103,21 +124,29 @@ function render() {
   app.innerHTML = '';
 
   // Topbar
-  const h = document.createElement('header');
-  h.className = 'topbar';
-  const cc = cart.reduce((s,i) => s+i.qty, 0);
-  h.innerHTML = `<div class="topbar-inner">
-    <button class="logo" onclick="nav('store')"><span class="logo-icon">🧵</span><span>Stitched<span class="logo-dot"></span></span></button>
-    <nav class="nav">
-      <button class="nav-btn ${currentPage==='store'?'active':''}" onclick="nav('store')">Store</button>
-      <button class="nav-btn ${currentPage==='admin'?'active':''}" onclick="nav('admin')">Dashboard</button>
-    </nav>
-    <button class="cart-btn" onclick="cartOpen()">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-      Cart
-      <span class="cart-badge ${cc===0?'hidden':''}" id="cb">${cc}</span>
-    </button>
-  </div>`;
+    const h = document.createElement('header');
+    h.className = 'topbar';
+    const cc = cart.reduce((s,i) => s+i.qty, 0);
+    const loggedIn = isLoggedIn();
+    h.innerHTML = `<div class="topbar-inner">
+      <button class="logo" onclick="nav('store')"><span class="logo-icon">🧵</span><span>Stitched<span class="logo-dot"></span></span></button>
+      <nav class="nav">
+        <button class="nav-btn ${currentPage==='store'?'active':''}" onclick="nav('store')">Store</button>
+        <button class="nav-btn ${currentPage==='admin'?'active':''}" onclick="nav('admin')">Dashboard</button>
+      </nav>
+      <div style="display:flex;align-items:center;gap:8px">
+        ${loggedIn
+          ? `<button class="nav-btn" style="font-size:12px;display:flex;align-items:center;gap:4px" onclick="nav('account')">👤 ${currentUser?.name||'Account'}</button>
+             <button class="nav-btn" style="font-size:12px;color:var(--text-muted)" onclick="doLogout()">Logout</button>`
+          : `<button class="nav-btn" style="font-size:12px" onclick="nav('signin')">Sign In</button>
+             <button class="btn-primary" style="padding:8px 18px;font-size:12px" onclick="nav('signup')">Sign Up</button>`}
+        <button class="cart-btn" onclick="cartOpen()">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          Cart
+          <span class="cart-badge ${cc===0?'hidden':''}" id="cb">${cc}</span>
+        </button>
+      </div>
+    </div>`;
 
   // Page
   const pg = document.createElement('div');
@@ -131,6 +160,9 @@ function render() {
   else if (currentPage==='terms') pg.appendChild(renderTerms());
   else if (currentPage==='privacy') pg.appendChild(renderPrivacy());
   else if (currentPage==='shipping') pg.appendChild(renderShipping());
+  else if (currentPage==='signin') pg.appendChild(renderSignIn());
+  else if (currentPage==='signup') pg.appendChild(renderSignUp());
+  else if (currentPage==='account') pg.appendChild(renderAccount());
 
   // Footer
   const ft = document.createElement('footer');
@@ -176,6 +208,90 @@ function render() {
 }
 
 function nav(p) { currentPage=p; render(); }
+
+function doLogout() { logout(); notify('Logged out'); render(); }
+
+// ─── Auth Pages ──────────────────────────────────────────────────────
+function renderSignIn() {
+  const p = document.createElement('div'); p.className = 'page';
+  p.style.cssText = 'display:flex;align-items:center;justify-content:center;min-height:80vh;padding:24px';
+  p.innerHTML = `<div style="background:#fff;border:1px solid var(--surface-border);border-radius:var(--radius-xl);padding:40px;max-width:400px;width:100%;box-shadow:var(--shadow-lg)">
+    <div style="text-align:center;margin-bottom:24px">
+      <span style="font-size:32px">🧵</span>
+      <h2 style="font-family:var(--fd);font-size:22px;font-weight:700;margin:8px 0">Welcome back</h2>
+      <p style="color:var(--text-secondary);font-size:13px">Sign in to your Stitched account</p>
+    </div>
+    <div class="ff"><label>Email</label><input type="email" id="siEmail" placeholder="you@example.com"></div>
+    <div class="ff"><label>Password</label><input type="password" id="siPass" placeholder="••••••••"></div>
+    <button class="btn-primary" style="width:100%;margin-top:16px" onclick="doSignIn()">Sign In</button>
+    <p style="text-align:center;font-size:12px;color:var(--text-muted);margin-top:16px">Don't have an account? <button class="nav-btn" style="padding:0;font-size:12px;color:var(--accent);display:inline" onclick="nav('signup')">Sign up</button></p>
+  </div>`;
+  return p;
+}
+
+function renderSignUp() {
+  const p = document.createElement('div'); p.className = 'page';
+  p.style.cssText = 'display:flex;align-items:center;justify-content:center;min-height:80vh;padding:24px';
+  p.innerHTML = `<div style="background:#fff;border:1px solid var(--surface-border);border-radius:var(--radius-xl);padding:40px;max-width:400px;width:100%;box-shadow:var(--shadow-lg)">
+    <div style="text-align:center;margin-bottom:24px">
+      <span style="font-size:32px">🧵</span>
+      <h2 style="font-family:var(--fd);font-size:22px;font-weight:700;margin:8px 0">Create account</h2>
+      <p style="color:var(--text-secondary);font-size:13px">Join Stitched for faster checkout</p>
+    </div>
+    <div class="ff"><label>Full Name</label><input type="text" id="suName" placeholder="Your name"></div>
+    <div class="ff"><label>Email</label><input type="email" id="suEmail" placeholder="you@example.com"></div>
+    <div class="ff"><label>Password</label><input type="password" id="suPass" placeholder="At least 6 characters"></div>
+    <button class="btn-primary" style="width:100%;margin-top:16px" onclick="doSignUp()">Create Account</button>
+    <p style="text-align:center;font-size:12px;color:var(--text-muted);margin-top:16px">Already have an account? <button class="nav-btn" style="padding:0;font-size:12px;color:var(--accent);display:inline" onclick="nav('signin')">Sign in</button></p>
+  </div>`;
+  return p;
+}
+
+function renderAccount() {
+  if (!isLoggedIn()) { currentPage='signin'; return renderSignIn(); }
+  const userOrders = orders.filter(o => o.customerEmail === currentUser.email);
+  const p = document.createElement('div');
+  p.style.cssText = 'padding:80px 24px;flex:1;max-width:800px;margin:0 auto;width:100%';
+  p.innerHTML = `
+    <div style="margin-bottom:32px">
+      <h1 style="font-family:var(--fd);font-size:clamp(24px,3vw,32px);font-weight:700;letter-spacing:-0.02em">Hi, ${currentUser.name} 👋</h1>
+      <p style="color:var(--text-secondary);font-size:13px;margin-top:4px">${currentUser.email}</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:32px">
+      <div class="sc"><div class="scl">Orders</div><div class="scv">${userOrders.length}</div></div>
+      <div class="sc"><div class="scl">Total Spent</div><div class="scv">$${userOrders.reduce((s,o) => s+o.total, 0).toFixed(2)}</div></div>
+      <div class="sc"><div class="scl">Member Since</div><div class="scv" style="font-size:16px">${new Date(currentUser.created||Date.now()).toLocaleDateString()}</div></div>
+    </div>
+    <h3 style="font-family:var(--fd);font-size:16px;font-weight:600;margin-bottom:12px">Your Orders</h3>
+    ${userOrders.length === 0
+      ? '<div class="empty-state" style="background:#fff;border:1px solid var(--surface-border);border-radius:var(--radius-xl);padding:40px"><span class="empty-state-icon">📋</span><p>No orders yet</p><button class="btn-primary" style="margin-top:12px" onclick="nav(\'store\')">Start Shopping</button></div>'
+      : `<div class="ol">${userOrders.map(o => `
+        <div class="oc ${o.status}">
+          <div class="oh"><div><span class="oi">#${o.id.slice(0,8)}</span> <span class="os ${o.status}">${o.status}</span></div><span class="odate">${new Date(o.createdAt).toLocaleDateString()}</span></div>
+          <div style="font-size:12px;color:var(--text-secondary);margin:6px 0">${o.items.map(i => `<div class="sum-item"><span>${i.name} × ${i.qty}</span><span>$${(i.price*i.qty).toFixed(2)}</span></div>`).join('')}</div>
+          <div class="of"><span class="ot">$${o.total.toFixed(2)}</span></div>
+        </div>`).join('')}</div>`}
+  `;
+  return p;
+}
+
+window.doSignIn = function() {
+  const e = document.getElementById('siEmail')?.value;
+  const p = document.getElementById('siPass')?.value;
+  if (!e || !p) return notify('Fill in all fields');
+  if (login(e, p)) { notify('Signed in ✓'); render(); }
+  else notify('Invalid email or password');
+};
+
+window.doSignUp = function() {
+  const n = document.getElementById('suName')?.value;
+  const e = document.getElementById('suEmail')?.value;
+  const p = document.getElementById('suPass')?.value;
+  if (!n || !e || !p) return notify('Fill in all fields');
+  if (p.length < 6) return notify('Password must be at least 6 characters');
+  if (signup(n, e, p)) { notify('Account created ✓'); render(); }
+  else notify('An account with this email already exists');
+};
 
 // ─── Info Pages ──────────────────────────────────────────────────────
 function renderAbout() {
@@ -462,8 +578,8 @@ function renderCheckout() {
       <div class="co-form">
         <h2>Checkout</h2>
         <div class="sb"><h4>Shipping</h4>
-          <div class="ff"><label>Full Name</label><input type="text" id="cn"></div>
-          <div class="ff"><label>Email</label><input type="email" id="ce"></div>
+          <div class="ff"><label>Full Name</label><input type="text" id="cn" value="${isLoggedIn()?currentUser.name:''}"></div>
+          <div class="ff"><label>Email</label><input type="email" id="ce" value="${isLoggedIn()?currentUser.email:''}"></div>
           <div class="ff"><label>Address</label><textarea id="ca" rows="3"></textarea></div>
         </div>
         <div class="sb"><h4>Payment</h4><p class="pn">🔒 Test mode — no real charges</p>
