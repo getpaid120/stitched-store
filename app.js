@@ -9,7 +9,7 @@ async function loadJSON(url) {
 const DEFAULT_PRODUCTS = [
   { id:'p1',name:'Wireless Earbuds Pro',supplierPrice:12.50,yourPrice:29.99,description:'Premium ANC earbuds with 24hr battery life. Crystal-clear calls.',category:'Electronics',supplier:'AliExpress',emoji:'🎧',gradient:'#1a1a3e,#0d0d1e' },
   { id:'p2',name:'LED Desk Lamp',supplierPrice:8.75,yourPrice:24.99,description:'Touch control lamp with 3 brightness levels and USB charging port.',category:'Home',supplier:'AliExpress',emoji:'💡',gradient:'#1a3a1a,#0d1e0d' },
-  { id:'p3',name':'Organic Cotton Hoodie',supplierPrice:15.00,yourPrice:39.99,description:'Sustainable fleece hoodie — soft, warm, and ethically made.',category:'Clothing',supplier:'Printful',emoji:'🧥',gradient:'#3a2a1a,#1e150d' },
+  { id:'p3',name:'Organic Cotton Hoodie',supplierPrice:15.00,yourPrice:39.99,description:'Sustainable fleece hoodie — soft, warm, and ethically made.',category:'Clothing',supplier:'Printful',emoji:'🧥',gradient:'#3a2a1a,#1e150d' },
   { id:'p4',name:'Smart Water Bottle',supplierPrice:6.30,yourPrice:19.99,description:'Hydration tracker with LED reminder. BPA-free 500ml.',category:'Accessories',supplier:'AliExpress',emoji:'💧',gradient:'#1a2a3e,#0d1520' },
   { id:'p5',name:'Bluetooth Speaker',supplierPrice:10.00,yourPrice:34.99,description:'Waterproof portable speaker with rich 360° sound. 12hr playtime.',category:'Electronics',supplier:'AliExpress',emoji:'🔊',gradient:'#2a1a3e,#150d20' },
   { id:'p6',name:'Bamboo Phone Stand',supplierPrice:2.50,yourPrice:9.99,description:'Eco-friendly bamboo stand with adjustable viewing angle.',category:'Accessories',supplier:'AliExpress',emoji:'🎋',gradient:'#2a3a1a,#15200d' },
