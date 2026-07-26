@@ -1,320 +1,307 @@
-// Stitched — Dropshipping Storefront (Static / GitHub Pages)
-// All data persisted in localStorage
+// Stitched v2 — Dropshipping Storefront with 3D aesthetic
+const DATA_URL = 'products.json';
+
+async function loadJSON(url) {
+  try { const r = await fetch(url); return r.ok ? await r.json() : null; }
+  catch { return null; }
+}
 
 const DEFAULT_PRODUCTS = [
-  { id:'p1', name:'Wireless Earbuds Pro', supplierPrice:12.50, yourPrice:29.99, description:'Premium sound quality with noise cancellation', category:'Electronics', supplier:'AliExpress' },
-  { id:'p2', name:'Minimalist LED Desk Lamp', supplierPrice:8.75, yourPrice:24.99, description:'Touch control, 3 brightness levels, USB charging', category:'Home', supplier:'AliExpress' },
-  { id:'p3', name:'Organic Cotton Hoodie', supplierPrice:15.00, yourPrice:39.99, description:'Sustainable, soft-touch fleece, unisex fit', category:'Clothing', supplier:'Printful' },
-  { id:'p4', name:'Smart Water Bottle', supplierPrice:6.30, yourPrice:19.99, description:'Tracks hydration, LED reminder, 500ml BPA-free', category:'Accessories', supplier:'AliExpress' },
-  { id:'p5', name:'Portable Bluetooth Speaker', supplierPrice:10.00, yourPrice:34.99, description:'Waterproof, 12hr battery, rich bass', category:'Electronics', supplier:'AliExpress' },
-  { id:'p6', name:'Bamboo Phone Stand', supplierPrice:2.50, yourPrice:9.99, description:'Eco-friendly bamboo, adjustable viewing angle', category:'Accessories', supplier:'AliExpress' },
+  { id:'p1',name:'Wireless Earbuds Pro',supplierPrice:12.50,yourPrice:29.99,description:'Premium ANC earbuds with 24hr battery life. Crystal-clear calls.',category:'Electronics',supplier:'AliExpress',emoji:'🎧',gradient:'#1a1a3e,#0d0d1e' },
+  { id:'p2',name:'LED Desk Lamp',supplierPrice:8.75,yourPrice:24.99,description:'Touch control lamp with 3 brightness levels and USB charging port.',category:'Home',supplier:'AliExpress',emoji:'💡',gradient:'#1a3a1a,#0d1e0d' },
+  { id:'p3',name':'Organic Cotton Hoodie',supplierPrice:15.00,yourPrice:39.99,description:'Sustainable fleece hoodie — soft, warm, and ethically made.',category:'Clothing',supplier:'Printful',emoji:'🧥',gradient:'#3a2a1a,#1e150d' },
+  { id:'p4',name:'Smart Water Bottle',supplierPrice:6.30,yourPrice:19.99,description:'Hydration tracker with LED reminder. BPA-free 500ml.',category:'Accessories',supplier:'AliExpress',emoji:'💧',gradient:'#1a2a3e,#0d1520' },
+  { id:'p5',name:'Bluetooth Speaker',supplierPrice:10.00,yourPrice:34.99,description:'Waterproof portable speaker with rich 360° sound. 12hr playtime.',category:'Electronics',supplier:'AliExpress',emoji:'🔊',gradient:'#2a1a3e,#150d20' },
+  { id:'p6',name:'Bamboo Phone Stand',supplierPrice:2.50,yourPrice:9.99,description:'Eco-friendly bamboo stand with adjustable viewing angle.',category:'Accessories',supplier:'AliExpress',emoji:'🎋',gradient:'#2a3a1a,#15200d' },
 ];
-
-function loadData(key, fallback) {
-  try { const d = localStorage.getItem('stitched_'+key); return d ? JSON.parse(d) : fallback; }
-  catch { return fallback; }
-}
-function saveData(key, data) { localStorage.setItem('stitched_'+key, JSON.stringify(data)); }
-
-let products = loadData('products', DEFAULT_PRODUCTS);
-let orders = loadData('orders', []);
+let products = [];
+let orders = [];
 let cart = [];
 let currentPage = 'store';
+let lastSync = null;
 
-function saveProducts() { saveData('products', products); }
-function saveOrders() { saveData('orders', orders); }
+function loadLocal(key, fallback) {
+  try { const d = localStorage.getItem('st2_'+key); return d ? JSON.parse(d) : fallback; }
+  catch { return fallback; }
+}
+function saveLocal(key, data) { localStorage.setItem('st2_'+key, JSON.stringify(data)); }
 
 function notify(msg) {
   let el = document.querySelector('.toast');
   if (!el) { el = document.createElement('div'); el.className='toast'; document.body.appendChild(el); }
-  el.textContent = msg;
-  el.classList.add('show');
+  el.textContent = msg; el.classList.add('show');
   setTimeout(() => el.classList.remove('show'), 3000);
+}
+
+async function init() {
+  products = loadLocal('products', DEFAULT_PRODUCTS);
+  orders = loadLocal('orders', []);
+  cart = loadLocal('cart', []);
+  lastSync = loadLocal('lastSync', null);
+  
+  // Try to load from remote products.json (GitHub Actions pushes this)
+  const remote = await loadJSON(DATA_URL);
+  if (remote && Array.isArray(remote) && remote.length > 0) {
+    products = remote;
+    saveLocal('products', products);
+    lastSync = new Date().toISOString();
+    saveLocal('lastSync', lastSync);
+  }
+  
+  render();
 }
 
 function render() {
   const app = document.getElementById('app');
   app.innerHTML = '';
   app.appendChild(renderTopbar());
-  app.appendChild(renderPage());
+  
+  const page = document.createElement('div');
+  page.className = 'page';
+  
+  if (currentPage === 'store') page.appendChild(renderStore());
+  else if (currentPage === 'admin') page.appendChild(renderDashboard());
+  else if (currentPage === 'checkout') page.appendChild(renderCheckout());
+  else if (currentPage === 'confirmed') page.appendChild(renderConfirmed());
+  
+  app.appendChild(page);
+  
+  // Update cart badge
+  const badge = document.getElementById('cartBadge');
+  if (badge) {
+    const c = cart.reduce((s,i) => s + i.qty, 0);
+    badge.textContent = c;
+    badge.classList.toggle('hidden', c === 0);
+  }
 }
 
 function renderTopbar() {
-  const header = document.createElement('header');
-  header.className = 'topbar';
-  header.innerHTML = `<div class="topbar-inner">
-    <button class="logo-btn" onclick="navigate('store')">
+  const h = document.createElement('header');
+  h.className = 'topbar';
+  h.innerHTML = `<div class="topbar-inner">
+    <button class="logo" onclick="navigate('store')">
       <span class="logo-icon">🧵</span>
-      <span class="logo-text">Stitched</span>
+      <span>Stitched<span class="logo-dot"></span></span>
     </button>
-    <nav class="top-nav">
+    <nav class="nav">
       <button class="nav-btn ${currentPage==='store'?'active':''}" onclick="navigate('store')">Store</button>
       <button class="nav-btn ${currentPage==='admin'?'active':''}" onclick="navigate('admin')">Dashboard</button>
     </nav>
     <button class="cart-btn" onclick="toggleCart()">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-      <span class="cart-badge ${cart.length===0?'hidden':''}" id="cartBadge">${cart.reduce((s,i)=>s+i.qty,0)}</span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+      Cart
+      <span class="cart-badge ${cart.reduce((s,i)=>s+i.qty,0)===0?'hidden':''}" id="cartBadge">${cart.reduce((s,i)=>s+i.qty,0)}</span>
     </button>
   </div>`;
-  return header;
-}
-
-function renderPage() {
-  if (currentPage === 'store') return renderStore();
-  if (currentPage === 'admin') return renderAdmin();
-  if (currentPage === 'checkout') return renderCheckout();
-  if (currentPage === 'confirmed') return renderConfirmed();
-  return renderStore();
+  return h;
 }
 
 // --- STORE PAGE ---
 function renderStore() {
-  const container = document.createElement('div');
-  container.className = 'store-page';
+  const page = document.createElement('div');
+  let search = '', category = 'all';
+  const cats = ['all', ...new Set(products.map(p => p.category))];
   
-  let search = '';
-  let category = 'all';
-  const categories = ['all', ...new Set(products.map(p => p.category))];
-  
-  function renderProducts() {
+  function renderGrid() {
+    const grid = page.querySelector('.product-grid');
+    if (!grid) return;
     const filtered = products.filter(p => {
       if (category !== 'all' && p.category !== category) return false;
       if (search && !p.name.toLowerCase().includes(search.toLowerCase())) return false;
       return true;
     });
     
-    const grid = container.querySelector('.product-grid') || document.createElement('div');
-    grid.className = 'product-grid';
-    
     if (filtered.length === 0) {
-      grid.innerHTML = `<div class="empty-state"><span class="empty-state-icon">📦</span><p>No products found. Add some in the Dashboard!</p></div>`;
+      grid.innerHTML = `<div class="empty-state"><span class="empty-state-icon">📦</span><p>No products found</p></div>`;
     } else {
       grid.innerHTML = filtered.map(p => {
-        const gradient = p.category === 'Electronics' ? '#1a3a5c,#0d2137' :
-                         p.category === 'Home' ? '#2d4a2d,#1a2e1a' :
-                         p.category === 'Clothing' ? '#5c3a1a,#37200e' : '#3a2d5c,#1f1737';
-        const emoji = { Electronics:'📱', Home:'🏠', Clothing:'👕', Accessories:'⌚' }[p.category] || '📦';
+        const emoji = p.emoji || '📦';
+        const grad = p.gradient || '#1a1a2e,#0a0a14';
         return `<div class="product-card">
-          <div class="product-image" style="background:linear-gradient(135deg,${gradient})">
+          <div class="product-image" style="background:linear-gradient(135deg,${grad})">
             <span class="product-emoji">${emoji}</span>
-            <span class="supplier-tag">${p.supplier}</span>
+            <span class="product-supplier">${p.supplier}</span>
           </div>
           <div class="product-info">
-            <span class="product-category">${p.category}</span>
+            <div class="product-category-row">
+              <span class="product-category">${p.category}</span>
+            </div>
             <h3 class="product-name">${p.name}</h3>
             <p class="product-desc">${p.description}</p>
-            <div class="price-row">
+            <div class="product-price-row">
               <span class="product-price">$${p.yourPrice.toFixed(2)}</span>
-              <span class="supplier-price">Supplier: $${p.supplierPrice.toFixed(2)}</span>
+              <span class="product-supplier-price">$${p.supplierPrice.toFixed(2)}</span>
             </div>
-            <button class="add-cart-btn" onclick="addToCart('${p.id}')">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            <button class="add-cart-btn btn-primary" style="width:100%;margin-top:12px;padding:12px;font-size:13px" onclick="event.stopPropagation();addToCart('${p.id}')">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
               Add to Cart
             </button>
           </div>
         </div>`;
       }).join('');
     }
-    
-    const existing = container.querySelector('.product-grid');
-    if (existing) existing.replaceWith(grid);
-    else container.appendChild(grid);
   }
   
-  container.innerHTML = `
-    <div class="store-header">
-      <h1 class="store-title">Curated Goods</h1>
-      <p class="store-subtitle">Hand-picked products at honest prices</p>
-      <div class="store-controls">
-        <div class="search-wrap">
-          <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-          <input class="search-input" type="text" placeholder="Search products..." id="searchInput">
+  page.innerHTML = `
+    <section class="hero">
+      <div class="hero-badge"><span class="hero-badge-dot"></span> D2C Marketplace</div>
+      <h1>Curated products.<br>Your markup.</h1>
+      <p class="hero-sub">Add any product with your price — when customers buy, you fulfill directly with the supplier.</p>
+      <div class="hero-actions">
+        <button class="btn-primary" onclick="navigate('admin')">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          Add Products
+        </button>
+        <button class="btn-secondary" onclick="document.querySelector('.products-section')?.scrollIntoView({behavior:'smooth'})">
+          Browse Store
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="hero-stat-num">${products.length}</div><div class="hero-stat-label">Products</div></div>
+        <div class="hero-stat"><div class="hero-stat-num">${orders.length}</div><div class="hero-stat-label">Orders</div></div>
+        <div class="hero-stat"><div class="hero-stat-num">${lastSync ? new Date(lastSync).toLocaleDateString() : 'Live'}</div><div class="hero-stat-label">Last Sync</div></div>
+      </div>
+    </section>
+    <section class="products-section">
+      <div class="section-header">
+        <div class="section-header-left">
+          <div class="section-label">Products</div>
+          <h2 class="section-title">Browse Collection</h2>
         </div>
-        <div class="category-filters" id="catFilters">
-          ${categories.map(c => `<button class="cat-btn ${c===category?'active':''}" data-cat="${c}">${c==='all'?'All':c}</button>`).join('')}
+        <div class="section-controls" id="sectionControls">
+          <div class="search-wrap">
+            <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            <input class="search-input" type="text" placeholder="Search products..." id="storeSearch">
+          </div>
+          <div class="cat-filters" id="catFilters">
+            ${cats.map(c => `<button class="cat-btn ${c===category?'active':''}" data-cat="${c}">${c==='all'?'All':c}</button>`).join('')}
+          </div>
         </div>
       </div>
-    </div>
-    <div class="product-grid"></div>
+      <div class="product-grid"></div>
+    </section>
   `;
   
-  const grid = container.querySelector('.product-grid');
-  const filtered = products.filter(p => {
-    if (category !== 'all' && p.category !== category) return false;
-    if (search && !p.name.toLowerCase().includes(search.toLowerCase())) return false;
-    return true;
-  });
+  renderGrid();
   
-  if (filtered.length === 0) {
-    grid.innerHTML = `<div class="empty-state"><span class="empty-state-icon">📦</span><p>No products found. Add some in the Dashboard!</p></div>`;
-  } else {
-    grid.innerHTML = filtered.map(p => {
-      const gradient = p.category === 'Electronics' ? '#1a3a5c,#0d2137' :
-                       p.category === 'Home' ? '#2d4a2d,#1a2e1a' :
-                       p.category === 'Clothing' ? '#5c3a1a,#37200e' : '#3a2d5c,#1f1737';
-      const emoji = { Electronics:'📱', Home:'🏠', Clothing:'👕', Accessories:'⌚' }[p.category] || '📦';
-      return `<div class="product-card">
-        <div class="product-image" style="background:linear-gradient(135deg,${gradient})">
-          <span class="product-emoji">${emoji}</span>
-          <span class="supplier-tag">${p.supplier}</span>
-        </div>
-        <div class="product-info">
-          <span class="product-category">${p.category}</span>
-          <h3 class="product-name">${p.name}</h3>
-          <p class="product-desc">${p.description}</p>
-          <div class="price-row">
-            <span class="product-price">$${p.yourPrice.toFixed(2)}</span>
-            <span class="supplier-price">Supplier: $${p.supplierPrice.toFixed(2)}</span>
-          </div>
-          <button class="add-cart-btn" onclick="addToCart('${p.id}')">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
-            Add to Cart
-          </button>
-        </div>
-      </div>`;
-    }).join('');
-  }
-  
-  // Wire up search
   setTimeout(() => {
-    const inp = container.querySelector('#searchInput');
-    if (inp) inp.addEventListener('input', function() {
-      search = this.value;
-      renderProducts();
-    });
-    
-    container.querySelectorAll('#catFilters .cat-btn').forEach(btn => {
-      btn.addEventListener('click', function() {
-        container.querySelectorAll('#catFilters .cat-btn').forEach(b => b.classList.remove('active'));
+    const inp = page.querySelector('#storeSearch');
+    if (inp) inp.addEventListener('input', function() { search = this.value; renderGrid(); });
+    page.querySelectorAll('#catFilters .cat-btn').forEach(b => {
+      b.addEventListener('click', function() {
+        page.querySelectorAll('#catFilters .cat-btn').forEach(x => x.classList.remove('active'));
         this.classList.add('active');
         category = this.dataset.cat;
-        renderProducts();
+        renderGrid();
       });
     });
   }, 0);
   
-  return container;
+  return page;
 }
 
-// --- ADMIN DASHBOARD ---
-function renderAdmin() {
-  const container = document.createElement('div');
-  container.className = 'admin-page';
-  
+// --- DASHBOARD ---
+function renderDashboard() {
+  const page = document.createElement('div');
+  page.className = 'dashboard';
   let tab = 'orders';
+  const pendingCount = orders.filter(o => o.status === 'pending').length;
   const totalRev = orders.reduce((s,o) => s + o.total, 0);
-  const pendingOrders = orders.filter(o => o.status === 'pending');
   
-  function renderOrders() {
-    const section = container.querySelector('.orders-section');
-    if (!section) return;
-    section.innerHTML = orders.length === 0
-      ? `<div class="empty-state"><span class="empty-state-icon">📋</span><p>No orders yet. Share your store link!</p></div>`
-      : orders.map(o => `
-        <div class="order-card ${o.status}">
-          <div class="order-header-row">
-            <div class="order-meta">
-              <span class="order-id">#${o.id.slice(0,8)}</span>
-              <span class="order-status-badge ${o.status}">${o.status}</span>
+  function renderContent() {
+    const content = page.querySelector('.db-content');
+    if (!content) return;
+    
+    if (tab === 'orders') {
+      content.innerHTML = orders.length === 0
+        ? `<div class="empty-state"><span class="empty-state-icon">📋</span><p>No orders yet</p></div>`
+        : `<div class="orders-list">${orders.map(o => `
+          <div class="order-card ${o.status}">
+            <div class="order-header">
+              <div><span class="order-id">#${o.id.slice(0,8)}</span> <span class="order-status ${o.status}">${o.status}</span></div>
+              <span class="order-date">${new Date(o.createdAt).toLocaleDateString()}</span>
             </div>
-            <span class="order-date">${new Date(o.createdAt).toLocaleDateString()}</span>
+            <div class="order-customer">${o.customerName} · ${o.customerEmail}</div>
+            <div class="order-ship">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              ${o.shippingAddress}
+            </div>
+            <div style="font-size:12px;color:var(--text-secondary);margin-bottom:6px">${o.items.map(i => `${i.name} × ${i.qty}`).join(', ')}</div>
+            <div class="order-footer">
+              <span class="order-total">$${o.total.toFixed(2)}</span>
+              ${o.status === 'pending' ? `<button class="fulfill-btn" onclick="fulfillOrder('${o.id}')">Mark Fulfilled</button>` : ''}
+            </div>
           </div>
-          <div class="order-customer">${o.customerName} — ${o.customerEmail}</div>
-          <div class="order-ship">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            ${o.shippingAddress}
-          </div>
-          <div style="border-top:1px solid var(--border);padding-top:8px">
-            ${o.items.map(i => `<div class="summary-item"><span>${i.name} × ${i.qty}</span><span>$${(i.price*i.qty).toFixed(2)}</span></div>`).join('')}
-          </div>
-          <div style="display:flex;justify-content:space-between;align-items:center;padding-top:6px">
-            <span class="order-total">Total: $${o.total.toFixed(2)}</span>
-            ${o.status === 'pending' ? `<button class="fulfill-btn" onclick="fulfillOrder('${o.id}')">Mark Fulfilled</button>` : ''}
-          </div>
+        `).join('')}</div>`;
+    } else {
+      content.innerHTML = `
+        <div class="products-toolbar">
+          <span style="font-size:13px;color:var(--text-secondary)">${products.length} products · ${lastSync ? 'Last sync: '+new Date(lastSync).toLocaleString() : 'Local only'}</span>
+          <button class="btn-primary" style="padding:8px 18px;font-size:12px" onclick="showProductForm()">+ Add Product</button>
         </div>
-      `).join('');
+        <div id="productForm" class="product-form hidden">
+          <h4>New Product</h4>
+          <div class="form-grid">
+            <div class="form-field"><label>Name</label><input type="text" id="pfName" placeholder="Product name"></div>
+            <div class="form-field"><label>Category</label><select id="pfCat"><option>Electronics</option><option>Clothing</option><option>Home</option><option>Accessories</option><option>Other</option></select></div>
+            <div class="form-field" style="grid-column:1/-1"><label>Description</label><input type="text" id="pfDesc" placeholder="Short description"></div>
+            <div class="form-field"><label>Supplier</label><input type="text" id="pfSup" placeholder="AliExpress, Printful..." value="AliExpress"></div>
+            <div class="form-field"><label>Supplier Price ($)</label><input type="number" step="0.01" id="pfSupPrice"></div>
+            <div class="form-field"><label>Your Price ($)</label><input type="number" step="0.01" id="pfYourPrice"></div>
+            <div class="form-field"><label>Emoji</label><input type="text" id="pfEmoji" placeholder="🎧" maxlength="2"></div>
+          </div>
+          <button class="submit-btn" onclick="submitProduct()">Add to Store</button>
+        </div>
+        <div class="product-table-wrap">
+          <table class="product-table">
+            <thead><tr><th>Product</th><th>Cost</th><th>Sell</th><th>Profit</th><th>Margin</th><th></th></tr></thead>
+            <tbody>${products.map(p => {
+              const profit = p.yourPrice - p.supplierPrice;
+              const margin = p.yourPrice > 0 ? ((profit / p.yourPrice) * 100).toFixed(0) : '0';
+              return `<tr><td><strong>${p.name}</strong><br><span style="font-size:11px;color:var(--text-muted)">${p.category}</span></td>
+                <td>$${p.supplierPrice.toFixed(2)}</td>
+                <td>$${p.yourPrice.toFixed(2)}</td>
+                <td class="profit">+$${profit.toFixed(2)}</td>
+                <td>${margin}%</td>
+                <td class="delete-cell"><button class="delete-btn" onclick="deleteProduct('${p.id}')"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></button></td></tr>`;
+            }).join('')}</tbody>
+          </table>
+        </div>
+      `;
+    }
   }
   
-  function renderProductsTable() {
-    const section = container.querySelector('.products-section-content');
-    if (!section) return;
-    section.innerHTML = `
-      <div class="products-toolbar">
-        <span class="products-count">${products.length} products</span>
-        <button class="add-product-btn" onclick="showAddProduct()">+ Add Product</button>
-      </div>
-      <div id="productForm" class="product-form hidden">
-        <h4>New Product</h4>
-        <div class="form-grid">
-          <div class="form-field"><label>Product Name</label><input type="text" id="pfName" placeholder="e.g. Wireless Mouse"></div>
-          <div class="form-field"><label>Description</label><input type="text" id="pfDesc" placeholder="Short description"></div>
-          <div class="form-field"><label>Category</label><select id="pfCat"><option>Electronics</option><option>Clothing</option><option>Home</option><option>Accessories</option><option>Other</option></select></div>
-          <div class="form-field"><label>Supplier</label><select id="pfSup"><option>AliExpress</option><option>Printful</option><option>Spocket</option><option>Other</option></select></div>
-          <div class="form-field"><label>Supplier Price ($)</label><input type="number" step="0.01" id="pfSupPrice" placeholder="0.00"></div>
-          <div class="form-field"><label>Your Price ($)</label><input type="number" step="0.01" id="pfYourPrice" placeholder="0.00"></div>
-        </div>
-        <button class="add-product-btn" style="margin-top:12px" onclick="submitProduct()">Add to Store</button>
-      </div>
-      <div class="product-table">
-        <div class="table-header">
-          <span>Product</span><span>Cost</span><span>Sell</span><span>Profit</span><span>Margin</span><span></span>
-        </div>
-        ${products.map(p => {
-          const profit = p.yourPrice - p.supplierPrice;
-          const margin = p.yourPrice > 0 ? ((profit / p.yourPrice) * 100).toFixed(0) : '0';
-          return `<div class="table-row">
-            <div><div class="table-name">${p.name}</div><div class="table-category">${p.category}</div></div>
-            <span>$${p.supplierPrice.toFixed(2)}</span>
-            <span>$${p.yourPrice.toFixed(2)}</span>
-            <span class="profit-pos">$${profit.toFixed(2)}</span>
-            <span>${margin}%</span>
-            <button class="delete-btn" onclick="deleteProduct('${p.id}')">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
-            </button>
-          </div>`;
-        }).join('')}
-      </div>
-    `;
-  }
-  
-  container.innerHTML = `
-    <div class="admin-header">
+  page.innerHTML = `
+    <div class="dashboard-header">
       <h2>Dashboard</h2>
-      <div class="admin-stats">
-        <div class="stat-card"><span class="stat-label">Products</span><span class="stat-value">${products.length}</span></div>
-        <div class="stat-card"><span class="stat-label">Orders</span><span class="stat-value">${orders.length}</span></div>
-        <div class="stat-card"><span class="stat-label">Revenue</span><span class="stat-value">$${totalRev.toFixed(2)}</span></div>
-        <div class="stat-card warning"><span class="stat-label">To Fulfill</span><span class="stat-value">${pendingOrders.length}</span></div>
+      <div class="dashboard-stats">
+        <div class="stat-card"><div class="stat-card-label">Products</div><div class="stat-card-value">${products.length}</div></div>
+        <div class="stat-card accent"><div class="stat-card-label">Revenue</div><div class="stat-card-value">$${totalRev.toFixed(2)}</div></div>
+        <div class="stat-card"><div class="stat-card-label">Orders</div><div class="stat-card-value">${orders.length}</div></div>
+        <div class="stat-card"><div class="stat-card-label">To Fulfill</div><div class="stat-card-value">${pendingCount}</div></div>
       </div>
-      <div class="admin-tabs">
-        <button class="tab-btn ${tab==='orders'?'active':''}" onclick="switchAdminTab('orders')">Orders (${orders.length})</button>
-        <button class="tab-btn ${tab==='products'?'active':''}" onclick="switchAdminTab('products')">Products (${products.length})</button>
+      <div class="dashboard-tabs">
+        <button class="db-tab ${tab==='orders'?'active':''}" onclick="switchTab('orders')">Orders</button>
+        <button class="db-tab ${tab==='products'?'active':''}" onclick="switchTab('products')">Products</button>
       </div>
     </div>
-    <div class="orders-section"></div>
-    <div class="products-section-content"></div>
+    <div class="db-content"></div>
   `;
   
-  renderOrders();
-  renderProductsTable();
-  
-  return container;
+  renderContent();
+  return page;
 }
 
 // --- CHECKOUT ---
 function renderCheckout() {
   if (cart.length === 0) {
-    const page = document.createElement('div');
-    page.className = 'store-page';
-    page.innerHTML = `<div class="empty-state"><span class="empty-state-icon">🛒</span><h3 style="margin:8px 0">Your cart is empty</h3><p style="color:var(--text-secondary)">Add some products first!</p><button class="back-store-btn" onclick="navigate('store')">Browse Store</button></div>`;
-    return page;
+    return makePage(`<div class="empty-state"><span class="empty-state-icon">🛒</span><h3 style="margin:8px 0;font-family:var(--font-display);font-weight:600">Cart is empty</h3><button class="btn-primary" style="margin:12px auto" onclick="navigate('store')">Browse Store</button></div>`);
   }
-  
-  const container = document.createElement('div');
-  container.className = 'checkout-page';
   const ct = cart.reduce((s,i) => s + i.price * i.qty, 0);
-  
-  container.innerHTML = `
+  const page = document.createElement('div');
+  page.className = 'checkout-page';
+  page.innerHTML = `
     <div class="checkout-layout">
       <div class="checkout-form-section">
         <h2>Checkout</h2>
@@ -322,184 +309,170 @@ function renderCheckout() {
           <h4>Shipping Details</h4>
           <div class="form-field"><label>Full Name</label><input type="text" id="chName" placeholder="John Doe"></div>
           <div class="form-field"><label>Email</label><input type="email" id="chEmail" placeholder="john@example.com"></div>
-          <div class="form-field"><label>Shipping Address</label><textarea id="chAddr" placeholder="123 Main St, City, Country" rows="3"></textarea></div>
+          <div class="form-field"><label>Address</label><textarea id="chAddr" placeholder="123 Main St, City, Country" rows="3"></textarea></div>
         </div>
         <div class="section-block">
           <h4>Payment</h4>
-          <p class="payment-note">🔒 Secure payment processing. Your card is charged on order.</p>
+          <p class="payment-note">🔒 Secured — test mode (no real charge)</p>
           <div class="form-field"><label>Card Number</label><input type="text" inputmode="numeric" id="chCard" placeholder="4242 4242 4242 4242" maxlength="19"></div>
           <div class="card-row">
             <div class="form-field"><label>Expiry</label><input type="text" inputmode="numeric" id="chExp" placeholder="MM/YY" maxlength="5"></div>
             <div class="form-field"><label>CVC</label><input type="text" inputmode="numeric" id="chCvc" placeholder="123" maxlength="4"></div>
           </div>
         </div>
-        <button class="place-order-btn" onclick="placeOrder()" id="placeOrderBtn">Pay $${ct.toFixed(2)}</button>
+        <button class="place-order-btn" onclick="placeOrder()" id="placeBtn">Pay $${ct.toFixed(2)}</button>
       </div>
       <div class="checkout-summary">
         <h4>Order Summary</h4>
-        <div class="summary-items">
-          ${cart.map(i => `<div class="summary-item"><span>${i.name} × ${i.qty}</span><span>$${(i.price*i.qty).toFixed(2)}</span></div>`).join('')}
-        </div>
+        ${cart.map(i => `<div class="summary-item"><span>${i.name} × ${i.qty}</span><span>$${(i.price*i.qty).toFixed(2)}</span></div>`).join('')}
         <div class="summary-total"><span>Total</span><span>$${ct.toFixed(2)}</span></div>
-        <p style="font-size:11px;color:var(--text-muted);margin-top:12px">You will fulfill this order with your supplier</p>
+        <p style="font-size:11px;color:var(--text-muted);margin-top:12px">You fulfill orders with your supplier</p>
       </div>
     </div>
   `;
-  
-  return container;
+  return page;
 }
 
 function renderConfirmed() {
-  const container = document.createElement('div');
-  container.className = 'confirmed-page';
-  container.innerHTML = `
-    <div class="confirmed-card">
-      <span class="confirmed-icon">✅</span>
-      <h2>Order Placed!</h2>
-      <p>We've received your order. You'll get a confirmation email shortly.</p>
-      <p style="margin-top:6px;color:var(--text-secondary)">The store owner will fulfill your order soon.</p>
-      <button class="back-store-btn" onclick="navigate('store')">Continue Shopping</button>
-    </div>
-  `;
-  return container;
+  const page = document.createElement('div');
+  page.className = 'confirmed-page';
+  page.innerHTML = `<div class="confirmed-card">
+    <span class="confirmed-icon">✅</span>
+    <h2>Order Placed!</h2>
+    <p>Check the Dashboard to fulfill it.</p>
+    <button class="btn-primary" style="margin:20px auto 0" onclick="navigate('store')">Continue Shopping</button>
+  </div>`;
+  return page;
 }
 
-// --- GLOBAL FUNCTIONS ---
-window.navigate = function(page) { currentPage = page; render(); };
-window.toggleCart = function() {
-  const overlay = document.querySelector('.cart-overlay');
-  if (overlay) { overlay.classList.toggle('open'); return; }
-  
-  const ct = cart.reduce((s,i) => s + i.price * i.qty, 0);
-  const overlayEl = document.createElement('div');
-  overlayEl.className = 'cart-overlay open';
-  overlayEl.innerHTML = `<div class="cart-panel">
-    <div class="cart-panel-header"><h3>Your Cart</h3><button class="close-btn" onclick="toggleCart()">✕</button></div>
-    ${cart.length === 0 ? '<p class="empty-state">Your cart is empty</p>' : `
-      <div class="cart-items">
-        ${cart.map(i => `
-          <div class="cart-item">
-            <div class="cart-item-info">
-              <span class="cart-item-name">${i.name}</span>
-              <span class="cart-item-price-text">$${i.price.toFixed(2)}</span>
-            </div>
-            <div class="cart-item-qty">
-              <button class="qty-btn" onclick="cartQty('${i.productId}',-1)">−</button>
-              <span class="qty-num">${i.qty}</span>
-              <button class="qty-btn" onclick="cartQty('${i.productId}',1)">+</button>
-            </div>
-          </div>
-        `).join('')}
-      </div>
-      <div class="cart-total"><span>Total</span><span class="cart-total-amount">$${ct.toFixed(2)}</span></div>
-      <button class="checkout-btn" onclick="goCheckout()">Proceed to Checkout</button>
-    `}
-  </div>`;
-  
-  overlayEl.addEventListener('click', function(e) { if (e.target === this) this.classList.remove('open'); });
-  document.body.appendChild(overlayEl);
+function makePage(html) {
+  const d = document.createElement('div');
+  d.className = 'page';
+  d.innerHTML = html;
+  return d;
+}
+
+// --- GLOBALS ---
+window.navigate = function(p) { currentPage = p; render(); };
+
+window.addToCart = function(id) {
+  const p = products.find(x => x.id === id);
+  if (!p) return;
+  const ex = cart.find(i => i.productId === id);
+  if (ex) ex.qty++;
+  else cart.push({ productId: id, name: p.name, price: p.yourPrice, qty: 1, emoji: p.emoji || '📦' });
+  saveLocal('cart', cart);
+  render();
+  notify('Added ✓');
 };
 
-window.cartQty = function(id, delta) {
-  cart = cart.map(i => i.productId === id ? {...i, qty: Math.max(0, i.qty + delta)} : i).filter(i => i.qty > 0);
-  updateCartUI();
+window.toggleCart = function() {
+  const ov = document.querySelector('.cart-overlay');
+  if (ov) { ov.classList.toggle('open'); return; }
+  const e = document.createElement('div');
+  e.className = 'cart-overlay open';
+  const ct = cart.reduce((s,i) => s + i.price * i.qty, 0);
+  e.innerHTML = `<div class="cart-panel">
+    <div class="cart-panel-header"><h3>Cart</h3><button class="close-btn" style="background:none;border:none;color:var(--text-secondary);cursor:pointer;font-size:20px" onclick="toggleCart()">✕</button></div>
+    ${cart.length === 0 ? '<div class="empty-state">Empty</div>' : `
+      <div class="cart-items">${cart.map(i => `
+        <div class="cart-item">
+          <div class="cart-item-info"><span class="cart-item-name">${i.emoji || ''} ${i.name}</span><span class="cart-item-price">$${i.price.toFixed(2)}</span></div>
+          <div class="cart-item-qty">
+            <button class="qty-btn" onclick="cartQty('${i.productId}',-1)">−</button>
+            <span style="font-size:14px;font-weight:500;min-width:16px;text-align:center">${i.qty}</span>
+            <button class="qty-btn" onclick="cartQty('${i.productId}',1)">+</button>
+          </div>
+        </div>`).join('')}</div>
+      <div style="display:flex;justify-content:space-between;font-size:16px;font-weight:700;padding-top:8px;border-top:1px solid var(--surface-border)"><span>Total</span><span style="color:var(--accent)">$${ct.toFixed(2)}</span></div>
+      <button class="checkout-btn" style="width:100%;background:var(--gradient-1);color:#fff;border:none;padding:14px;border-radius:var(--radius-lg);font-size:14px;font-weight:600;cursor:pointer;margin-top:12px" onclick="goCheckout()">Checkout</button>
+    `}
+  </div>`;
+  e.addEventListener('click', function(ev) { if (ev.target === this) this.classList.remove('open'); });
+  document.body.appendChild(e);
 };
+
+window.cartQty = function(id, d) {
+  cart = cart.map(i => i.productId === id ? {...i, qty: Math.max(0, i.qty + d)} : i).filter(i => i.qty > 0);
+  saveLocal('cart', cart);
+  document.querySelector('.cart-overlay.open')?.remove();
+  window.toggleCart();
+  render();
+};
+
 window.goCheckout = function() {
   document.querySelector('.cart-overlay')?.classList.remove('open');
   navigate('checkout');
 };
-window.addToCart = function(id) {
-  const p = products.find(x => x.id === id);
-  if (!p) return;
-  const existing = cart.find(i => i.productId === id);
-  if (existing) existing.qty++;
-  else cart.push({ productId: id, name: p.name, price: p.yourPrice, qty: 1 });
-  updateCartUI();
-  notify('Added to cart');
-};
+
 window.fulfillOrder = function(id) {
   const o = orders.find(x => x.id === id);
-  if (o) { o.status = 'fulfilled'; saveOrders(); notify('Order marked as fulfilled!'); render(); }
+  if (o) { o.status = 'fulfilled'; saveLocal('orders', orders); notify('Fulfilled ✓'); render(); }
 };
-window.switchAdminTab = function(tab) {
-  const container = document.querySelector('.admin-page');
-  if (!container) return;
-  const ordersSec = container.querySelector('.orders-section');
-  const prodsSec = container.querySelector('.products-section-content');
-  const tabs = container.querySelectorAll('.tab-btn');
-  tabs.forEach(t => t.classList.toggle('active', t.textContent.toLowerCase().includes(tab)));
-  
-  if (ordersSec) ordersSec.style.display = tab === 'orders' ? '' : 'none';
-  if (prodsSec) prodsSec.style.display = tab === 'products' ? '' : 'none';
+
+window.switchTab = function(t) {
+  const cont = document.querySelector('.dashboard');
+  if (!cont) return;
+  cont.querySelectorAll('.db-tab').forEach(b => b.classList.toggle('active', b.textContent.toLowerCase().includes(t)));
+  // Re-render
+  const oldPage = currentPage;
+  currentPage = 'admin';
+  render();
+  currentPage = oldPage;
 };
-window.showAddProduct = function() {
+
+window.showProductForm = function() {
   document.getElementById('productForm')?.classList.toggle('hidden');
 };
+
 window.submitProduct = function() {
   const name = document.getElementById('pfName')?.value;
-  const yourPrice = parseFloat(document.getElementById('pfYourPrice')?.value);
-  if (!name || !yourPrice) return notify('Name and your price required');
-  
+  const price = parseFloat(document.getElementById('pfYourPrice')?.value);
+  if (!name || !price) return notify('Name and price required');
   products.push({
     id: crypto.randomUUID(),
-    name,
-    description: document.getElementById('pfDesc')?.value || '',
+    name, description: document.getElementById('pfDesc')?.value || '',
     category: document.getElementById('pfCat')?.value || 'Other',
     supplier: document.getElementById('pfSup')?.value || 'AliExpress',
     supplierPrice: parseFloat(document.getElementById('pfSupPrice')?.value) || 0,
-    yourPrice,
+    yourPrice: price,
+    emoji: document.getElementById('pfEmoji')?.value || '📦',
+    gradient: '#1a1a2e,#0a0a14',
   });
-  saveProducts();
+  saveLocal('products', products);
   notify('Product added!');
   render();
 };
+
 window.deleteProduct = function(id) {
   products = products.filter(p => p.id !== id);
-  saveProducts();
-  notify('Product deleted');
+  saveLocal('products', products);
+  notify('Deleted');
   render();
 };
+
 window.placeOrder = function() {
   const name = document.getElementById('chName')?.value;
   const email = document.getElementById('chEmail')?.value;
   const addr = document.getElementById('chAddr')?.value;
   if (!name || !email || !addr) return notify('Please fill in all details');
   
-  const btn = document.getElementById('placeOrderBtn');
-  btn.disabled = true;
-  btn.innerHTML = '<span class="btn-loading">⏳ Processing...</span>';
+  const btn = document.getElementById('placeBtn');
+  btn.disabled = true; btn.textContent = '⏳ Processing...';
   
   setTimeout(() => {
     const ct = cart.reduce((s,i) => s + i.price * i.qty, 0);
     orders.unshift({
-      id: crypto.randomUUID(),
-      customerName: name,
-      customerEmail: email,
-      shippingAddress: addr,
-      items: [...cart],
-      total: ct,
-      status: 'pending',
-      createdAt: new Date().toISOString(),
+      id: crypto.randomUUID(), customerName: name, customerEmail: email,
+      shippingAddress: addr, items: [...cart], total: ct,
+      status: 'pending', createdAt: new Date().toISOString(),
     });
-    saveOrders();
-    cart = [];
-    updateCartUI();
+    saveLocal('orders', orders);
+    cart = []; saveLocal('cart', cart);
     navigate('confirmed');
-    notify('Order placed! Check the Dashboard.');
-  }, 1500);
+    notify('Order placed ✓');
+  }, 1200);
 };
 
-function updateCartUI() {
-  const badge = document.getElementById('cartBadge');
-  if (badge) {
-    const count = cart.reduce((s,i) => s + i.qty, 0);
-    badge.textContent = count;
-    badge.classList.toggle('hidden', count === 0);
-  }
-  // Re-render cart overlay if open
-  const overlay = document.querySelector('.cart-overlay.open');
-  if (overlay) { overlay.remove(); window.toggleCart(); }
-}
-
-// Init
-render();
+// Boot
+init();

@@ -1,0 +1,12 @@
+[
+  {"id":"ae_1","name":"Wireless Earbuds Pro","supplierPrice":12.50,"yourPrice":29.99,"description":"Premium wireless earbuds with active noise cancellation and 24hr battery","category":"Electronics","supplier":"AliExpress","emoji":"🎧","gradient":"#1a1a3e,#0d0d1e"},
+  {"id":"ae_2","name":"LED Desk Lamp","supplierPrice":8.75,"yourPrice":24.99,"description":"Touch control desk lamp with 3 brightness levels and USB charging","category":"Home","supplier":"AliExpress","emoji":"💡","gradient":"#1a3a1a,#0d1e0d"},
+  {"id":"ae_3","name":"Bluetooth 5.3 Speaker","supplierPrice":10.00,"yourPrice":34.99,"description":"Portable waterproof speaker with deep bass and 12hr playtime","category":"Electronics","supplier":"AliExpress","emoji":"🔊","gradient":"#2a1a3e,#150d20"},
+  {"id":"ae_4","name":"20000mAh Power Bank","supplierPrice":7.50,"yourPrice":22.99,"description":"Fast charging portable power bank with dual USB output","category":"Electronics","supplier":"AliExpress","emoji":"🔋","gradient":"#1a2a3e,#0d1520"},
+  {"id":"ae_5","name":"Fitness Smart Watch","supplierPrice":9.00,"yourPrice":27.99,"description":"Heart rate monitor, step counter, sleep tracking, IP68 waterproof","category":"Accessories","supplier":"AliExpress","emoji":"⌚","gradient":"#2a1a3e,#150d20"},
+  {"id":"ae_6","name":"Slim Phone Case","supplierPrice":2.00,"yourPrice":8.99,"description":"Minimalist shockproof case, precise cutouts, available for all models","category":"Accessories","supplier":"AliExpress","emoji":"📱","gradient":"#1a2a3e,#0d1520"},
+  {"id":"ae_7","name":"Cotton Casual T-Shirt","supplierPrice":4.50,"yourPrice":16.99,"description":"Soft breathable cotton tee, relaxed fit, multiple colors available","category":"Clothing","supplier":"AliExpress","emoji":"👕","gradient":"#3a2a1a,#1e150d"},
+  {"id":"ae_8","name":"RGB LED Strip 5M","supplierPrice":3.80,"yourPrice":13.99,"description":"Color changing LED strip lights with remote, music sync mode","category":"Home","supplier":"AliExpress","emoji":"✨","gradient":"#1a3a1a,#0d1e0d"},
+  {"id":"ae_9","name":"Wireless Charger Pad","supplierPrice":4.00,"yourPrice":12.99,"description":"Qi fast wireless charging pad, compatible with all phones","category":"Electronics","supplier":"AliExpress","emoji":"⚡","gradient":"#1a2a3e,#0d1520"},
+  {"id":"ae_10","name":"Bamboo Phone Stand","supplierPrice":2.50,"yourPrice":9.99,"description":"Adjustable eco-friendly bamboo stand, foldable and portable","category":"Accessories","supplier":"AliExpress","emoji":"🎋","gradient":"#2a3a1a,#15200d"}
+]
