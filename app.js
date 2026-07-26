@@ -506,6 +506,25 @@ function render() {
       </div>
     </div>`;
 
+  // Chat bubble + panel
+  const chatHTML = `
+    <div id="chatBubble" class="chat-bubble" onclick="chatToggle()">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    </div>
+    <div id="chatPanel" class="chat-panel">
+      <div class="chat-h">
+        <span>💬 AI Support</span>
+        <button class="chat-close" onclick="chatToggle()">✕</button>
+      </div>
+      <div class="chat-msgs" id="chatMsgs"></div>
+      <div class="chat-inp">
+        <input type="text" id="chatInput" placeholder="Ask a question..." autocomplete="off">
+        <button class="chat-send" onclick="chatSend()">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+      </div>
+    </div>`;
+
   // Page
   const pg = document.createElement('div');
   pg.className = 'page';
@@ -562,6 +581,7 @@ function render() {
   </div>`;
 
   app.append(h, pg, ft);
+  document.body.insertAdjacentHTML('beforeend', chatHTML);
   document.getElementById('cb') && (document.getElementById('cb').textContent=cc);
 }
 
