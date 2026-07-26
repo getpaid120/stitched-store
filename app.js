@@ -177,7 +177,7 @@ const translations = {
     explore: 'Explorer →', dashboardBtn: 'Tableau de bord',
     products: 'Produits', featuredProducts: 'Produits vedettes',
     curatedCollection: 'Collection Curée',
-    heroTitle: 'Des produits qui<br>méritent d'être partagés.',
+    heroTitle: "Des produits qui<br>méritent d'être partagés.",
     heroSub: 'Un marché de produits authentiques. Parcourez, ajoutez au panier et gérez tout depuis un tableau de bord.',
     shipping: 'Expédition', payment: 'Paiement', testMode: '🔒 Mode test — sans frais réels',
     card: 'Carte', expiry: 'Expiration', address: 'Adresse',
@@ -622,7 +622,7 @@ function renderAccount() {
     </div>
     <h3 style="font-family:var(--fd);font-size:16px;font-weight:600;margin-bottom:12px">${__('yourOrders')}</h3>
     ${userOrders.length === 0
-      ? '<div class="empty-state" style="background:#fff;border:1px solid var(--surface-border);border-radius:var(--radius-xl);padding:40px"><span class="empty-state-icon">📋</span><p>${__('noOrders')}</p><button class="btn-primary" style="margin-top:12px" onclick="nav(\'store\')">${__('startShopping')}</button></div>'
+      ? `<div class="empty-state" style="background:#fff;border:1px solid var(--surface-border);border-radius:var(--radius-xl);padding:40px"><span class="empty-state-icon">📋</span><p>${__('noOrders')}</p><button class="btn-primary" style="margin-top:12px" onclick="nav('store')">${__('startShopping')}</button></div>`
       : `<div class="ol">${userOrders.map(o => `
         <div class="oc ${o.status}">
           <div class="oh"><div><span class="oi">#${o.id.slice(0,8)}</span> <span class="os ${o.status}">${o.status}</span></div><span class="odate">${new Date(o.createdAt).toLocaleDateString()}</span></div>
@@ -771,7 +771,7 @@ function renderStore() {
       return true;
     });
     g.innerHTML = flt.length === 0
-      ? '<div class="empty-state"><span class="empty-state-icon">📦</span><p>${__('noProducts')}</p></div>'
+      ? `<div class="empty-state"><span class="empty-state-icon">📦</span><p>${__('noProducts')}</p></div>`
       : flt.map(p => `<div class="pc" onclick="navProduct('${p.id}')">
           <div class="pc-img">
             <img src="${p.image}" alt="${p.name}" loading="lazy" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22300%22><rect fill=%22%23f0efe8%22 width=%22300%22 height=%22300%22/><text fill=%22%23a8a7b2%22 font-size=%2240%22 x=%22150%22 y=%22160%22 text-anchor=%22middle%22>📦</text></svg>'">
@@ -928,7 +928,7 @@ function renderCheckout() {
   if (cart.length === 0) {
     const p = document.createElement('div');
     p.style.cssText='display:flex;align-items:center;justify-content:center;min-height:60vh';
-    p.innerHTML = '<div class="empty-state"><span class="empty-state-icon">🛒</span><h3 style="margin:8px 0;font-family:var(--fd)">${__('cartEmpty')}</h3><button class="btn-primary" onclick="nav(\'store\')">Browse</button></div>';
+    p.innerHTML = `<div class="empty-state"><span class="empty-state-icon">🛒</span><h3 style="margin:8px 0;font-family:var(--fd)">${__('cartEmpty')}</h3><button class="btn-primary" onclick="nav('store')">${__('browse')}</button></div>`;
     return p;
   }
   const ct = cart.reduce((s,i) => s+i.price*i.qty, 0);
@@ -977,7 +977,7 @@ function placeOrder() {
 
 function renderConfirmed() {
   const p = document.createElement('div'); p.className='confirmed-page';
-  p.innerHTML = '<div class="cc"><span class="confirmed-icon">✅</span><h2>${__('orderPlaced')}</h2><p>${__('checkDashboard')}</p><button class="btn-primary" onclick="nav(\'store\')">${__('continue')}</button></div>';
+  p.innerHTML = `<div class="cc"><span class="confirmed-icon">✅</span><h2>${__('orderPlaced')}</h2><p>${__('checkDashboard')}</p><button class="btn-primary" onclick="nav('store')">${__('continue')}</button></div>`;
   return p;
 }
 
@@ -993,7 +993,7 @@ function renderDash() {
     if (!c) return;
     if (tab === 'orders') {
       c.innerHTML = orders.length === 0
-        ? '<div class="empty-state"><span class="empty-state-icon">📋</span><p>${__('noOrders')}</p></div>'
+        ? `<div class="empty-state"><span class="empty-state-icon">📋</span><p>${__('noOrders')}</p></div>`
         : `<div class="ol">${orders.map(o => `
           <div class="oc ${o.status}">
             <div class="oh"><div><span class="oi">#${o.id.slice(0,8)}</span> <span class="os ${o.status}">${o.status}</span></div><span class="odate">${new Date(o.createdAt).toLocaleDateString()}</span></div>
