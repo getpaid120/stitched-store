@@ -2,7 +2,7 @@
   {
     "id": "dj_1",
     "name": "Essence Mascara Lash Princess",
-    "supplierPrice": 4.0,
+    "supplierPrice": 5.49,
     "yourPrice": 9.99,
     "description": "The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.",
     "category": "Beauty",
@@ -11,12 +11,12 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp"
     ],
-    "rating": 2.6
+    "rating": 2.56
   },
   {
     "id": "dj_2",
     "name": "Eyeshadow Palette with Mirror",
-    "supplierPrice": 8.0,
+    "supplierPrice": 10.99,
     "yourPrice": 19.99,
     "description": "The Eyeshadow Palette with Mirror offers a versatile range of eyeshadow shades for creating stunning eye looks. With a built-in mirror, it's convenient for on-the-go makeup application.",
     "category": "Beauty",
@@ -25,12 +25,12 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/1.webp"
     ],
-    "rating": 2.9
+    "rating": 2.86
   },
   {
     "id": "dj_3",
     "name": "Powder Canister",
-    "supplierPrice": 6.0,
+    "supplierPrice": 8.24,
     "yourPrice": 14.99,
     "description": "The Powder Canister is a finely milled setting powder designed to set makeup and control shine. With a lightweight and translucent formula, it provides a smooth and matte finish.",
     "category": "Beauty",
@@ -39,12 +39,12 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/beauty/powder-canister/1.webp"
     ],
-    "rating": 4.6
+    "rating": 4.64
   },
   {
     "id": "dj_4",
     "name": "Red Lipstick",
-    "supplierPrice": 5.2,
+    "supplierPrice": 7.14,
     "yourPrice": 12.99,
     "description": "The Red Lipstick is a classic and bold choice for adding a pop of color to your lips. With a creamy and pigmented formula, it provides a vibrant and long-lasting finish.",
     "category": "Beauty",
@@ -53,12 +53,12 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/1.webp"
     ],
-    "rating": 4.4
+    "rating": 4.36
   },
   {
     "id": "dj_5",
     "name": "Red Nail Polish",
-    "supplierPrice": 3.6,
+    "supplierPrice": 4.94,
     "yourPrice": 8.99,
     "description": "The Red Nail Polish offers a rich and glossy red hue for vibrant and polished nails. With a quick-drying formula, it provides a salon-quality finish at home.",
     "category": "Beauty",
@@ -67,12 +67,12 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/beauty/red-nail-polish/1.webp"
     ],
-    "rating": 4.3
+    "rating": 4.32
   },
   {
     "id": "dj_6",
     "name": "Calvin Klein CK One",
-    "supplierPrice": 20.0,
+    "supplierPrice": 27.49,
     "yourPrice": 49.99,
     "description": "CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and clean scent. It's a versatile fragrance suitable for everyday wear.",
     "category": "Beauty",
@@ -83,12 +83,12 @@
       "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/2.webp",
       "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/3.webp"
     ],
-    "rating": 4.4
+    "rating": 4.37
   },
   {
     "id": "dj_7",
     "name": "Chanel Coco Noir Eau De",
-    "supplierPrice": 52.0,
+    "supplierPrice": 71.49,
     "yourPrice": 129.99,
     "description": "Coco Noir by Chanel is an elegant and mysterious fragrance, featuring notes of grapefruit, rose, and sandalwood. Perfect for evening occasions.",
     "category": "Beauty",
@@ -99,12 +99,12 @@
       "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/2.webp",
       "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/3.webp"
     ],
-    "rating": 4.3
+    "rating": 4.26
   },
   {
     "id": "dj_8",
     "name": "Dior J'adore",
-    "supplierPrice": 36.0,
+    "supplierPrice": 49.49,
     "yourPrice": 89.99,
     "description": "J'adore by Dior is a luxurious and floral fragrance, known for its blend of ylang-ylang, rose, and jasmine. It embodies femininity and sophistication.",
     "category": "Beauty",
@@ -120,7 +120,7 @@
   {
     "id": "dj_9",
     "name": "Dolce Shine Eau de",
-    "supplierPrice": 28.0,
+    "supplierPrice": 38.49,
     "yourPrice": 69.99,
     "description": "Dolce Shine by Dolce & Gabbana is a vibrant and fruity fragrance, featuring notes of mango, jasmine, and blonde woods. It's a joyful and youthful scent.",
     "category": "Beauty",
@@ -131,12 +131,12 @@
       "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/2.webp",
       "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/3.webp"
     ],
-    "rating": 4.0
+    "rating": 3.96
   },
   {
     "id": "dj_10",
     "name": "Gucci Bloom Eau de",
-    "supplierPrice": 32.0,
+    "supplierPrice": 43.99,
     "yourPrice": 79.99,
     "description": "Gucci Bloom by Gucci is a floral and captivating fragrance, with notes of tuberose, jasmine, and Rangoon creeper. It's a modern and romantic scent.",
     "category": "Beauty",
@@ -147,12 +147,12 @@
       "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/2.webp",
       "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/3.webp"
     ],
-    "rating": 2.7
+    "rating": 2.74
   },
   {
     "id": "dj_11",
     "name": "Annibale Colombo Bed",
-    "supplierPrice": 760.0,
+    "supplierPrice": 1044.99,
     "yourPrice": 1899.99,
     "description": "The Annibale Colombo Bed is a luxurious and elegant bed frame, crafted with high-quality materials for a comfortable and stylish bedroom.",
     "category": "Home",
@@ -163,12 +163,12 @@
       "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/2.webp",
       "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/3.webp"
     ],
-    "rating": 4.8
+    "rating": 4.77
   },
   {
     "id": "dj_12",
     "name": "Annibale Colombo Sofa",
-    "supplierPrice": 1000.0,
+    "supplierPrice": 1374.99,
     "yourPrice": 2499.99,
     "description": "The Annibale Colombo Sofa is a sophisticated and comfortable seating option, featuring exquisite design and premium upholstery for your living room.",
     "category": "Home",
@@ -179,12 +179,12 @@
       "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/2.webp",
       "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/3.webp"
     ],
-    "rating": 3.9
+    "rating": 3.92
   },
   {
     "id": "dj_13",
     "name": "Bedside Table African Cherry",
-    "supplierPrice": 120.0,
+    "supplierPrice": 164.99,
     "yourPrice": 299.99,
     "description": "The Bedside Table in African Cherry is a stylish and functional addition to your bedroom, providing convenient storage space and a touch of elegance.",
     "category": "Home",
@@ -195,12 +195,12 @@
       "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/2.webp",
       "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/3.webp"
     ],
-    "rating": 2.9
+    "rating": 2.87
   },
   {
     "id": "dj_14",
     "name": "Knoll Saarinen Executive Conference Chair",
-    "supplierPrice": 200.0,
+    "supplierPrice": 274.99,
     "yourPrice": 499.99,
     "description": "The Knoll Saarinen Executive Conference Chair is a modern and ergonomic chair, perfect for your office or conference room with its timeless design.",
     "category": "Home",
@@ -211,12 +211,12 @@
       "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/2.webp",
       "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/3.webp"
     ],
-    "rating": 4.9
+    "rating": 4.88
   },
   {
     "id": "dj_15",
     "name": "Wooden Bathroom Sink With Mirror",
-    "supplierPrice": 320.0,
+    "supplierPrice": 439.99,
     "yourPrice": 799.99,
     "description": "The Wooden Bathroom Sink with Mirror is a unique and stylish addition to your bathroom, featuring a wooden sink countertop and a matching mirror.",
     "category": "Home",
@@ -227,12 +227,12 @@
       "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/2.webp",
       "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/3.webp"
     ],
-    "rating": 3.6
+    "rating": 3.59
   },
   {
     "id": "dj_16",
     "name": "Apple",
-    "supplierPrice": 0.8,
+    "supplierPrice": 1.09,
     "yourPrice": 1.99,
     "description": "Fresh and crisp apples, perfect for snacking or incorporating into various recipes.",
     "category": "Groceries",
@@ -241,12 +241,12 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/groceries/apple/1.webp"
     ],
-    "rating": 4.2
+    "rating": 4.19
   },
   {
     "id": "dj_17",
     "name": "Beef Steak",
-    "supplierPrice": 5.2,
+    "supplierPrice": 7.14,
     "yourPrice": 12.99,
     "description": "High-quality beef steak, great for grilling or cooking to your preferred level of doneness.",
     "category": "Groceries",
@@ -255,12 +255,12 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/groceries/beef-steak/1.webp"
     ],
-    "rating": 4.5
+    "rating": 4.47
   },
   {
     "id": "dj_18",
     "name": "Cat Food",
-    "supplierPrice": 3.6,
+    "supplierPrice": 4.94,
     "yourPrice": 8.99,
     "description": "Nutritious cat food formulated to meet the dietary needs of your feline friend.",
     "category": "Groceries",
@@ -269,12 +269,12 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/groceries/cat-food/1.webp"
     ],
-    "rating": 3.1
+    "rating": 3.13
   },
   {
     "id": "dj_19",
     "name": "Chicken Meat",
-    "supplierPrice": 4.0,
+    "supplierPrice": 5.49,
     "yourPrice": 9.99,
     "description": "Fresh and tender chicken meat, suitable for various culinary preparations.",
     "category": "Groceries",
@@ -284,12 +284,12 @@
       "https://cdn.dummyjson.com/product-images/groceries/chicken-meat/1.webp",
       "https://cdn.dummyjson.com/product-images/groceries/chicken-meat/2.webp"
     ],
-    "rating": 3.2
+    "rating": 3.19
   },
   {
     "id": "dj_20",
     "name": "Cooking Oil",
-    "supplierPrice": 2.0,
+    "supplierPrice": 2.74,
     "yourPrice": 4.99,
     "description": "Versatile cooking oil suitable for frying, saut\u00e9ing, and various culinary applications.",
     "category": "Groceries",
@@ -303,7 +303,7 @@
   {
     "id": "dj_21",
     "name": "Cucumber",
-    "supplierPrice": 0.6,
+    "supplierPrice": 0.82,
     "yourPrice": 1.49,
     "description": "Crisp and hydrating cucumbers, ideal for salads, snacks, or as a refreshing side.",
     "category": "Groceries",
@@ -312,12 +312,12 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/groceries/cucumber/1.webp"
     ],
-    "rating": 4.1
+    "rating": 4.07
   },
   {
     "id": "dj_22",
     "name": "Dog Food",
-    "supplierPrice": 4.4,
+    "supplierPrice": 6.04,
     "yourPrice": 10.99,
     "description": "Specially formulated dog food designed to provide essential nutrients for your canine companion.",
     "category": "Groceries",
@@ -326,12 +326,12 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/groceries/dog-food/1.webp"
     ],
-    "rating": 4.6
+    "rating": 4.55
   },
   {
     "id": "dj_23",
     "name": "Eggs",
-    "supplierPrice": 1.2,
+    "supplierPrice": 1.64,
     "yourPrice": 2.99,
     "description": "Fresh eggs, a versatile ingredient for baking, cooking, or breakfast.",
     "category": "Groceries",
@@ -340,12 +340,12 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/groceries/eggs/1.webp"
     ],
-    "rating": 2.5
+    "rating": 2.53
   },
   {
     "id": "dj_24",
     "name": "Fish Steak",
-    "supplierPrice": 6.0,
+    "supplierPrice": 8.24,
     "yourPrice": 14.99,
     "description": "Quality fish steak, suitable for grilling, baking, or pan-searing.",
     "category": "Groceries",
@@ -354,12 +354,12 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/groceries/fish-steak/1.webp"
     ],
-    "rating": 3.8
+    "rating": 3.78
   },
   {
     "id": "dj_25",
     "name": "Green Bell Pepper",
-    "supplierPrice": 0.52,
+    "supplierPrice": 0.71,
     "yourPrice": 1.29,
     "description": "Fresh and vibrant green bell pepper, perfect for adding color and flavor to your dishes.",
     "category": "Groceries",
@@ -368,12 +368,12 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/groceries/green-bell-pepper/1.webp"
     ],
-    "rating": 3.2
+    "rating": 3.25
   },
   {
     "id": "dj_26",
     "name": "Green Chili Pepper",
-    "supplierPrice": 0.4,
+    "supplierPrice": 0.54,
     "yourPrice": 0.99,
     "description": "Spicy green chili pepper, ideal for adding heat to your favorite recipes.",
     "category": "Groceries",
@@ -382,12 +382,12 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/groceries/green-chili-pepper/1.webp"
     ],
-    "rating": 3.7
+    "rating": 3.66
   },
   {
     "id": "dj_27",
     "name": "Honey Jar",
-    "supplierPrice": 2.8,
+    "supplierPrice": 3.84,
     "yourPrice": 6.99,
     "description": "Pure and natural honey in a convenient jar, perfect for sweetening beverages or drizzling over food.",
     "category": "Groceries",
@@ -396,12 +396,12 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/groceries/honey-jar/1.webp"
     ],
-    "rating": 4.0
+    "rating": 3.97
   },
   {
     "id": "dj_28",
     "name": "Ice Cream",
-    "supplierPrice": 2.2,
+    "supplierPrice": 3.02,
     "yourPrice": 5.49,
     "description": "Creamy and delicious ice cream, available in various flavors for a delightful treat.",
     "category": "Groceries",
@@ -413,12 +413,12 @@
       "https://cdn.dummyjson.com/product-images/groceries/ice-cream/3.webp",
       "https://cdn.dummyjson.com/product-images/groceries/ice-cream/4.webp"
     ],
-    "rating": 3.4
+    "rating": 3.39
   },
   {
     "id": "dj_29",
     "name": "Juice",
-    "supplierPrice": 1.6,
+    "supplierPrice": 2.19,
     "yourPrice": 3.99,
     "description": "Refreshing fruit juice, packed with vitamins and great for staying hydrated.",
     "category": "Groceries",
@@ -427,12 +427,12 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/groceries/juice/1.webp"
     ],
-    "rating": 3.9
+    "rating": 3.94
   },
   {
     "id": "dj_30",
     "name": "Kiwi",
-    "supplierPrice": 1.0,
+    "supplierPrice": 1.37,
     "yourPrice": 2.49,
     "description": "Nutrient-rich kiwi, perfect for snacking or adding a tropical twist to your dishes.",
     "category": "Groceries",
@@ -441,6 +441,441 @@
     "images": [
       "https://cdn.dummyjson.com/product-images/groceries/kiwi/1.webp"
     ],
-    "rating": 4.9
+    "rating": 4.93
+  },
+  {
+    "id": "dj_31",
+    "name": "Lemon",
+    "supplierPrice": 0.43,
+    "yourPrice": 0.79,
+    "description": "Zesty and tangy lemons, versatile for cooking, baking, or making refreshing beverages.",
+    "category": "Groceries",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/groceries/lemon/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/groceries/lemon/1.webp"
+    ],
+    "rating": 3.53
+  },
+  {
+    "id": "dj_32",
+    "name": "Milk",
+    "supplierPrice": 1.92,
+    "yourPrice": 3.49,
+    "description": "Fresh and nutritious milk, a staple for various recipes and daily consumption.",
+    "category": "Groceries",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/groceries/milk/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/groceries/milk/1.webp"
+    ],
+    "rating": 2.61
+  },
+  {
+    "id": "dj_33",
+    "name": "Mulberry",
+    "supplierPrice": 2.74,
+    "yourPrice": 4.99,
+    "description": "Sweet and juicy mulberries, perfect for snacking or adding to desserts and cereals.",
+    "category": "Groceries",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/groceries/mulberry/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/groceries/mulberry/1.webp"
+    ],
+    "rating": 4.95
+  },
+  {
+    "id": "dj_34",
+    "name": "Nescafe Coffee",
+    "supplierPrice": 4.39,
+    "yourPrice": 7.99,
+    "description": "Quality coffee from Nescafe, available in various blends for a rich and satisfying cup.",
+    "category": "Groceries",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/groceries/nescafe-coffee/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/groceries/nescafe-coffee/1.webp"
+    ],
+    "rating": 4.82
+  },
+  {
+    "id": "dj_35",
+    "name": "Potatoes",
+    "supplierPrice": 1.26,
+    "yourPrice": 2.29,
+    "description": "Versatile and starchy potatoes, great for roasting, mashing, or as a side dish.",
+    "category": "Groceries",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/groceries/potatoes/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/groceries/potatoes/1.webp"
+    ],
+    "rating": 4.81
+  },
+  {
+    "id": "dj_36",
+    "name": "Protein Powder",
+    "supplierPrice": 10.99,
+    "yourPrice": 19.99,
+    "description": "Nutrient-packed protein powder, ideal for supplementing your diet with essential proteins.",
+    "category": "Groceries",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/groceries/protein-powder/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/groceries/protein-powder/1.webp"
+    ],
+    "rating": 4.18
+  },
+  {
+    "id": "dj_37",
+    "name": "Red Onions",
+    "supplierPrice": 1.09,
+    "yourPrice": 1.99,
+    "description": "Flavorful and aromatic red onions, perfect for adding depth to your savory dishes.",
+    "category": "Groceries",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/groceries/red-onions/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/groceries/red-onions/1.webp"
+    ],
+    "rating": 4.2
+  },
+  {
+    "id": "dj_38",
+    "name": "Rice",
+    "supplierPrice": 3.29,
+    "yourPrice": 5.99,
+    "description": "High-quality rice, a staple for various cuisines and a versatile base for many dishes.",
+    "category": "Groceries",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/groceries/rice/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/groceries/rice/1.webp"
+    ],
+    "rating": 3.18
+  },
+  {
+    "id": "dj_39",
+    "name": "Soft Drinks",
+    "supplierPrice": 1.09,
+    "yourPrice": 1.99,
+    "description": "Assorted soft drinks in various flavors, perfect for refreshing beverages.",
+    "category": "Groceries",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/groceries/soft-drinks/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/groceries/soft-drinks/1.webp"
+    ],
+    "rating": 4.75
+  },
+  {
+    "id": "dj_40",
+    "name": "Strawberry",
+    "supplierPrice": 2.19,
+    "yourPrice": 3.99,
+    "description": "Sweet and succulent strawberries, great for snacking, desserts, or blending into smoothies.",
+    "category": "Groceries",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/groceries/strawberry/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/groceries/strawberry/1.webp"
+    ],
+    "rating": 3.08
+  },
+  {
+    "id": "dj_41",
+    "name": "Tissue Paper Box",
+    "supplierPrice": 1.37,
+    "yourPrice": 2.49,
+    "description": "Convenient tissue paper box for everyday use, providing soft and absorbent tissues.",
+    "category": "Groceries",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/groceries/tissue-paper-box/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/groceries/tissue-paper-box/1.webp",
+      "https://cdn.dummyjson.com/product-images/groceries/tissue-paper-box/2.webp"
+    ],
+    "rating": 2.69
+  },
+  {
+    "id": "dj_42",
+    "name": "Water",
+    "supplierPrice": 0.54,
+    "yourPrice": 0.99,
+    "description": "Pure and refreshing bottled water, essential for staying hydrated throughout the day.",
+    "category": "Groceries",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/groceries/water/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/groceries/water/1.webp"
+    ],
+    "rating": 4.96
+  },
+  {
+    "id": "dj_43",
+    "name": "Decoration Swing",
+    "supplierPrice": 32.99,
+    "yourPrice": 59.99,
+    "description": "The Decoration Swing is a charming addition to your home decor. Crafted with intricate details, it adds a touch of elegance and whimsy to any room.",
+    "category": "Home",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/home-decoration/decoration-swing/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/home-decoration/decoration-swing/1.webp",
+      "https://cdn.dummyjson.com/product-images/home-decoration/decoration-swing/2.webp",
+      "https://cdn.dummyjson.com/product-images/home-decoration/decoration-swing/3.webp"
+    ],
+    "rating": 3.16
+  },
+  {
+    "id": "dj_44",
+    "name": "Family Tree Photo Frame",
+    "supplierPrice": 16.49,
+    "yourPrice": 29.99,
+    "description": "The Family Tree Photo Frame is a sentimental and stylish way to display your cherished family memories. With multiple photo slots, it tells the story of your loved ones.",
+    "category": "Home",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/home-decoration/family-tree-photo-frame/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/home-decoration/family-tree-photo-frame/1.webp"
+    ],
+    "rating": 4.53
+  },
+  {
+    "id": "dj_45",
+    "name": "House Showpiece Plant",
+    "supplierPrice": 21.99,
+    "yourPrice": 39.99,
+    "description": "The House Showpiece Plant is an artificial plant that brings a touch of nature to your home without the need for maintenance. It adds greenery and style to any space.",
+    "category": "Home",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/1.webp",
+      "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/2.webp",
+      "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/3.webp"
+    ],
+    "rating": 4.67
+  },
+  {
+    "id": "dj_46",
+    "name": "Plant Pot",
+    "supplierPrice": 8.24,
+    "yourPrice": 14.99,
+    "description": "The Plant Pot is a stylish container for your favorite plants. With a sleek design, it complements your indoor or outdoor garden, adding a modern touch to your plant display.",
+    "category": "Home",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/1.webp",
+      "https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/2.webp",
+      "https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/3.webp",
+      "https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/4.webp"
+    ],
+    "rating": 3.01
+  },
+  {
+    "id": "dj_47",
+    "name": "Table Lamp",
+    "supplierPrice": 27.49,
+    "yourPrice": 49.99,
+    "description": "The Table Lamp is a functional and decorative lighting solution for your living space. With a modern design, it provides both ambient and task lighting, enhancing the atmosphere.",
+    "category": "Home",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/1.webp"
+    ],
+    "rating": 3.55
+  },
+  {
+    "id": "dj_48",
+    "name": "Bamboo Spatula",
+    "supplierPrice": 4.39,
+    "yourPrice": 7.99,
+    "description": "The Bamboo Spatula is a versatile kitchen tool made from eco-friendly bamboo. Ideal for flipping, stirring, and serving various dishes.",
+    "category": "Kitchen",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/bamboo-spatula/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/kitchen-accessories/bamboo-spatula/1.webp"
+    ],
+    "rating": 3.27
+  },
+  {
+    "id": "dj_49",
+    "name": "Black Aluminium Cup",
+    "supplierPrice": 3.29,
+    "yourPrice": 5.99,
+    "description": "The Black Aluminium Cup is a stylish and durable cup suitable for both hot and cold beverages. Its sleek black design adds a modern touch to your drinkware collection.",
+    "category": "Kitchen",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/black-aluminium-cup/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/kitchen-accessories/black-aluminium-cup/1.webp",
+      "https://cdn.dummyjson.com/product-images/kitchen-accessories/black-aluminium-cup/2.webp"
+    ],
+    "rating": 4.46
+  },
+  {
+    "id": "dj_50",
+    "name": "Black Whisk",
+    "supplierPrice": 5.49,
+    "yourPrice": 9.99,
+    "description": "The Black Whisk is a kitchen essential for whisking and beating ingredients. Its ergonomic handle and sleek design make it a practical and stylish tool.",
+    "category": "Kitchen",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/black-whisk/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/kitchen-accessories/black-whisk/1.webp"
+    ],
+    "rating": 3.9
+  },
+  {
+    "id": "dj_51",
+    "name": "Boxed Blender",
+    "supplierPrice": 21.99,
+    "yourPrice": 39.99,
+    "description": "The Boxed Blender is a powerful and compact blender perfect for smoothies, shakes, and more. Its convenient design and multiple functions make it a versatile kitchen appliance.",
+    "category": "Kitchen",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/boxed-blender/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/kitchen-accessories/boxed-blender/1.webp",
+      "https://cdn.dummyjson.com/product-images/kitchen-accessories/boxed-blender/2.webp",
+      "https://cdn.dummyjson.com/product-images/kitchen-accessories/boxed-blender/3.webp",
+      "https://cdn.dummyjson.com/product-images/kitchen-accessories/boxed-blender/4.webp"
+    ],
+    "rating": 4.56
+  },
+  {
+    "id": "dj_52",
+    "name": "Carbon Steel Wok",
+    "supplierPrice": 16.49,
+    "yourPrice": 29.99,
+    "description": "The Carbon Steel Wok is a versatile cooking pan suitable for stir-frying, saut\u00e9ing, and deep frying. Its sturdy construction ensures even heat distribution for delicious meals.",
+    "category": "Kitchen",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/carbon-steel-wok/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/kitchen-accessories/carbon-steel-wok/1.webp"
+    ],
+    "rating": 4.05
+  },
+  {
+    "id": "dj_53",
+    "name": "Chopping Board",
+    "supplierPrice": 7.14,
+    "yourPrice": 12.99,
+    "description": "The Chopping Board is an essential kitchen accessory for food preparation. Made from durable material, it provides a safe and hygienic surface for cutting and chopping.",
+    "category": "Kitchen",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/chopping-board/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/kitchen-accessories/chopping-board/1.webp"
+    ],
+    "rating": 3.7
+  },
+  {
+    "id": "dj_54",
+    "name": "Citrus Squeezer Yellow",
+    "supplierPrice": 4.94,
+    "yourPrice": 8.99,
+    "description": "The Citrus Squeezer in Yellow is a handy tool for extracting juice from citrus fruits. Its vibrant color adds a cheerful touch to your kitchen gadgets.",
+    "category": "Kitchen",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/citrus-squeezer-yellow/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/kitchen-accessories/citrus-squeezer-yellow/1.webp"
+    ],
+    "rating": 4.63
+  },
+  {
+    "id": "dj_55",
+    "name": "Egg Slicer",
+    "supplierPrice": 3.84,
+    "yourPrice": 6.99,
+    "description": "The Egg Slicer is a convenient tool for slicing boiled eggs evenly. It's perfect for salads, sandwiches, and other dishes where sliced eggs are desired.",
+    "category": "Kitchen",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/egg-slicer/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/kitchen-accessories/egg-slicer/1.webp"
+    ],
+    "rating": 3.09
+  },
+  {
+    "id": "dj_56",
+    "name": "Electric Stove",
+    "supplierPrice": 27.49,
+    "yourPrice": 49.99,
+    "description": "The Electric Stove provides a portable and efficient cooking solution. Ideal for small kitchens or as an additional cooking surface for various culinary needs.",
+    "category": "Kitchen",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/electric-stove/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/kitchen-accessories/electric-stove/1.webp",
+      "https://cdn.dummyjson.com/product-images/kitchen-accessories/electric-stove/2.webp",
+      "https://cdn.dummyjson.com/product-images/kitchen-accessories/electric-stove/3.webp",
+      "https://cdn.dummyjson.com/product-images/kitchen-accessories/electric-stove/4.webp"
+    ],
+    "rating": 4.11
+  },
+  {
+    "id": "dj_57",
+    "name": "Fine Mesh Strainer",
+    "supplierPrice": 5.49,
+    "yourPrice": 9.99,
+    "description": "The Fine Mesh Strainer is a versatile tool for straining liquids and sifting dry ingredients. Its fine mesh ensures efficient filtering for smooth cooking and baking.",
+    "category": "Kitchen",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/fine-mesh-strainer/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/kitchen-accessories/fine-mesh-strainer/1.webp"
+    ],
+    "rating": 3.04
+  },
+  {
+    "id": "dj_58",
+    "name": "Fork",
+    "supplierPrice": 2.19,
+    "yourPrice": 3.99,
+    "description": "The Fork is a classic utensil for various dining and serving purposes. Its durable and ergonomic design makes it a reliable choice for everyday use.",
+    "category": "Kitchen",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/fork/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/kitchen-accessories/fork/1.webp"
+    ],
+    "rating": 3.11
+  },
+  {
+    "id": "dj_59",
+    "name": "Glass",
+    "supplierPrice": 2.74,
+    "yourPrice": 4.99,
+    "description": "The Glass is a versatile and elegant drinking vessel suitable for a variety of beverages. Its clear design allows you to enjoy the colors and textures of your drinks.",
+    "category": "Kitchen",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/glass/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/kitchen-accessories/glass/1.webp"
+    ],
+    "rating": 4.02
+  },
+  {
+    "id": "dj_60",
+    "name": "Grater Black",
+    "supplierPrice": 6.04,
+    "yourPrice": 10.99,
+    "description": "The Grater in Black is a handy kitchen tool for grating cheese, vegetables, and more. Its sleek design and sharp blades make food preparation efficient and easy.",
+    "category": "Kitchen",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/grater-black/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/kitchen-accessories/grater-black/1.webp"
+    ],
+    "rating": 3.21
   }
 ]

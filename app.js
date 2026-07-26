@@ -127,12 +127,160 @@ function render() {
   else if (currentPage==='checkout') pg.appendChild(renderCheckout());
   else if (currentPage==='product') pg.appendChild(renderProduct());
   else if (currentPage==='confirmed') pg.appendChild(renderConfirmed());
+  else if (currentPage==='about') pg.appendChild(renderAbout());
+  else if (currentPage==='terms') pg.appendChild(renderTerms());
+  else if (currentPage==='privacy') pg.appendChild(renderPrivacy());
+  else if (currentPage==='shipping') pg.appendChild(renderShipping());
 
-  app.append(h, pg);
+  // Footer
+  const ft = document.createElement('footer');
+  ft.style.cssText = 'background:#fff;border-top:1px solid var(--surface-border);padding:56px 24px 32px;margin-top:auto';
+  ft.innerHTML = `<div style="max-width:1200px;margin:0 auto">
+    <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px">
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;font-family:var(--fd);font-size:20px;font-weight:700"><span>🧵</span> Stitched</div>
+        <p style="color:var(--text-secondary);font-size:13px;line-height:1.7;max-width:280px">A curated marketplace of authentic goods. We hand-pick every product so you don't have to.</p>
+      </div>
+      <div>
+        <h4 style="font-family:var(--fd);font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px">Shop</h4>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <button class="nav-btn" style="padding:0;font-size:13px" onclick="nav('store')">All Products</button>
+          <button class="nav-btn" style="padding:0;font-size:13px" onclick="nav('store');setTimeout(()=>{const i=document.querySelector('#ss');if(i)i.focus()},100)">Search</button>
+        </div>
+      </div>
+      <div>
+        <h4 style="font-family:var(--fd);font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px">Info</h4>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <button class="nav-btn" style="padding:0;font-size:13px" onclick="nav('about')">About</button>
+          <button class="nav-btn" style="padding:0;font-size:13px" onclick="nav('shipping')">Shipping & Returns</button>
+          <button class="nav-btn" style="padding:0;font-size:13px" onclick="nav('terms')">Terms & Conditions</button>
+          <button class="nav-btn" style="padding:0;font-size:13px" onclick="nav('privacy')">Privacy Policy</button>
+        </div>
+      </div>
+      <div>
+        <h4 style="font-family:var(--fd);font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px">Support</h4>
+        <div style="display:flex;flex-direction:column;gap:8px;font-size:13px;color:var(--text-secondary)">
+          <span>contact@stitched.store</span>
+          <span>Mon–Fri, 9AM–6PM</span>
+        </div>
+      </div>
+    </div>
+    <div style="border-top:1px solid var(--surface-border);padding-top:20px;display:flex;justify-content:space-between;font-size:12px;color:var(--text-muted);flex-wrap:wrap;gap:8px">
+      <span>© 2026 Stitched. All rights reserved.</span>
+      <span>Made with care.</span>
+    </div>
+  </div>`;
+
+  app.append(h, pg, ft);
   document.getElementById('cb') && (document.getElementById('cb').textContent=cc);
 }
 
 function nav(p) { currentPage=p; render(); }
+
+// ─── Info Pages ──────────────────────────────────────────────────────
+function renderAbout() {
+  const p = document.createElement('div');
+  p.className = 'page';
+  p.style.cssText = 'padding:80px 24px;flex:1';
+  p.innerHTML = `<div style="max-width:720px;margin:0 auto">
+    <button class="btn-secondary" style="margin-bottom:24px" onclick="nav('store')">← Back</button>
+    <h1 style="font-family:var(--fd);font-size:clamp(28px,4vw,40px);font-weight:700;letter-spacing:-0.03em;margin-bottom:24px">About Stitched</h1>
+    <div style="background:#fff;border:1px solid var(--surface-border);border-radius:var(--radius-xl);padding:32px;box-shadow:var(--shadow-sm);line-height:1.8;color:var(--text-secondary)">
+      <p style="margin-bottom:16px;color:var(--text);font-size:16px"><strong>Welcome to Stitched.</strong> We believe great products shouldn't be hard to find.</p>
+      <p style="margin-bottom:16px">Stitched is a curated marketplace that brings together quality goods from trusted suppliers around the world. Every item in our catalog has been selected for its value, craftsmanship, and appeal — so you can shop with confidence.</p>
+      <p style="margin-bottom:16px">Our model is simple: we partner with reliable suppliers, negotiate fair prices, and pass the savings on to you. No middlemen markups, no questionable listings — just products worth sharing.</p>
+      <p style="margin-bottom:16px">We're a small team passionate about making online shopping straightforward and honest. If something doesn't feel right, reach out — we're here to help.</p>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px;padding-top:24px;border-top:1px solid var(--surface-border)">
+        <div style="text-align:center"><div style="font-size:28px;margin-bottom:4px">🎯</div><div style="font-size:13px;font-weight:600;color:var(--text)">Curated</div><div style="font-size:12px;color:var(--text-muted)">Every product hand-picked</div></div>
+        <div style="text-align:center"><div style="font-size:28px;margin-bottom:4px">🤝</div><div style="font-size:13px;font-weight:600;color:var(--text)">Trusted</div><div style="font-size:12px;color:var(--text-muted)">Reliable suppliers only</div></div>
+        <div style="text-align:center"><div style="font-size:28px;margin-bottom:4px">💬</div><div style="font-size:13px;font-weight:600;color:var(--text)">Support</div><div style="font-size:12px;color:var(--text-muted)">We're here for you</div></div>
+      </div>
+    </div>
+  </div>`;
+  return p;
+}
+
+function renderTerms() {
+  const p = document.createElement('div');
+  p.className = 'page';
+  p.style.cssText = 'padding:80px 24px;flex:1';
+  p.innerHTML = `<div style="max-width:720px;margin:0 auto">
+    <button class="btn-secondary" style="margin-bottom:24px" onclick="nav('store')">← Back</button>
+    <h1 style="font-family:var(--fd);font-size:clamp(28px,4vw,40px);font-weight:700;letter-spacing:-0.03em;margin-bottom:24px">Terms & Conditions</h1>
+    <div style="background:#fff;border:1px solid var(--surface-border);border-radius:var(--radius-xl);padding:32px;box-shadow:var(--shadow-sm);line-height:1.8;color:var(--text-secondary);font-size:13px">
+      <p style="margin-bottom:16px"><strong>Last updated:</strong> July 2026</p>
+      <h3 style="color:var(--text);margin:20px 0 8px;font-size:15px">1. Acceptance of Terms</h3>
+      <p style="margin-bottom:12px">By accessing or using Stitched, you agree to be bound by these Terms & Conditions. If you do not agree, please do not use our service.</p>
+      <h3 style="color:var(--text);margin:20px 0 8px;font-size:15px">2. Products & Pricing</h3>
+      <p style="margin-bottom:12px">All product descriptions, images, and prices are provided for informational purposes. We make every effort to ensure accuracy, but we do not guarantee that product descriptions or prices are error-free. Prices are subject to change without notice.</p>
+      <h3 style="color:var(--text);margin:20px 0 8px;font-size:15px">3. Orders & Payment</h3>
+      <p style="margin-bottom:12px">When you place an order, you agree to provide accurate and complete information. Payment is due at the time of order. We reserve the right to refuse or cancel any order at our discretion.</p>
+      <h3 style="color:var(--text);margin:20px 0 8px;font-size:15px">4. Shipping & Delivery</h3>
+      <p style="margin-bottom:12px">Shipping times are estimates and not guaranteed. We are not responsible for delays caused by customs, carriers, or unforeseen circumstances. Risk of loss passes to you upon delivery to the carrier.</p>
+      <h3 style="color:var(--text);margin:20px 0 8px;font-size:15px">5. Returns & Refunds</h3>
+      <p style="margin-bottom:12px">Please refer to our Shipping & Returns policy for detailed information on returns and refunds. Generally, items may be returned within 30 days of delivery in unused condition.</p>
+      <h3 style="color:var(--text);margin:20px 0 8px;font-size:15px">6. Limitation of Liability</h3>
+      <p style="margin-bottom:12px">Stitched shall not be liable for any indirect, incidental, or consequential damages arising from your use of this service or any products purchased through it.</p>
+      <h3 style="color:var(--text);margin:20px 0 8px;font-size:15px">7. Changes</h3>
+      <p style="margin-bottom:12px">We reserve the right to update these terms at any time. Continued use after changes constitutes acceptance of the new terms.</p>
+      <h3 style="color:var(--text);margin:20px 0 8px;font-size:15px">8. Contact</h3>
+      <p>For questions about these terms, contact us at <strong>contact@stitched.store</strong>.</p>
+    </div>
+  </div>`;
+  return p;
+}
+
+function renderPrivacy() {
+  const p = document.createElement('div');
+  p.className = 'page';
+  p.style.cssText = 'padding:80px 24px;flex:1';
+  p.innerHTML = `<div style="max-width:720px;margin:0 auto">
+    <button class="btn-secondary" style="margin-bottom:24px" onclick="nav('store')">← Back</button>
+    <h1 style="font-family:var(--fd);font-size:clamp(28px,4vw,40px);font-weight:700;letter-spacing:-0.03em;margin-bottom:24px">Privacy Policy</h1>
+    <div style="background:#fff;border:1px solid var(--surface-border);border-radius:var(--radius-xl);padding:32px;box-shadow:var(--shadow-sm);line-height:1.8;color:var(--text-secondary);font-size:13px">
+      <p style="margin-bottom:16px"><strong>Last updated:</strong> July 2026</p>
+      <h3 style="color:var(--text);margin:20px 0 8px;font-size:15px">1. Information We Collect</h3>
+      <p style="margin-bottom:12px">We collect information you provide when placing an order: your name, email address, shipping address, and payment details. We also collect anonymous usage data to improve our service.</p>
+      <h3 style="color:var(--text);margin:20px 0 8px;font-size:15px">2. How We Use Your Information</h3>
+      <p style="margin-bottom:12px">We use your information to process orders, communicate with you about your purchases, improve our store, and comply with legal obligations. We do not sell your personal information to third parties.</p>
+      <h3 style="color:var(--text);margin:20px 0 8px;font-size:15px">3. Data Security</h3>
+      <p style="margin-bottom:12px">We implement reasonable security measures to protect your information. However, no method of transmission over the Internet is 100% secure.</p>
+      <h3 style="color:var(--text);margin:20px 0 8px;font-size:15px">4. Cookies</h3>
+      <p style="margin-bottom:12px">We use minimal cookies necessary for the functioning of the store. You can control cookie preferences through your browser settings.</p>
+      <h3 style="color:var(--text);margin:20px 0 8px;font-size:15px">5. Third Parties</h3>
+      <p style="margin-bottom:12px">We may share your information with trusted third parties who help us process payments and deliver orders. These partners are bound by confidentiality agreements.</p>
+      <h3 style="color:var(--text);margin:20px 0 8px;font-size:15px">6. Your Rights</h3>
+      <p style="margin-bottom:12px">You have the right to access, correct, or delete your personal information. To exercise these rights, contact us at <strong>contact@stitched.store</strong>.</p>
+      <h3 style="color:var(--text);margin:20px 0 8px;font-size:15px">7. Changes</h3>
+      <p>We may update this policy. We will notify you of material changes via the website.</p>
+    </div>
+  </div>`;
+  return p;
+}
+
+function renderShipping() {
+  const p = document.createElement('div');
+  p.className = 'page';
+  p.style.cssText = 'padding:80px 24px;flex:1';
+  p.innerHTML = `<div style="max-width:720px;margin:0 auto">
+    <button class="btn-secondary" style="margin-bottom:24px" onclick="nav('store')">← Back</button>
+    <h1 style="font-family:var(--fd);font-size:clamp(28px,4vw,40px);font-weight:700;letter-spacing:-0.03em;margin-bottom:24px">Shipping & Returns</h1>
+    <div style="background:#fff;border:1px solid var(--surface-border);border-radius:var(--radius-xl);padding:32px;box-shadow:var(--shadow-sm);line-height:1.8;color:var(--text-secondary);font-size:13px">
+      <h3 style="color:var(--text);margin:0 0 8px;font-size:15px">Shipping</h3>
+      <p style="margin-bottom:12px">We offer worldwide shipping on all orders. Standard shipping takes 7–14 business days depending on your location. Express shipping options are available at checkout.</p>
+      <p style="margin-bottom:16px"><strong>Free shipping</strong> on all orders over $50.</p>
+      <h3 style="color:var(--text);margin:20px 0 8px;font-size:15px">Order Tracking</h3>
+      <p style="margin-bottom:16px">Once your order ships, you'll receive a tracking number via email. You can check your order status anytime from your account or by contacting us.</p>
+      <h3 style="color:var(--text);margin:20px 0 8px;font-size:15px">Returns</h3>
+      <p style="margin-bottom:12px">We accept returns within <strong>30 days</strong> of delivery. Items must be unused and in original packaging. To initiate a return, email <strong>contact@stitched.store</strong> with your order number.</p>
+      <h3 style="color:var(--text);margin:20px 0 8px;font-size:15px">Refunds</h3>
+      <p style="margin-bottom:12px">Refunds are processed within 5–7 business days after we receive the returned item. The refund will be issued to the original payment method. Shipping costs are non-refundable.</p>
+      <h3 style="color:var(--text);margin:20px 0 8px;font-size:15px">Damaged or Incorrect Items</h3>
+      <p>If you receive a damaged or incorrect item, contact us within 48 hours of delivery. We'll arrange a replacement or full refund, including return shipping costs.</p>
+    </div>
+  </div>`;
+  return p;
+}
 
 // ─── Store Page ──────────────────────────────────────────────────────
 function renderStore() {
@@ -157,9 +305,9 @@ function renderStore() {
             <h3 class="pc-name">${p.name}</h3>
             <p class="pc-desc">${(p.description||'').slice(0,80)}${(p.description||'').length>80?'…':''}</p>
             <div class="pc-row">
-              <span class="pc-price">$${p.yourPrice.toFixed(2)}</span>
-              <span class="pc-old">$${p.supplierPrice.toFixed(2)}</span>
-              ${p.rating ? `<span class="pc-rating">★ ${p.rating}</span>` : ''}
+                <span class="pc-price">$${p.yourPrice.toFixed(2)}</span>
+                <span class="pc-old" style="display:none">$${p.supplierPrice.toFixed(2)}</span>
+                ${p.rating ? `<span class="pc-rating">★ ${p.rating}</span>` : ''}
             </div>
           </div>
         </div>`).join('');
@@ -234,9 +382,7 @@ function renderProduct() {
           <p class="pd-desc">${p.description}</p>
           <div class="pd-prices">
             <span class="pd-price">$${p.yourPrice.toFixed(2)}</span>
-            <span class="pd-old">Suppliers: $${p.supplierPrice.toFixed(2)}</span>
           </div>
-          <div class="pd-supplier">Supplier: ${p.supplier}</div>
           <button class="btn-primary" style="width:100%;margin-top:16px" onclick="addCart('${p.id}');nav('store')">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
             Add to Cart — $${p.yourPrice.toFixed(2)}
