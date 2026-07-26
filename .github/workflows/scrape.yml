@@ -1,4 +1,4 @@
-name: Scrape AliExpress & Update Store
+name: Sync Products & Update Store
 
 on:
   schedule:
@@ -19,11 +19,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Scrape AliExpress products
+      - name: Fetch products
         id: scrape
         run: python3 .github/scripts/scrape_aliexpress.py
-        env:
-          KEYWORDS: ${{ github.event.inputs.keywords || 'wireless earbuds,led desk lamp,bluetooth speaker,phone stand,water bottle,hoodie' }}
 
       - name: Commit and push updates
         run: |

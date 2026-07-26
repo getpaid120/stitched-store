@@ -1,112 +1,446 @@
 [
   {
-    "id": "ae_1",
-    "name": "Wireless Earbuds Pro",
-    "supplierPrice": 12.5,
-    "yourPrice": 29.99,
-    "description": "Premium wireless earbuds with active noise cancellation and 24hr battery",
-    "category": "Electronics",
-    "supplier": "AliExpress",
-    "emoji": "\ud83c\udfa7",
-    "gradient": "#1a1a3e,#0d0d1e"
-  },
-  {
-    "id": "ae_2",
-    "name": "LED Desk Lamp",
-    "supplierPrice": 8.75,
-    "yourPrice": 24.99,
-    "description": "Touch control desk lamp with 3 brightness levels and USB charging",
-    "category": "Home",
-    "supplier": "AliExpress",
-    "emoji": "\ud83d\udca1",
-    "gradient": "#1a3a1a,#0d1e0d"
-  },
-  {
-    "id": "ae_3",
-    "name": "Bluetooth 5.3 Speaker",
-    "supplierPrice": 10.0,
-    "yourPrice": 34.99,
-    "description": "Portable waterproof speaker with deep bass and 12hr playtime",
-    "category": "Electronics",
-    "supplier": "AliExpress",
-    "emoji": "\ud83d\udd0a",
-    "gradient": "#2a1a3e,#150d20"
-  },
-  {
-    "id": "ae_4",
-    "name": "20000mAh Power Bank",
-    "supplierPrice": 7.5,
-    "yourPrice": 22.99,
-    "description": "Fast charging portable power bank with dual USB output",
-    "category": "Electronics",
-    "supplier": "AliExpress",
-    "emoji": "\ud83d\udd0b",
-    "gradient": "#1a2a3e,#0d1520"
-  },
-  {
-    "id": "ae_5",
-    "name": "Fitness Smart Watch",
-    "supplierPrice": 9.0,
-    "yourPrice": 27.99,
-    "description": "Heart rate monitor, step counter, sleep tracking, IP68 waterproof",
-    "category": "Accessories",
-    "supplier": "AliExpress",
-    "emoji": "\u231a",
-    "gradient": "#2a1a3e,#150d20"
-  },
-  {
-    "id": "ae_6",
-    "name": "Slim Phone Case",
-    "supplierPrice": 2.0,
-    "yourPrice": 8.99,
-    "description": "Minimalist shockproof case, precise cutouts, available for all models",
-    "category": "Accessories",
-    "supplier": "AliExpress",
-    "emoji": "\ud83d\udcf1",
-    "gradient": "#1a2a3e,#0d1520"
-  },
-  {
-    "id": "ae_7",
-    "name": "Cotton Casual T-Shirt",
-    "supplierPrice": 4.5,
-    "yourPrice": 16.99,
-    "description": "Soft breathable cotton tee, relaxed fit, multiple colors available",
-    "category": "Clothing",
-    "supplier": "AliExpress",
-    "emoji": "\ud83d\udc55",
-    "gradient": "#3a2a1a,#1e150d"
-  },
-  {
-    "id": "ae_8",
-    "name": "RGB LED Strip 5M",
-    "supplierPrice": 3.8,
-    "yourPrice": 13.99,
-    "description": "Color changing LED strip lights with remote, music sync mode",
-    "category": "Home",
-    "supplier": "AliExpress",
-    "emoji": "\u2728",
-    "gradient": "#1a3a1a,#0d1e0d"
-  },
-  {
-    "id": "ae_9",
-    "name": "Wireless Charger Pad",
+    "id": "dj_1",
+    "name": "Essence Mascara Lash Princess",
     "supplierPrice": 4.0,
-    "yourPrice": 12.99,
-    "description": "Qi fast wireless charging pad, compatible with all phones",
-    "category": "Electronics",
+    "yourPrice": 9.99,
+    "description": "The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.",
+    "category": "Beauty",
     "supplier": "AliExpress",
-    "emoji": "\u26a1",
-    "gradient": "#1a2a3e,#0d1520"
+    "image": "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp"
+    ],
+    "rating": 2.6
   },
   {
-    "id": "ae_10",
-    "name": "Bamboo Phone Stand",
-    "supplierPrice": 2.5,
-    "yourPrice": 9.99,
-    "description": "Adjustable eco-friendly bamboo stand, foldable and portable",
-    "category": "Accessories",
+    "id": "dj_2",
+    "name": "Eyeshadow Palette with Mirror",
+    "supplierPrice": 8.0,
+    "yourPrice": 19.99,
+    "description": "The Eyeshadow Palette with Mirror offers a versatile range of eyeshadow shades for creating stunning eye looks. With a built-in mirror, it's convenient for on-the-go makeup application.",
+    "category": "Beauty",
     "supplier": "AliExpress",
-    "emoji": "\ud83c\udf8b",
-    "gradient": "#2a3a1a,#15200d"
+    "image": "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/1.webp"
+    ],
+    "rating": 2.9
+  },
+  {
+    "id": "dj_3",
+    "name": "Powder Canister",
+    "supplierPrice": 6.0,
+    "yourPrice": 14.99,
+    "description": "The Powder Canister is a finely milled setting powder designed to set makeup and control shine. With a lightweight and translucent formula, it provides a smooth and matte finish.",
+    "category": "Beauty",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/beauty/powder-canister/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/beauty/powder-canister/1.webp"
+    ],
+    "rating": 4.6
+  },
+  {
+    "id": "dj_4",
+    "name": "Red Lipstick",
+    "supplierPrice": 5.2,
+    "yourPrice": 12.99,
+    "description": "The Red Lipstick is a classic and bold choice for adding a pop of color to your lips. With a creamy and pigmented formula, it provides a vibrant and long-lasting finish.",
+    "category": "Beauty",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/1.webp"
+    ],
+    "rating": 4.4
+  },
+  {
+    "id": "dj_5",
+    "name": "Red Nail Polish",
+    "supplierPrice": 3.6,
+    "yourPrice": 8.99,
+    "description": "The Red Nail Polish offers a rich and glossy red hue for vibrant and polished nails. With a quick-drying formula, it provides a salon-quality finish at home.",
+    "category": "Beauty",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/beauty/red-nail-polish/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/beauty/red-nail-polish/1.webp"
+    ],
+    "rating": 4.3
+  },
+  {
+    "id": "dj_6",
+    "name": "Calvin Klein CK One",
+    "supplierPrice": 20.0,
+    "yourPrice": 49.99,
+    "description": "CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and clean scent. It's a versatile fragrance suitable for everyday wear.",
+    "category": "Beauty",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/1.webp",
+      "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/2.webp",
+      "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/3.webp"
+    ],
+    "rating": 4.4
+  },
+  {
+    "id": "dj_7",
+    "name": "Chanel Coco Noir Eau De",
+    "supplierPrice": 52.0,
+    "yourPrice": 129.99,
+    "description": "Coco Noir by Chanel is an elegant and mysterious fragrance, featuring notes of grapefruit, rose, and sandalwood. Perfect for evening occasions.",
+    "category": "Beauty",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/1.webp",
+      "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/2.webp",
+      "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/3.webp"
+    ],
+    "rating": 4.3
+  },
+  {
+    "id": "dj_8",
+    "name": "Dior J'adore",
+    "supplierPrice": 36.0,
+    "yourPrice": 89.99,
+    "description": "J'adore by Dior is a luxurious and floral fragrance, known for its blend of ylang-ylang, rose, and jasmine. It embodies femininity and sophistication.",
+    "category": "Beauty",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/1.webp",
+      "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/2.webp",
+      "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/3.webp"
+    ],
+    "rating": 3.8
+  },
+  {
+    "id": "dj_9",
+    "name": "Dolce Shine Eau de",
+    "supplierPrice": 28.0,
+    "yourPrice": 69.99,
+    "description": "Dolce Shine by Dolce & Gabbana is a vibrant and fruity fragrance, featuring notes of mango, jasmine, and blonde woods. It's a joyful and youthful scent.",
+    "category": "Beauty",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/1.webp",
+      "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/2.webp",
+      "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/3.webp"
+    ],
+    "rating": 4.0
+  },
+  {
+    "id": "dj_10",
+    "name": "Gucci Bloom Eau de",
+    "supplierPrice": 32.0,
+    "yourPrice": 79.99,
+    "description": "Gucci Bloom by Gucci is a floral and captivating fragrance, with notes of tuberose, jasmine, and Rangoon creeper. It's a modern and romantic scent.",
+    "category": "Beauty",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/1.webp",
+      "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/2.webp",
+      "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/3.webp"
+    ],
+    "rating": 2.7
+  },
+  {
+    "id": "dj_11",
+    "name": "Annibale Colombo Bed",
+    "supplierPrice": 760.0,
+    "yourPrice": 1899.99,
+    "description": "The Annibale Colombo Bed is a luxurious and elegant bed frame, crafted with high-quality materials for a comfortable and stylish bedroom.",
+    "category": "Home",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/1.webp",
+      "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/2.webp",
+      "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/3.webp"
+    ],
+    "rating": 4.8
+  },
+  {
+    "id": "dj_12",
+    "name": "Annibale Colombo Sofa",
+    "supplierPrice": 1000.0,
+    "yourPrice": 2499.99,
+    "description": "The Annibale Colombo Sofa is a sophisticated and comfortable seating option, featuring exquisite design and premium upholstery for your living room.",
+    "category": "Home",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/1.webp",
+      "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/2.webp",
+      "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/3.webp"
+    ],
+    "rating": 3.9
+  },
+  {
+    "id": "dj_13",
+    "name": "Bedside Table African Cherry",
+    "supplierPrice": 120.0,
+    "yourPrice": 299.99,
+    "description": "The Bedside Table in African Cherry is a stylish and functional addition to your bedroom, providing convenient storage space and a touch of elegance.",
+    "category": "Home",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/1.webp",
+      "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/2.webp",
+      "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/3.webp"
+    ],
+    "rating": 2.9
+  },
+  {
+    "id": "dj_14",
+    "name": "Knoll Saarinen Executive Conference Chair",
+    "supplierPrice": 200.0,
+    "yourPrice": 499.99,
+    "description": "The Knoll Saarinen Executive Conference Chair is a modern and ergonomic chair, perfect for your office or conference room with its timeless design.",
+    "category": "Home",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/1.webp",
+      "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/2.webp",
+      "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/3.webp"
+    ],
+    "rating": 4.9
+  },
+  {
+    "id": "dj_15",
+    "name": "Wooden Bathroom Sink With Mirror",
+    "supplierPrice": 320.0,
+    "yourPrice": 799.99,
+    "description": "The Wooden Bathroom Sink with Mirror is a unique and stylish addition to your bathroom, featuring a wooden sink countertop and a matching mirror.",
+    "category": "Home",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/1.webp",
+      "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/2.webp",
+      "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/3.webp"
+    ],
+    "rating": 3.6
+  },
+  {
+    "id": "dj_16",
+    "name": "Apple",
+    "supplierPrice": 0.8,
+    "yourPrice": 1.99,
+    "description": "Fresh and crisp apples, perfect for snacking or incorporating into various recipes.",
+    "category": "Groceries",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/groceries/apple/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/groceries/apple/1.webp"
+    ],
+    "rating": 4.2
+  },
+  {
+    "id": "dj_17",
+    "name": "Beef Steak",
+    "supplierPrice": 5.2,
+    "yourPrice": 12.99,
+    "description": "High-quality beef steak, great for grilling or cooking to your preferred level of doneness.",
+    "category": "Groceries",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/groceries/beef-steak/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/groceries/beef-steak/1.webp"
+    ],
+    "rating": 4.5
+  },
+  {
+    "id": "dj_18",
+    "name": "Cat Food",
+    "supplierPrice": 3.6,
+    "yourPrice": 8.99,
+    "description": "Nutritious cat food formulated to meet the dietary needs of your feline friend.",
+    "category": "Groceries",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/groceries/cat-food/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/groceries/cat-food/1.webp"
+    ],
+    "rating": 3.1
+  },
+  {
+    "id": "dj_19",
+    "name": "Chicken Meat",
+    "supplierPrice": 4.0,
+    "yourPrice": 9.99,
+    "description": "Fresh and tender chicken meat, suitable for various culinary preparations.",
+    "category": "Groceries",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/groceries/chicken-meat/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/groceries/chicken-meat/1.webp",
+      "https://cdn.dummyjson.com/product-images/groceries/chicken-meat/2.webp"
+    ],
+    "rating": 3.2
+  },
+  {
+    "id": "dj_20",
+    "name": "Cooking Oil",
+    "supplierPrice": 2.0,
+    "yourPrice": 4.99,
+    "description": "Versatile cooking oil suitable for frying, saut\u00e9ing, and various culinary applications.",
+    "category": "Groceries",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/groceries/cooking-oil/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/groceries/cooking-oil/1.webp"
+    ],
+    "rating": 4.8
+  },
+  {
+    "id": "dj_21",
+    "name": "Cucumber",
+    "supplierPrice": 0.6,
+    "yourPrice": 1.49,
+    "description": "Crisp and hydrating cucumbers, ideal for salads, snacks, or as a refreshing side.",
+    "category": "Groceries",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/groceries/cucumber/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/groceries/cucumber/1.webp"
+    ],
+    "rating": 4.1
+  },
+  {
+    "id": "dj_22",
+    "name": "Dog Food",
+    "supplierPrice": 4.4,
+    "yourPrice": 10.99,
+    "description": "Specially formulated dog food designed to provide essential nutrients for your canine companion.",
+    "category": "Groceries",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/groceries/dog-food/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/groceries/dog-food/1.webp"
+    ],
+    "rating": 4.6
+  },
+  {
+    "id": "dj_23",
+    "name": "Eggs",
+    "supplierPrice": 1.2,
+    "yourPrice": 2.99,
+    "description": "Fresh eggs, a versatile ingredient for baking, cooking, or breakfast.",
+    "category": "Groceries",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/groceries/eggs/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/groceries/eggs/1.webp"
+    ],
+    "rating": 2.5
+  },
+  {
+    "id": "dj_24",
+    "name": "Fish Steak",
+    "supplierPrice": 6.0,
+    "yourPrice": 14.99,
+    "description": "Quality fish steak, suitable for grilling, baking, or pan-searing.",
+    "category": "Groceries",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/groceries/fish-steak/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/groceries/fish-steak/1.webp"
+    ],
+    "rating": 3.8
+  },
+  {
+    "id": "dj_25",
+    "name": "Green Bell Pepper",
+    "supplierPrice": 0.52,
+    "yourPrice": 1.29,
+    "description": "Fresh and vibrant green bell pepper, perfect for adding color and flavor to your dishes.",
+    "category": "Groceries",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/groceries/green-bell-pepper/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/groceries/green-bell-pepper/1.webp"
+    ],
+    "rating": 3.2
+  },
+  {
+    "id": "dj_26",
+    "name": "Green Chili Pepper",
+    "supplierPrice": 0.4,
+    "yourPrice": 0.99,
+    "description": "Spicy green chili pepper, ideal for adding heat to your favorite recipes.",
+    "category": "Groceries",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/groceries/green-chili-pepper/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/groceries/green-chili-pepper/1.webp"
+    ],
+    "rating": 3.7
+  },
+  {
+    "id": "dj_27",
+    "name": "Honey Jar",
+    "supplierPrice": 2.8,
+    "yourPrice": 6.99,
+    "description": "Pure and natural honey in a convenient jar, perfect for sweetening beverages or drizzling over food.",
+    "category": "Groceries",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/groceries/honey-jar/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/groceries/honey-jar/1.webp"
+    ],
+    "rating": 4.0
+  },
+  {
+    "id": "dj_28",
+    "name": "Ice Cream",
+    "supplierPrice": 2.2,
+    "yourPrice": 5.49,
+    "description": "Creamy and delicious ice cream, available in various flavors for a delightful treat.",
+    "category": "Groceries",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/groceries/ice-cream/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/groceries/ice-cream/1.webp",
+      "https://cdn.dummyjson.com/product-images/groceries/ice-cream/2.webp",
+      "https://cdn.dummyjson.com/product-images/groceries/ice-cream/3.webp",
+      "https://cdn.dummyjson.com/product-images/groceries/ice-cream/4.webp"
+    ],
+    "rating": 3.4
+  },
+  {
+    "id": "dj_29",
+    "name": "Juice",
+    "supplierPrice": 1.6,
+    "yourPrice": 3.99,
+    "description": "Refreshing fruit juice, packed with vitamins and great for staying hydrated.",
+    "category": "Groceries",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/groceries/juice/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/groceries/juice/1.webp"
+    ],
+    "rating": 3.9
+  },
+  {
+    "id": "dj_30",
+    "name": "Kiwi",
+    "supplierPrice": 1.0,
+    "yourPrice": 2.49,
+    "description": "Nutrient-rich kiwi, perfect for snacking or adding a tropical twist to your dishes.",
+    "category": "Groceries",
+    "supplier": "AliExpress",
+    "image": "https://cdn.dummyjson.com/product-images/groceries/kiwi/thumbnail.webp",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/groceries/kiwi/1.webp"
+    ],
+    "rating": 4.9
   }
 ]
